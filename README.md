@@ -8,6 +8,8 @@
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 
-* <a href="http://nbviewer.jupyter.org/github/genkuroki/HighSchoolMath/blob/master/HighSchoolMath.ipynb">高校数学の話題 HTML版</a>
+## 内容
 
-* <a href="https://genkuroki.github.io/documents/HighSchoolMath/HighSchoolMath.pdf">高校数学の話題 PDF版</a>
+* 高校数学の話題 <a href="http://nbviewer.jupyter.org/github/genkuroki/HighSchoolMath/blob/master/HighSchoolMath.ipynb">HTML版</a> (<a href="https://genkuroki.github.io/documents/HighSchoolMath/HighSchoolMath.pdf">PDF版</a>)
+
+* 算数数学教育の暗黒面 <a href="http://nbviewer.jupyter.org/github/genkuroki/HighSchoolMath/blob/master/MathEduDarkSide.ipynb">HTML版</a> (<a href="https://genkuroki.github.io/documents/HighSchoolMath/MathEduDarkSide.pdf">PDF版</a>)
