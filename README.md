@@ -16,4 +16,6 @@
 
 ## 付録
 
+* Report2019 [HTML版](http://nbviewer.jupyter.org/github/genkuroki/HighSchoolMath/blob/master/Report2019.ipynb) ([PDF版](https://genkuroki.github.io/documents/HighSchoolMath/Report2019.pdf))
+
 * Report2018 [HTML版](http://nbviewer.jupyter.org/github/genkuroki/HighSchoolMath/blob/master/Report2018.ipynb) ([PDF版](https://genkuroki.github.io/documents/HighSchoolMath/Report2018.pdf))
