@@ -2,9 +2,9 @@
 
 黒木玄 (Gen Kuroki)
 
-2018-08-15～2019-09-09
+2018-08-15～2019-09-09, 2020-08-28
 
-* Copyright 2018, 2019 Gen Kuroki
+* Copyright 2018, 2019, 2020 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 
