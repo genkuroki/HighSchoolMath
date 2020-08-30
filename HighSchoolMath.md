@@ -18,7 +18,7 @@ jupyter:
 
 黒木玄 (Gen Kuroki)
 
-2018-08-15～2019-09-24, 2020-08-27
+2018-08-15～2019-09-24, 2020-08-27～2020-08-30
 
 このノートでは高校の数学の教科書にあるような話題を扱い, その数学的背景について解説する.
 
@@ -958,7 +958,7 @@ $f(x)$ の次数が $k+1$ 次より大きいならば $f(x)-f(x-1)$ の次数は
 $\ds f(x)=\sum_{m=0}^{k+1} a_m x^m$ とおき, $f(0)=0$, $f(x)=f(x-1)+x^k$ を満たす $a_m$ 達が一意に定まることを示そう. $f(x-1)$ は
 
 $$
-f(x-1) = \sum_{m=0}^{k+1} a_i \sum_{i=0}\binom{m}{i}(-1)^{m-i}x^i =
+f(x-1) = \sum_{m=0}^{k+1} a_i \sum_{i=0}^m\binom{m}{i}(-1)^{m-i}x^i =
 \sum_{i=0}^{k+1}\left(\sum_{m=i}^{k+1}(-1)^{m-i}\binom{m}{i} a_m\right) x^i
 $$
 
@@ -1259,9 +1259,11 @@ $$
 
 $$
 \begin{aligned}
+&
 \zeta(-m,x) - \zeta(-m,x+n) &=
-(x^m + \cdots + (x+n)^m + (x+n+1)^m + \cdots) - ((x+n)^m + (x+n+1)^m + \cdots)
-\\ & = x^m + (x+1)^m + \cdots + (x+n)^m
+(x^m + \cdots + (x+n-1)^m + (x+n)^m + (x+n+1)^m + \cdots) 
+\\ &\, - ((x+n)^m + (x+n+1)^m + \cdots)
+\\ & = x^m + (x+1)^m + \cdots + (x+n-1)^m
 \end{aligned}
 $$
 
@@ -1273,7 +1275,7 @@ $$
 
 この公式はHurwitzのゼータ函数の解析接続によって論理的に正当化される.
 
-一方, ガンマ函数の応用としてよく使われる公式
+一方, ガンマ函数 $\Gamma(s)=\int_0^\infty e^{-t}x^{s-1}\,dx$ の応用としてよく使われる公式
 
 $$
 \frac{1}{a^s} = \frac{1}{\Gamma(s)}\int_0^\infty e^{-at} t^{s-1}\,dt
@@ -1282,10 +1284,14 @@ $$
 の $a=x,x+1,x+2,\ldots$ の場合をHurwitzのゼータ函数の定義式に代入して, 無限和と積分の順序を交換して, 等比級数の和の公式を使うと, 
 
 $$
-\zeta(s,x) = 
-\frac{1}{\Gamma(s)} \sum_{k=0}^\infty \int_0^\infty e^{-(x+k)t} t^{s-1}\,dt =
-\frac{1}{\Gamma(s)} \int_0^\infty \frac{e^{-xt}}{1-e^{-t}} t^{s-1}\,dt =
+\begin{aligned}
+\zeta(s,x) &= 
+\frac{1}{\Gamma(s)} \sum_{k=0}^\infty \int_0^\infty e^{-(x+k)t} t^{s-1}\,dt
+\\ &=
+\frac{1}{\Gamma(s)} \int_0^\infty \frac{e^{-xt}}{1-e^{-t}} t^{s-1}\,dt
+\\ &=
 \frac{1}{\Gamma(s)} \int_0^\infty \frac{t e^{(1-x)t}}{e^t-1} t^{s-2}\,dt.
+\end{aligned}
 $$
 
 このようにして, 自然にBernoulli多項式に $1-x$ を代入したものの母函数
@@ -1297,20 +1303,30 @@ $$
 が出て来る. この結果はべき乗和を無限和に拡張して得られるHurwitzのゼータ函数の中に自然にBernoulli多項式の母函数が現われることを意味している. さらに, $0$ から $\infty$ までの積分を $0$ から $1$ までの積分と $1$ から $\infty$ までの積分の和に分解し, $0$ から $1$ までの積分の中の $B_k(1-x)$ の母函数 $\ds \frac{t e^{(1-x)t}}{e^t-1}$ をそれから $\ds\sum_{k=0}^N B_k(1-x)\frac{t^k}{k!}$ を引いて足したもので置き換え, 足した分から得らえる項を $0$ から $1$ まで積分することによって, 次が得られる:
 
 $$
-\zeta(s,x) = \frac{1}{\Gamma(s)}\left[
-\int_1^\infty \frac{t e^{(1-x)t}}{e^t-1} t^{s-2}\,dt +
-\int_0^1 \left(\frac{t e^{(1-x)t}}{e^t-1} - \sum_{k=0}^N B_k(1-x)\frac{t^k}{k!}\right)t^{s-2}\,dt +
+\begin{aligned}
+\zeta(s,x) = \frac{1}{\Gamma(s)}\biggl[&
+\int_1^\infty \frac{t e^{(1-x)t}}{e^t-1} t^{s-2}\,dt 
+\\ &\, +
+\int_0^1 \left(\frac{t e^{(1-x)t}}{e^t-1} - \sum_{k=0}^N B_k(1-x)\frac{t^k}{k!}\right)t^{s-2}\,dt 
+\\ &\, +
 \sum_{k=0}^N \frac{B_k(1-x)}{k!}\frac{1}{s+k-1}
-\right].
+\biggr].
+\end{aligned}
 $$
 
-この公式の右辺は $\imag s > -N$ で意味を持ち, そこへの $\zeta(s,x)$ の解析接続を与える.  $m\in\Z$,  $0\leqq m < N$ のとき $s\to -m$ とすることによって, 
+この公式の右辺は $\imag s > -N$, $\imag x > 0$ で意味を持ち, そこへの $\zeta(s,x)$ の解析接続を与える.  $m\in\Z$,  $0\leqq m < N$ のとき $s\to -m$ とすることによって, 
 
 $$
 \zeta(-m,x) = \frac{(-1)^m B_{m+1}(1-x)}{m+1} = -\frac{B_{m+1}(x)}{m+1}.
 $$
 
-ここで $B_k(1-x)=(-1)^k B_k(x)$ となることを使った.  この結果を使っても, べき乗和をBernoulli多項式で表す公式
+ここで $B_k(1-x)=(-1)^k B_k(x)$ および $\Gamma(s+1)=s\Gamma(s)$ より
+
+$$
+\frac{1}{\Gamma(s)} = \frac{s(s+1)\cdots(s+m)}{\Gamma(s+m+1)}
+$$
+
+となること(これは $s\to-1$ で $0$ になる)を使った($k=m+1$ の分母の $s+m$ と $1/\Gamma(s)$ の分子の $s+m$ がキャンセルすることに注意せよ). この結果を使っても, べき乗和をBernoulli多項式で表す公式
 
 $$
 S_m(n) = \zeta(-m,1) - \zeta(-m,n+1) = \frac{B_{m+1}(n+1)-B_{m+1}(1)}{m+1}
