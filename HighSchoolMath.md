@@ -1255,11 +1255,16 @@ $$
 \frac{1}{x^s} + \frac{1}{(x+1)^s} + \frac{1}{(x+2)^s} + \cdots
 $$
 
-によって定義される. 形式的には $m=0,1,2,\ldots$ に対して
+によって定義される. これは形式的には $s=-m$ とおくと,
+
+$$
+\zeta(-m,x) = x^m + (x+1)^m + (x+2)^m + \cdots.
+$$
+
+と書け, さらに, $m=0,1,2,\ldots$ に対して, 形式的には
 
 $$
 \begin{aligned}
-&
 \zeta(-m,x) - \zeta(-m,x+n) &=
 (x^m + \cdots + (x+n-1)^m + (x+n)^m + (x+n+1)^m + \cdots) 
 \\ &\, - ((x+n)^m + (x+n+1)^m + \cdots)
