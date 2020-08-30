@@ -1816,7 +1816,7 @@ L = 2\sum_{i=1}^n \sin\frac{\alpha_i}{2} = 2n\,\frac{1}{n}\sum_{i=1}^n \sin\frac
 \end{aligned}
 $$
 
-この計算中の不等号は $\sin\alpha$ が $0\leqq\alpha\leqq\pi/2$ で上に凸であることとJensenの不等式から従う. この不等式の最右辺は単位円に内接する正 $n$ 角形の周長に等しい. $\sin\alpha$ が $0\leqq\alpha\leqq\pi/2$ で強い意味で凸であることを使えば, 逆に周長 $L$ が最大になるのは単位円に内接する $n$ 角形 $A_1\ldots A_n$ が正 $n$ 角形になるときであることもわかる.
+この計算中の不等号は $\sin\alpha$ が $0\leqq\alpha\leqq\pi$ で上に凸であることとJensenの不等式から従う(注意: 上で述べた仮定を使わなくても, $0< \alpha_i<2\pi$ なので 0<$\alpha_i/2<\pi$ となる). この不等式の最右辺は単位円に内接する正 $n$ 角形の周長に等しい. $\sin\alpha$ が $0\leqq\alpha\leqq\pi/2$ で強い意味で凸であることを使えば, 逆に周長 $L$ が最大になるのは単位円に内接する $n$ 角形 $A_1\ldots A_n$ が正 $n$ 角形になるときであることもわかる.
 
 三角形 $\triangle A_iOA_{i+1}$ の面積は $(1/2)\sin\alpha_i$ に等しいので, 
 
