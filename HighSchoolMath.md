@@ -40,7 +40,7 @@ jupyter:
 
 * <a href="http://nbviewer.jupyter.org/gist/genkuroki/81de23edcae631a995e19a2ecf946a4f">WindowsへのJulia言語のインストール</a>
 
-を参照せよ. このファイルは <a href="https://juliabox.com/">JuliaBox</a> でも使用できるかもしれない. このファイル中の<a href="https://julialang.org/">Julia言語</a>のコードを理解できれば, <a href="https://julialang.org/">Julia言語</a>から<a href="https://www.sympy.org">SymPy</a>を用いた数式処理や数値計算の結果のプロットの仕方を学ぶことができる.
+を参照せよ. このファイル中の<a href="https://julialang.org/">Julia言語</a>のコードを理解できれば, <a href="https://julialang.org/">Julia言語</a>から<a href="https://www.sympy.org">SymPy</a>を用いた数式処理や数値計算の結果のプロットの仕方を学ぶことができる.
 
 $
 \newcommand\eps{\varepsilon}
@@ -1415,7 +1415,7 @@ plot!(title="\$z = |$a x + $b y + $c|\$")
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## Jensenの不等式と相加相乗調和平均
 
-相加相乗平均の不等式はそれより圧倒的に一般的なJensenの不等式の特別な場合になっていることを解説する. さらに, 相加相乗調和平均の一般化になっている $p$ 乗平均についても解説する.
+相加相乗平均の不等式はそれより圧倒的に一般的なJensenの不等式の特別な場合になっていることを解説する. さらに, 相加相乗調和平均の一般化になっている $p$ 乗平均についても解説する. 最後に単位円に内接する多角形の周長と面積の最大値が正多角形の場合に得られることをJensenの不等式を使って証明する.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -1878,13 +1878,17 @@ $$
 $$
 \frac{\cos x - 1}{x^2} = 
 \frac{\cos^2 x - 1}{x^2(\cos x+1)} = 
-\frac{\sin^2 x}{x^2(\cos x+1)} \to
-\frac{1}{2} \quad (x\to 0)
+\frac{-\sin^2 x}{x^2(\cos x+1)} \to
+-\frac{1}{2} \quad (x\to 0)
 $$
 
-も得られる. 
+も得られる:
 
-そして, 三角函数の加法公式
+$$
+\lim_{x\to 0} \frac{\cos x - 1}{x^2} = -\frac{1}{2}.
+$$
+
+そして, 三角函数の加法定理
 
 $$
 \begin{aligned}
@@ -2144,7 +2148,7 @@ plot(P1, P2, size=(500, 260))
 ```
 
 ```julia slideshow={"slide_type": "subslide"}
-# (cn u, sn u)のプロット
+# (cd u, sn u)のプロット
 
 k² = -20
 u = -5:0.01:5
@@ -2163,7 +2167,7 @@ Gauss積分の公式 $\ds\int_{-\infty}^\infty e^{-x^2}\,dx=\sqrt{\pi}$ は筆�
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 <a href="https://www.google.co.jp/search?q=%E6%9D%B1%E5%B7%A5%E5%A4%A7+2015+%E6%95%B0%E5%AD%A6">2015年の東京工業大学前期日程の入試問題</a>として次の問題が出題された.
 
->\[3\] $a>0$ とする. 曲線 $y=e^{-y^2}$ と $x$ 軸, $y$ 軸, および直線 $x=a$ で囲まれた図形を, $y$ 軸のまわりに1回転してできる回転体を $A$ とする.
+>\[3\] $a>0$ とする. 曲線 $y=e^{-x^2}$ と $x$ 軸, $y$ 軸, および直線 $x=a$ で囲まれた図形を, $y$ 軸のまわりに1回転してできる回転体を $A$ とする.
 >
 >(1) $A$ の体積 $V$ を求めよ.
 >
@@ -2268,7 +2272,7 @@ $$
 \left(\int_{-\infty}^\infty e^{-x^2}\,dx\right)^2 &=
 \int_{-\infty}^\infty \int_{-\infty}^\infty e^{-(x^2+y^2)}\,dx\,dy 
 \\ &=
-\int_0^1 \pi(-\log z)\,dz = \pi[z\log z - z]_0^1 = \pi.
+\int_0^1 \pi(-\log z)\,dz = -\pi[z\log z - z]_0^1 = \pi.
 \end{aligned}
 $$
 
@@ -2286,7 +2290,7 @@ r = 1/√2
 ```
 
 ```julia slideshow={"slide_type": "-"}
-# z = e^{-(x^2+y2)} のグラフ
+# z = e^{-(x^2+y^2)} のグラフ
 surface(x, y, f.(x', y), size=(400,250), colorbar=false)
 ```
 
@@ -2387,6 +2391,14 @@ showimg("image/jpeg", "images/Jikkyo20140125GammaLaplace.jpg", scale="80%")
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### Stirlingの公式
+
+**準備の準備:** $|X|<1$ のとき
+
+$$
+\log(1 + X) = X - \frac{X^2}{2} + \frac{X^3}{3} - \frac{X^4}{4} + \cdots.
+$$
+
+正値函数の漸近挙動は, 対数を取ってから, Taylor展開などを使って調べることが多い. $\QED$
 
 **準備:** $n\to\infty$ のとき, Taylor展開 $\log(1+X)=X-X^2/2+O(X^3)$ を使うと,
 
@@ -2864,16 +2876,16 @@ showimg("image/jpeg", "images/Gamma-Beta-02.jpg", scale="60%")
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### ベータ函数の極限によるガンマ函数の表示とWallisの公式
 
-$\ds B(p,q)=\int_0^1 x^{p-1}(1-x)^{q-1}$ において, $p=s$, $q=n+1$, $x = t/n$ とおいて, $n\to\infty$ とすると,
+$\ds B(p,q)=\int_0^1 x^{p-1}(1-x)^{q-1}\,dx$ において, $p=s$, $q=n+1$, $x = t/n$ とおいて, $n\to\infty$ とすると,
 
 $$
 \begin{aligned}
 n^s B(s,n+1) &= 
 n^s \int_0^1 x^{s-1}(1-x)^n\,dx 
 \\ &=
-\int_0^n t^{s-1}\left(1-\frac{1}{n}\right)^n\,dx 
+\int_0^n t^{s-1}\left(1-\frac{t}{n}\right)^n\,dx 
 \\ &\to
-\int_0^\infty x^{s-1} e^{-x}\,dx = \Gamma(s).
+\int_0^\infty t^{s-1} e^{-t}\,dt = \Gamma(s).
 \end{aligned}
 $$
 
@@ -2908,8 +2920,11 @@ $$
 (n+1/2)\Gamma(n+1/2) = 
 \frac{2n+1}{2}\frac{(2n)!}{2^{2n} n!}\sqrt{\pi},
 \\ &
-\frac{1}{\sqrt{\pi}B(1/2,n+1)} = 
-\frac{\Gamma(n+1+1/2)}{\sqrt{\pi}\;\Gamma(1/2)\Gamma(n+1)} 
+\frac{1}{\sqrt{n}B(1/2,n+1)} = 
+\frac{\Gamma(n+1+1/2)}{\sqrt{n}\;\Gamma(1/2)\Gamma(n+1)} 
+\\ &\qquad=
+\frac{2n+1}{2}\frac{(2n)!}{2^{2n} n!}\sqrt{\pi}\cdot
+\frac{1}{\sqrt{n}\sqrt{\pi}\;n!}
 \\ &\qquad=
 \frac{2n+1}{2n}\sqrt{n}\;\frac{1}{2^{2n}}\binom{2n}{n} \to 
 \frac{1}{\Gamma(1/2)}=\frac{1}{\sqrt{\pi}}
@@ -3085,7 +3100,7 @@ showimg("image/jpeg", "images/Hurwitz-Gamma.jpg", scale="70%")
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## Taylor展開
 
-例えば, 実教出版の高校数学の教科書『数学III』2014年1月25日発行の終わりの方にはCauchyの平均値の定理の応用としてTaylotの公式を示す議論が載っている. その証明法は高木貞治『解析概論』におけるTaylorの公式の証明法と同じである. 以下ではより「初等的」な証明を解説する.
+例えば, 実教出版の高校数学の教科書『数学III』2014年1月25日発行の終わりの方にはCauchyの平均値の定理の応用としてTaylorの公式を示す議論が載っている. その証明法は高木貞治『解析概論』におけるTaylorの公式の証明法と同じである. 以下ではより「初等的」な証明を解説する.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -3152,7 +3167,7 @@ $$
 \begin{aligned}
 f(x) &= f(a) + \int_a^{x}dx_1\,f'(x_1)
 \\ &=
-f(a) + f'(a)x + f''(a)\frac{(x-a)}{2} + f'''(a)\frac{(x-a)^3}{3!} + R_4,
+f(a) + f'(a)(x-a) + f''(a)\frac{(x-a)^2}{2} + f'''(a)\frac{(x-a)^3}{3!} + R_4,
 \\ 
 R_4 &=
 \int_a^x dx_1\int_a^{x_1}dx_2\int_a^{x_2}dx_3\int_a^{x_3}dx_4\,f^{(4)}(x_4).
@@ -3193,12 +3208,12 @@ $$
 
 が成立する. 
 
-**例:** $f(x)=e^x$, $a=0$ の場合を考えよう. このとき, $f'(x)=f(x)$ と $f(0)=1$ より, $f^{(k)}(0)=1$ となる.  $r>0$ であるとし, $|x|\leqq r$ であると仮定する.  $0$ と $x$ のあいだの実数 $x_n$ について, $x<a$ ならば $0< f^{(n)}(x_n) = f(x_n) \leqq f(r)=e^r$ となる. したがって,
+**例:** $f(x)=e^x$, $a=0$ の場合を考えよう. このとき, $f'(x)=f(x)$ と $f(0)=1$ より, $f^{(k)}(0)=1$ となる.  $r>0$ であるとし, $|x|\leqq r$ であると仮定する.  $0$ と $x$ のあいだの実数 $x_n$ について, $0< f^{(n)}(x_n) = f(x_n) \leqq f(r)=e^r$ となる. したがって,
 
 $$
 e^x = 
 f(x) =
-\sum_{k=0}^{n-1} f^{(k)}(0)\frac{x^k}{k!} + R_n
+\sum_{k=0}^{n-1} f^{(k)}(0)\frac{x^k}{k!} + R_n =
 \sum_{k=0}^{n-1} \frac{x^k}{k!} + R_n
 $$
 
