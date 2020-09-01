@@ -73,7 +73,7 @@ $
 
 <!-- #region {"slideshow": {"slide_type": "-"}, "toc": true} -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#微積分における記号法について" data-toc-modified-id="微積分における記号法について-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>微積分における記号法について</a></span><ul class="toc-item"><li><span><a href="#微分は分数商ではないのか？" data-toc-modified-id="微分は分数商ではないのか？-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>微分は分数商ではないのか？</a></span></li><li><span><a href="#積分の書き方について" data-toc-modified-id="積分の書き方について-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>積分の書き方について</a></span><ul class="toc-item"><li><span><a href="#積分記号-$\ds\int$-は和を意味する" data-toc-modified-id="積分記号-$\ds\int$-は和を意味する-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>積分記号 $\ds\int$ は和を意味する</a></span></li><li><span><a href="#積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい" data-toc-modified-id="積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>積分を $\ds\int_a^b\!\!dx\;f(x)$ と書いてもよい</a></span></li><li><span><a href="#積分で-$dx$-を左側に書くスタイルのメリット" data-toc-modified-id="積分で-$dx$-を左側に書くスタイルのメリット-1.2.3"><span class="toc-item-num">1.2.3&nbsp;&nbsp;</span>積分で $dx$ を左側に書くスタイルのメリット</a></span></li></ul></li></ul></li><li><span><a href="#高校数学における三角函数の微積分は循環論法なのか？" data-toc-modified-id="高校数学における三角函数の微積分は循環論法なのか？-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>高校数学における三角函数の微積分は循環論法なのか？</a></span></li><li><span><a href="#無理式とは根号内に文字を含む式のことなのか？" data-toc-modified-id="無理式とは根号内に文字を含む式のことなのか？-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>無理式とは根号内に文字を含む式のことなのか？</a></span></li><li><span><a href="#単項式は多項式ではないのか？" data-toc-modified-id="単項式は多項式ではないのか？-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>単項式は多項式ではないのか？</a></span></li><li><span><a href="#等式は方程式と恒等式に分類されるのか？" data-toc-modified-id="等式は方程式と恒等式に分類されるのか？-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>等式は方程式と恒等式に分類されるのか？</a></span></li><li><span><a href="#「移項」=「項の符号を変えて移す」という教え方は教育的に正しいか？" data-toc-modified-id="「移項」=「項の符号を変えて移す」という教え方は教育的に正しいか？-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>「移項」=「項の符号を変えて移す」という教え方は教育的に正しいか？</a></span><ul class="toc-item"><li><span><a href="#誤解の例" data-toc-modified-id="誤解の例-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>誤解の例</a></span></li><li><span><a href="#教科書通りの教え方の問題点" data-toc-modified-id="教科書通りの教え方の問題点-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>教科書通りの教え方の問題点</a></span><ul class="toc-item"><li><span><a href="#枠で囲まれた「等式の性質」の記述はよろしくない" data-toc-modified-id="枠で囲まれた「等式の性質」の記述はよろしくない-6.2.1"><span class="toc-item-num">6.2.1&nbsp;&nbsp;</span>枠で囲まれた「等式の性質」の記述はよろしくない</a></span></li><li><span><a href="#「どんな等式の性質を使っているでしょうか」という問いもよろしくない" data-toc-modified-id="「どんな等式の性質を使っているでしょうか」という問いもよろしくない-6.2.2"><span class="toc-item-num">6.2.2&nbsp;&nbsp;</span>「どんな等式の性質を使っているでしょうか」という問いもよろしくない</a></span></li><li><span><a href="#「項を移すことができる」と教えることもよろしくない" data-toc-modified-id="「項を移すことができる」と教えることもよろしくない-6.2.3"><span class="toc-item-num">6.2.3&nbsp;&nbsp;</span>「項を移すことができる」と教えることもよろしくない</a></span></li></ul></li></ul></li><li><span><a href="#問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？" data-toc-modified-id="問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>問題 6÷2(1+2)=?, 2a÷2a=? の答えは唯一つに決まるか？</a></span></li><li><span><a href="#ゼロは倍数ではないのか？" data-toc-modified-id="ゼロは倍数ではないのか？-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ゼロは倍数ではないのか？</a></span></li><li><span><a href="#括弧やかけ算の式は1つの数量を表すか？" data-toc-modified-id="括弧やかけ算の式は1つの数量を表すか？-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>括弧やかけ算の式は1つの数量を表すか？</a></span></li><li><span><a href="#かけ算の順序が逆の「式」は誤りなのか？" data-toc-modified-id="かけ算の順序が逆の「式」は誤りなのか？-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>かけ算の順序が逆の「式」は誤りなのか？</a></span><ul class="toc-item"><li><span><a href="#掛け算順序問題の実態" data-toc-modified-id="掛け算順序問題の実態-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>掛け算順序問題の実態</a></span></li><li><span><a href="#掛け算順序問題が生じる原因" data-toc-modified-id="掛け算順序問題が生じる原因-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>掛け算順序問題が生じる原因</a></span></li><li><span><a href="#掛け算順序固定強制指導には教育的効果がない" data-toc-modified-id="掛け算順序固定強制指導には教育的効果がない-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>掛け算順序固定強制指導には教育的効果がない</a></span></li><li><span><a href="#1951年の文部省学習指導要領算数科編試案" data-toc-modified-id="1951年の文部省学習指導要領算数科編試案-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>1951年の文部省学習指導要領算数科編試案</a></span></li><li><span><a href="#100年以上の歴史がある！" data-toc-modified-id="100年以上の歴史がある！-10.5"><span class="toc-item-num">10.5&nbsp;&nbsp;</span>100年以上の歴史がある！</a></span></li><li><span><a href="#パターンマッチ教育の恐怖" data-toc-modified-id="パターンマッチ教育の恐怖-10.6"><span class="toc-item-num">10.6&nbsp;&nbsp;</span>パターンマッチ教育の恐怖</a></span></li><li><span><a href="#パターンマッチ教育の極北" data-toc-modified-id="パターンマッチ教育の極北-10.7"><span class="toc-item-num">10.7&nbsp;&nbsp;</span>パターンマッチ教育の極北</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#微積分における記号法について" data-toc-modified-id="微積分における記号法について-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>微積分における記号法について</a></span><ul class="toc-item"><li><span><a href="#微分は分数商ではないのか？" data-toc-modified-id="微分は分数商ではないのか？-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>微分は分数商ではないのか？</a></span></li><li><span><a href="#積分の書き方について" data-toc-modified-id="積分の書き方について-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>積分の書き方について</a></span><ul class="toc-item"><li><span><a href="#積分記号-$\ds\int$-は和を意味する" data-toc-modified-id="積分記号-$\ds\int$-は和を意味する-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>積分記号 $\ds\int$ は和を意味する</a></span></li><li><span><a href="#積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい" data-toc-modified-id="積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>積分を $\ds\int_a^b\!\!dx\;f(x)$ と書いてもよい</a></span></li><li><span><a href="#積分で-$dx$-を左側に書くスタイルのメリット" data-toc-modified-id="積分で-$dx$-を左側に書くスタイルのメリット-1.2.3"><span class="toc-item-num">1.2.3&nbsp;&nbsp;</span>積分で $dx$ を左側に書くスタイルのメリット</a></span></li></ul></li></ul></li><li><span><a href="#高校数学における三角函数の微積分は循環論法なのか？" data-toc-modified-id="高校数学における三角函数の微積分は循環論法なのか？-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>高校数学における三角函数の微積分は循環論法なのか？</a></span></li><li><span><a href="#無理式とは根号内に文字を含む式のことなのか？" data-toc-modified-id="無理式とは根号内に文字を含む式のことなのか？-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>無理式とは根号内に文字を含む式のことなのか？</a></span></li><li><span><a href="#単項式は多項式ではないのか？" data-toc-modified-id="単項式は多項式ではないのか？-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>単項式は多項式ではないのか？</a></span></li><li><span><a href="#等式は方程式と恒等式に分類されるのか？" data-toc-modified-id="等式は方程式と恒等式に分類されるのか？-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>等式は方程式と恒等式に分類されるのか？</a></span></li><li><span><a href="#「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？" data-toc-modified-id="「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？</a></span><ul class="toc-item"><li><span><a href="#誤解の例" data-toc-modified-id="誤解の例-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>誤解の例</a></span></li><li><span><a href="#教科書通りの教え方の問題点" data-toc-modified-id="教科書通りの教え方の問題点-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>教科書通りの教え方の問題点</a></span><ul class="toc-item"><li><span><a href="#枠で囲まれた「等式の性質」の記述はよろしくない" data-toc-modified-id="枠で囲まれた「等式の性質」の記述はよろしくない-6.2.1"><span class="toc-item-num">6.2.1&nbsp;&nbsp;</span>枠で囲まれた「等式の性質」の記述はよろしくない</a></span></li><li><span><a href="#「どんな等式の性質を使っているでしょうか」という問いもよろしくない" data-toc-modified-id="「どんな等式の性質を使っているでしょうか」という問いもよろしくない-6.2.2"><span class="toc-item-num">6.2.2&nbsp;&nbsp;</span>「どんな等式の性質を使っているでしょうか」という問いもよろしくない</a></span></li><li><span><a href="#「項を移すことができる」と教えることもよろしくない" data-toc-modified-id="「項を移すことができる」と教えることもよろしくない-6.2.3"><span class="toc-item-num">6.2.3&nbsp;&nbsp;</span>「項を移すことができる」と教えることもよろしくない</a></span></li></ul></li></ul></li><li><span><a href="#問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？" data-toc-modified-id="問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>問題 6÷2(1+2)=?, 2a÷2a=? の答えは唯一つに決まるか？</a></span></li><li><span><a href="#ゼロは倍数ではないのか？" data-toc-modified-id="ゼロは倍数ではないのか？-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ゼロは倍数ではないのか？</a></span></li><li><span><a href="#括弧やかけ算の式は1つの数量を表すか？" data-toc-modified-id="括弧やかけ算の式は1つの数量を表すか？-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>括弧やかけ算の式は1つの数量を表すか？</a></span></li><li><span><a href="#かけ算の順序が逆の「式」は誤りなのか？" data-toc-modified-id="かけ算の順序が逆の「式」は誤りなのか？-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>かけ算の順序が逆の「式」は誤りなのか？</a></span><ul class="toc-item"><li><span><a href="#掛け算順序問題の実態" data-toc-modified-id="掛け算順序問題の実態-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>掛け算順序問題の実態</a></span></li><li><span><a href="#掛け算順序問題が生じる原因" data-toc-modified-id="掛け算順序問題が生じる原因-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>掛け算順序問題が生じる原因</a></span></li><li><span><a href="#かけ算の式が数値や数量ではなく場面を表わすと教えている！" data-toc-modified-id="かけ算の式が数値や数量ではなく場面を表わすと教えている！-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>かけ算の式が数値や数量ではなく場面を表わすと教えている！</a></span></li><li><span><a href="#掛け算順序固定強制指導には教育的効果がない" data-toc-modified-id="掛け算順序固定強制指導には教育的効果がない-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>掛け算順序固定強制指導には教育的効果がない</a></span></li><li><span><a href="#1951年の文部省学習指導要領算数科編試案" data-toc-modified-id="1951年の文部省学習指導要領算数科編試案-10.5"><span class="toc-item-num">10.5&nbsp;&nbsp;</span>1951年の文部省学習指導要領算数科編試案</a></span></li><li><span><a href="#100年以上の歴史がある！" data-toc-modified-id="100年以上の歴史がある！-10.6"><span class="toc-item-num">10.6&nbsp;&nbsp;</span>100年以上の歴史がある！</a></span></li><li><span><a href="#パターンマッチ教育の恐怖" data-toc-modified-id="パターンマッチ教育の恐怖-10.7"><span class="toc-item-num">10.7&nbsp;&nbsp;</span>パターンマッチ教育の恐怖</a></span></li><li><span><a href="#パターンマッチ教育の極北" data-toc-modified-id="パターンマッチ教育の極北-10.8"><span class="toc-item-num">10.8&nbsp;&nbsp;</span>パターンマッチ教育の極北</a></span></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
@@ -83,10 +83,16 @@ using Base64
 using Plots
 pyplot(fmt=:png)
 
-showimg(mime, fn; scale="") = open(fn) do f
-    base64 = base64encode(f)
+function showimg(mime, fns...; scale="")
     option = ifelse(scale == "", "", """ width="$scale" """)
-    display("text/html", """<img src="data:$mime;base64,$base64" $option />""")
+    html = ""
+    for fn in fns
+        open(fn) do f
+            base64 = base64encode(f)
+            html *= """<img src="data:$mime;base64,$base64" $option />"""
+        end
+    end
+    display("text/html", html)
 end
 
 using SymPy
@@ -147,7 +153,7 @@ $df$ の定義を $f(x+dx)-f(x)$ とするのではなく, 上の図のように
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
 #### 積分記号 $\ds\int$ は和を意味する
 
-積分 $\ds\int_a^b f(x)\,dx$ における $\ds\int_a^n$ と $dx$ をまるで「括弧」と「括弧閉じる」のような記号だとみなすと, それらの記号の由来からかけ離れたニュアンスで記号を使うことになるので要注意である. 
+積分 $\ds\int_a^b f(x)\,dx$ における $\ds\int_a^b$ と $dx$ をまるで「括弧」と「括弧閉じる」のような記号だとみなすと, それらの記号の由来からかけ離れたニュアンスで記号を使うことになるので要注意である. 
 
 $f(x)$ が閉区間 $[a,b]$ 上の連続函数であれば, 区間 $[a,b]$ を $a=x_0 < x_1 < x_2 < \cdots < x_n=b$ と分割し, $x_i^*\in[x_{i-1}, x_i]$ 達を任意に取って, $\Delta x_i = x_i - x_{i-1}$ とおくと, 
 
@@ -525,7 +531,7 @@ showimg("image/jpeg", "images/equation1892.jpg", scale="40%")
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## 「移項」=「項の符号を変えて移す」という教え方は教育的に正しいか？
+## 「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？
 
 答えは**教育的には正しくない**である. その理由を以下で説明しよう. 
 <!-- #endregion -->
@@ -1070,6 +1076,23 @@ showimg("image/png", "images/tokyoshoseki2b2.png", scale="50%")
 
 **補足:** 算数の教材における文章題の解答欄は常に「式　　　答え　」の形式になっている. 解答欄の式の項目に書いて正解になる式は「式は場面を表す」というデタラメな考え方に基いて決められている. そして, 教師は児童に「正しい式」を書かせるために, 「ずつ」のようなキーワードに下線を引かせるなどして, 有害なパターンマッチによる「読解」を教えるようになる. このようなことが小学校の6年間ずっと続くのである. この問題は公立私立は関係ない. 算数の教科書に忠実に算数を教えられてしまうとほぼ確実にそうなってしまう. この問題が解決される目途は現時点では全くない. もしかしたら, 「式　　　答え　」という解答欄の形式を廃止することも検討するべきかもしれない. 「考え方　　　答え　」の形式の方が好ましいのではないか? $\QED$
 <!-- #endregion -->
+
+### かけ算の式が数値や数量ではなく場面を表わすと教えている！
+
+さらに調査してみると, かけ算を習う小学2年生向けの算数の教科書では「かけ算の式が数値や数量ではなく場面を表わす」と教えるように編集・執筆されていることが分かる. 下の方で証拠となる引用を示しておく.
+
+「5人を含む集まりが3つあるとき, 全体の人数を5×3と表わす」であれば, 5×3が数値・数量を表すことになり, 常識的なかけ算の説明になる.
+
+しかし, 実際には「5人を含む集まりが3つある場面を5×3と表し, 全体の人数が15人になることを, 5×3=15と書く」のように教えているように見える. この教え方では 5×3 は数値・数量ではなく, 場面を表すという非常識な考え方を子供の心に植え付ける教え方になってしまっている. 
+
+この非常識なスタイルの延長線上にかけ算順序固定強制指導があるのである.
+
+```julia
+showimg("image/png", "images/sikihabamen01.jpg", scale="80%")
+showimg("image/png", "images/sikihabamen02a.jpg", scale="80%")
+showimg("image/png", "images/sikihabamen02b.jpg", scale="80%")
+showimg("image/png", "images/sikihabamen02c.jpg", scale="80%")
+```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### 掛け算順序固定強制指導には教育的効果がない
