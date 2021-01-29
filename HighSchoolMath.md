@@ -8,9 +8,9 @@ jupyter:
       format_version: '1.1'
       jupytext_version: 1.2.1
   kernelspec:
-    display_name: Julia 1.6.0-DEV depwarn
+    display_name: Julia 1.6.0-beta1 depwarn -O3
     language: julia
-    name: julia-1.6-depwarn
+    name: julia-1.6-depwarn-o3
 ---
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -1736,9 +1736,9 @@ $M_p$ は $p=0$ でも連続(実際には解析的)なので, これで
 
 $$
 p\leqq 1 \leqq q \implies 
-\left(\sum_{i=1}^n x_i^p\right)^{1/p} \leqq
+\left(\frac{1}{n}\sum_{i=1}^n x_i^p\right)^{1/p} \leqq
 \frac{1}{n}\sum_{i=1}^n x_i \leqq
-\left(\sum_{i=1}^n x_i^q\right)^{1/q}
+\left(\frac{1}{n}\sum_{i=1}^n x_i^q\right)^{1/q}
 \iff M_p \leqq M_1 \leqq M_q.
 $$
 
@@ -1748,15 +1748,15 @@ $$
 \begin{aligned}
 &
 r>0 \implies
-\left(\sum_{i=1}^n x_i^{pr}\right)^{1/(pr)} \leqq
+\left(\frac{1}{n}\sum_{i=1}^n x_i^{pr}\right)^{1/(pr)} \leqq
 \left(\frac{1}{n}\sum_{i=1}^n x_i^r\right)^{1/r} \leqq
-\left(\sum_{i=1}^n x_i^{qr}\right)^{1/(qr)}
+\left(\frac{1}{n}\sum_{i=1}^n x_i^{qr}\right)^{1/(qr)}
 \quad \text{and}\quad pr\leqq r\leqq qr,
 \\ &
 r<0 \implies
-\left(\sum_{i=1}^n x_i^{pr}\right)^{1/(pr)} \geqq
+\left(\frac{1}{n}\sum_{i=1}^n x_i^{pr}\right)^{1/(pr)} \geqq
 \left(\frac{1}{n}\sum_{i=1}^n x_i^r\right)^{1/r} \geqq
-\left(\sum_{i=1}^n x_i^{qr}\right)^{1/(qr)}
+\left(\frac{1}{n}\sum_{i=1}^n x_i^{qr}\right)^{1/(qr)}
 \quad \text{and}\quad pr\geqq r\geqq qr.
 \end{aligned}
 $$
@@ -1775,9 +1775,9 @@ f(p,x) = iszero(p) ? 1/x : (2 - x^p)^(1/p)
 P = plot(size=(500,500))
 ps = [-10, -2, -1, 0, 1, 2, 10]
 for p in ps
-    a = 2^(1/p)
+    a = iszero(p) ? 1/3 : 2^(1/p)
     if p > 0
-        Δx = 2^(1/p)/1000
+        Δx = a/1000
         x = Δx:Δx:a
     else
         Δx = 3/1000
