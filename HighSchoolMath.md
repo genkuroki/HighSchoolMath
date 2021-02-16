@@ -8,7 +8,7 @@ jupyter:
       format_version: '1.1'
       jupytext_version: 1.2.1
   kernelspec:
-    display_name: Julia 1.6.0-beta1 depwarn -O3
+    display_name: Julia 1.6.0-rc1 depwarn -O3
     language: julia
     name: julia-1.6-depwarn-o3
 ---
@@ -2182,7 +2182,7 @@ $$
 \lim_{a\to\infty}\int_{-a}^a e^{-x^2}\,dx = \sqrt{\pi}
 $$
 
-の高校数学の範囲内での証明である. 高校数学IIIの教科書にも以下のような問題が載っている. (前者の問題はGauss∫と関係しており, 後者の問題はゼータ函数と関係している.)
+の高校数学の範囲内での証明である. 高校数学IIIの教科書にも以下のような問題が載っている. (前者の問題はGauss積分と関係しており, 後者の問題はゼータ函数と関係している.)
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "subslide"}
