@@ -1,16 +1,17 @@
 ---
 jupyter:
   jupytext:
+    cell_metadata_json: true
     formats: ipynb,md
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.1'
-      jupytext_version: 1.2.1
+      format_version: '1.3'
+      jupytext_version: 1.11.2
   kernelspec:
-    display_name: Julia 1.6.0-rc1 depwarn -O3
+    display_name: Julia 1.6.2
     language: julia
-    name: julia-1.6-depwarn-o3
+    name: julia-1.6
 ---
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -18,13 +19,13 @@ jupyter:
 
 黒木玄 (Gen Kuroki)
 
-2018-08-15～2019-09-24, 2020-08-27～2020-08-30
+2018-08-15～2019-09-24, 2020-08-27～2020-08-30, 2021-08-30
 
 このノートでは高校の数学の教科書にあるような話題を扱い, その数学的背景について解説する.
 
 タイポや自明な誤りは自分で訂正して読むこと. 本質的な誤りがあれば著者に教えて欲しい.
 
-* Copyright 2018, 2019, 2020 Gen Kuroki
+* Copyright 2018, 2019, 2020, 2021 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 
@@ -81,6 +82,7 @@ $
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "subslide"}
+using Logging; disable_logging(Logging.Warn)
 using Printf
 using Base64
 
