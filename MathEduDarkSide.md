@@ -1,16 +1,17 @@
 ---
 jupyter:
   jupytext:
+    cell_metadata_json: true
     formats: ipynb,md
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.1'
-      jupytext_version: 1.2.1
+      format_version: '1.3'
+      jupytext_version: 1.11.2
   kernelspec:
-    display_name: Julia 1.6.0-DEV depwarn
+    display_name: Julia 1.6.2
     language: julia
-    name: julia-1.6-depwarn
+    name: julia-1.6
 ---
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -18,9 +19,9 @@ jupyter:
 
 黒木玄 (Gen Kuroki)
 
-2018-08-21～2018-09-11, 2020-08-28
+2018-08-21～2018-09-11, 2020-08-28, 2021-09-01
 
-* Copyright 2018, 2020 Gen Kuroki
+* Copyright 2018, 2020, 2021 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 
@@ -77,6 +78,7 @@ $
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
+using Logging; disable_logging(Logging.Warn)
 using Printf
 using Base64
 
