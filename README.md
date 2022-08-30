@@ -2,7 +2,7 @@
 
 黒木玄 (Gen Kuroki)
 
-2018-08-15～2019-09-09, 2020-08-28, 2022-08-29
+2018-08-15～2019-09-09, 2020-08-28, 2022-08-30
 
 * Copyright 2018, 2019, 2020, 2022 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
