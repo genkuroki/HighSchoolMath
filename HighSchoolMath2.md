@@ -41,7 +41,7 @@ $
 
 <!-- #region toc=true -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#ポリアの壺" data-toc-modified-id="ポリアの壺-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>ポリアの壺</a></span><ul class="toc-item"><li><span><a href="#問題：n回目に赤玉が出る確率" data-toc-modified-id="問題：n回目に赤玉が出る確率-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>問題：n回目に赤玉が出る確率</a></span></li><li><span><a href="#n回目に赤玉が出る確率の漸化式による導出" data-toc-modified-id="n回目に赤玉が出る確率の漸化式による導出-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>n回目に赤玉が出る確率の漸化式による導出</a></span></li><li><span><a href="#n回目に赤玉が出る確率の漸化式を使わない導出" data-toc-modified-id="n回目に赤玉が出る確率の漸化式を使わない導出-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>n回目に赤玉が出る確率の漸化式を使わない導出</a></span></li><li><span><a href="#ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)" data-toc-modified-id="ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)</a></span></li><li><span><a href="#問題：名古屋大学2007年文系前期3(b)の一般化" data-toc-modified-id="問題：名古屋大学2007年文系前期3(b)の一般化-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>問題：名古屋大学2007年文系前期3(b)の一般化</a></span></li><li><span><a href="#P(k|n,a,b)の漸化式による導出" data-toc-modified-id="P(k|n,a,b)の漸化式による導出-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>P(k|n,a,b)の漸化式による導出</a></span></li><li><span><a href="#P(k|n,a,b)の漸化式を使わない導出" data-toc-modified-id="P(k|n,a,b)の漸化式を使わない導出-1.7"><span class="toc-item-num">1.7&nbsp;&nbsp;</span>P(k|n,a,b)の漸化式を使わない導出</a></span></li></ul></li><li><span><a href="#ポリアの壺と二項分布や超幾何分布の関係" data-toc-modified-id="ポリアの壺と二項分布や超幾何分布の関係-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>ポリアの壺と二項分布や超幾何分布の関係</a></span><ul class="toc-item"><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布</a></span></li><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布の統一的理解 (ポリア分布)</a></span></li><li><span><a href="#問題：二項分布がポリア分布の極限になっていること" data-toc-modified-id="問題：二項分布がポリア分布の極限になっていること-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>問題：二項分布がポリア分布の極限になっていること</a></span></li><li><span><a href="#解答例：二項分布がポリア分布の極限になっていること" data-toc-modified-id="解答例：二項分布がポリア分布の極限になっていること-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>解答例：二項分布がポリア分布の極限になっていること</a></span><ul class="toc-item"><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(素朴な方法)</a></span></li><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)-2.4.2"><span class="toc-item-num">2.4.2&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(1つの函数にまとめる方法)</a></span></li></ul></li><li><span><a href="#問題：ポリア分布の期待値と分散" data-toc-modified-id="問題：ポリア分布の期待値と分散-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>問題：ポリア分布の期待値と分散</a></span></li><li><span><a href="#解答例：ポリア分布の期待値と分散" data-toc-modified-id="解答例：ポリア分布の期待値と分散-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>解答例：ポリア分布の期待値と分散</a></span></li></ul></li><li><span><a href="#ポリアの壺試行の別の解釈" data-toc-modified-id="ポリアの壺試行の別の解釈-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>ポリアの壺試行の別の解釈</a></span><ul class="toc-item"><li><span><a href="#ベータ分布,-ベータ函数,-ガンマ函数" data-toc-modified-id="ベータ分布,-ベータ函数,-ガンマ函数-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>ベータ分布, ベータ函数, ガンマ函数</a></span></li><li><span><a href="#成功確率がベータ分布に従ってランダムに決まるようなベルヌーイ試行" data-toc-modified-id="成功確率がベータ分布に従ってランダムに決まるようなベルヌーイ試行-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>成功確率がベータ分布に従ってランダムに決まるようなベルヌーイ試行</a></span></li><li><span><a href="#余談：生まれつきの才能か,-努力の結果か？" data-toc-modified-id="余談：生まれつきの才能か,-努力の結果か？-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>余談：生まれつきの才能か, 努力の結果か？</a></span></li><li><span><a href="#問題：ポリアの壺試行で大数の法則が成立することの確認" data-toc-modified-id="問題：ポリアの壺試行で大数の法則が成立することの確認-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>問題：ポリアの壺試行で大数の法則が成立することの確認</a></span></li><li><span><a href="#解答例：ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="解答例：ポリアの壺試行の側で大数の法則が成立することの確認-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>解答例：ポリアの壺試行の側で大数の法則が成立することの確認</a></span><ul class="toc-item"><li><span><a href="#ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="ポリアの壺試行の側で大数の法則が成立することの確認-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span>ポリアの壺試行の側で大数の法則が成立することの確認</a></span></li><li><span><a href="#ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認" data-toc-modified-id="ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span>ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認</a></span></li></ul></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#ポリアの壺" data-toc-modified-id="ポリアの壺-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>ポリアの壺</a></span><ul class="toc-item"><li><span><a href="#問題：n回目に赤玉が出る確率" data-toc-modified-id="問題：n回目に赤玉が出る確率-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>問題：n回目に赤玉が出る確率</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式による導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式による導出-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式による導出</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式を使わない導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式を使わない導出-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式を使わない導出</a></span></li><li><span><a href="#ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)" data-toc-modified-id="ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)</a></span></li><li><span><a href="#問題：名古屋大学2007年文系前期3(b)の一般化" data-toc-modified-id="問題：名古屋大学2007年文系前期3(b)の一般化-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>問題：名古屋大学2007年文系前期3(b)の一般化</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式による導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式による導出-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式による導出</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式を使わない導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式を使わない導出-1.7"><span class="toc-item-num">1.7&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式を使わない導出</a></span></li></ul></li><li><span><a href="#ポリアの壺と二項分布や超幾何分布の関係" data-toc-modified-id="ポリアの壺と二項分布や超幾何分布の関係-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>ポリアの壺と二項分布や超幾何分布の関係</a></span><ul class="toc-item"><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布</a></span></li><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布の統一的理解 (ポリア分布)</a></span></li><li><span><a href="#問題：二項分布がポリア分布の極限になっていること" data-toc-modified-id="問題：二項分布がポリア分布の極限になっていること-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>問題：二項分布がポリア分布の極限になっていること</a></span></li><li><span><a href="#解答例：二項分布がポリア分布の極限になっていること" data-toc-modified-id="解答例：二項分布がポリア分布の極限になっていること-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>解答例：二項分布がポリア分布の極限になっていること</a></span><ul class="toc-item"><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(素朴な方法)</a></span></li><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)-2.4.2"><span class="toc-item-num">2.4.2&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(1つの函数にまとめる方法)</a></span></li></ul></li><li><span><a href="#問題：ポリア分布の期待値と分散" data-toc-modified-id="問題：ポリア分布の期待値と分散-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>問題：ポリア分布の期待値と分散</a></span></li><li><span><a href="#解答例：ポリア分布の期待値と分散" data-toc-modified-id="解答例：ポリア分布の期待値と分散-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>解答例：ポリア分布の期待値と分散</a></span></li></ul></li><li><span><a href="#ポリアの壺試行の別の解釈" data-toc-modified-id="ポリアの壺試行の別の解釈-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>ポリアの壺試行の別の解釈</a></span><ul class="toc-item"><li><span><a href="#ベータ分布,-ベータ函数,-ガンマ函数" data-toc-modified-id="ベータ分布,-ベータ函数,-ガンマ函数-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>ベータ分布, ベータ函数, ガンマ函数</a></span></li><li><span><a href="#成功確率がベータ分布に従ってランダムに決まるようなベルヌーイ試行" data-toc-modified-id="成功確率がベータ分布に従ってランダムに決まるようなベルヌーイ試行-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>成功確率がベータ分布に従ってランダムに決まるようなベルヌーイ試行</a></span></li><li><span><a href="#余談：生まれつきの才能か,-努力の結果か？" data-toc-modified-id="余談：生まれつきの才能か,-努力の結果か？-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>余談：生まれつきの才能か, 努力の結果か？</a></span></li><li><span><a href="#問題：ポリアの壺試行で大数の法則が成立することの確認" data-toc-modified-id="問題：ポリアの壺試行で大数の法則が成立することの確認-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>問題：ポリアの壺試行で大数の法則が成立することの確認</a></span></li><li><span><a href="#解答例：ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="解答例：ポリアの壺試行の側で大数の法則が成立することの確認-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>解答例：ポリアの壺試行の側で大数の法則が成立することの確認</a></span><ul class="toc-item"><li><span><a href="#ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="ポリアの壺試行の側で大数の法則が成立することの確認-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span>ポリアの壺試行の側で大数の法則が成立することの確認</a></span></li><li><span><a href="#ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認" data-toc-modified-id="ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span>ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認</a></span></li></ul></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia
@@ -54,12 +54,14 @@ Random.seed!(4649373)
 ```
 
 ```julia
-# SymPy.jl はjuliaを起動した後に以下のようにすると良いと思われる.
+# SymPy.jl はjuliaを起動した後に以下のようにすると良いだろう.
+#
 # julia> ENV["Python"] = ""
 # julia> ]
 # pkg> add SymPy
-# pkg> バックスペースを押す
+# pkg> バックスペースを押す.
 # julia> using SymPy
+# Python環境がJulia環境の中にインストールされる.
 
 using SymPy
 
@@ -95,7 +97,7 @@ $a, b$ は正の整数であると仮定する.
 
 (1) 壺から玉を無作為に取り出して, 取り出された玉の色を記録する.
 
-(2) 取り出した玉と同じ色の玉を壺に2個戻す.
+(2) 取り出した玉と同じ色の玉を壺に __2個__ 戻す.
 
 この試行を1回行うごとに壺の中の玉の個数は1個ずつ増える.
 
@@ -111,7 +113,7 @@ $a, b$ は正の整数であると仮定する.
 この問題について, 答えが分かるまでまたは1時間以上考えてから以下の節を読むと理解が深まるだろう.
 
 
-### n回目に赤玉が出る確率の漸化式による導出
+### 解答例：n回目に赤玉が出る確率の漸化式による導出
 
 __ポイント:__ 漸化式を作るときには, 「$n$ 回試行してから $1$ 回試行する」と考えるのではなく, 「$1$ 回試行してから, $n$ 回試行する」と考えるとよい. $1$ 回目の試行に関する確率計算は自明であるが, $n$ 回の試行後の壺の状態に関する確率の計算は非自明である.
 
@@ -169,19 +171,21 @@ $$
 __答え:__ $\ds p_n(a, b) = \frac{a}{a+b}$.
 
 
-### n回目に赤玉が出る確率の漸化式を使わない導出
+### 解答例：n回目に赤玉が出る確率の漸化式を使わない導出
 
 ポリアの壺試行の代わりに以下のような試行を考える.
 
 $c$ は正の整数であると仮定する.
 
-初期状態では番号が $1$ から $c$ までの番号が付けられた $c$ 個の玉が壺の中に入っているとする.
+初期状態では $1$ から $c$ までの番号が付けられた $c$ 種類の玉が1個ずつ壺の中に入っていると仮定する.
+
+初期状態では壺の中に $c$ 個の玉が入っていることになる.
 
 その初期状態から出発して, 以下の試行を繰り返す:
 
 (1) 壺から玉を無作為に取り出して, 取り出された玉の番号を記録する.
 
-(2) 取り出した玉と同じ番号が付けられた玉を壺に2個戻す.
+(2) 取り出した玉と同じ番号が付けられた玉を壺に __2個__ 戻す.
 
 この試行を1回行うごとに壺の中の玉の個数は1個ずつ増える.
 
@@ -243,7 +247,7 @@ __注意:__ この問題の $a=b=1$ の特別に簡単な場合が名古屋大�
 答えの具体的な対応は $P(k|N,1,1) = p_N(1+k)$ で与えられる.
 
 
-### P(k|n,a,b)の漸化式による導出
+### 解答例：P(k|n,a,b)の漸化式による導出
 
 $1$ 回目に赤玉が出る確率は $a/(a+b)$ であり, 白玉が出る確率は $b/(a+b)$ である. ゆえに,
 
@@ -296,7 +300,7 @@ __実際に自分でも以上の結果を確認すると, 以下の証明の方�
 $$
 P(k|n,a,b) =
 \binom{n}{k}
-\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k+1)}
+\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k-1)}
 {(a+b)(a+b+1)\cdots(a+b+n-1)}.
 $$
 
@@ -309,7 +313,7 @@ $$
 二項係数は次の漸化式(Pascalの三角形)を満たしている:
 
 $$
-\binom{n}{k-1} + \binom{n}{k} = \binom{n}{k}.
+\binom{n}{k-1} + \binom{n}{k} = \binom{n+1}{k}.
 $$
 
 上の予想を帰納法で証明しよう.  これが $n$ について成立している仮定する. 上で示した漸化式を使うと,
@@ -319,19 +323,19 @@ $$
 P(k|n+1,a,b) &= \frac{a}{a+b}P(k-1|n,a+1,b) + \frac{b}{a+b}P(k|n,a,b+1)
 \\ &=
 \frac{a}{a+b}\binom{n}{k-1}
-\frac{(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k)}
+\frac{(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k)}
 {(a+b+1)\cdots(a+b+n)}
 \\ &+
 \frac{b}{a+b}\binom{n}{k}
-\frac{a(a+1)\cdots(a+k-1)\,(b+1)\cdots(b+n-k)}
+\frac{a(a+1)\cdots(a+k-1)\cdot (b+1)\cdots(b+n-k)}
 {(a+b+1)\cdots(a+b+n)}
 \\ &=
 \left(\binom{n}{k-1} + \binom{n}{k}\right)
-\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k)}
+\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k)}
 {(a+b)(a+b+1)\cdots(a+b+n)}
 \\ &=
 \binom{n+1}{k}
-\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k)}
+\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k)}
 {(a+b)(a+b+1)\cdots(a+b+n)}.
 \end{aligned}
 $$
@@ -340,8 +344,29 @@ $$
 
 数学的帰納法より, すべての正の整数 $n=1,2,3,\ldots$ について上の予想が成立することが示された.
 
+結論: $P(k|n,a,b)$ は次のようになる:
 
-### P(k|n,a,b)の漸化式を使わない導出
+$$
+P(k|n,a,b) =
+\binom{n}{k}
+\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k-1)}
+{(a+b)(a+b+1)\cdots(a+b+n-1)}.
+$$
+
+__注意:__ 例えば, $n=N$, $a=b=1$, $k=0,1,\cdots,N$ のとき,
+
+$$
+P(k|N,1,1) =
+\frac{N!}{k!(N-k)!}
+\frac{1\cdot2\cdots k\cdot 1\cdot2\cdots(N-k)}
+{2\cdot3\cdots(N+1)} =
+\frac{1}{N+1}.
+$$
+
+これはちょうど名古屋大学2007年文系前期3(b)の解答を与える.
+
+
+### 解答例：P(k|n,a,b)の漸化式を使わない導出
 
 ポリアの壺試行において, $i$ 回目に赤玉が出たら $X_i=1$ とおき, 白玉が出たら $X_i=0$ とおく.
 
@@ -351,9 +376,11 @@ $$
 P(x_1,x_2,\ldots,x_n|a, b).
 $$
 
-この $P(x_1,x_2,\ldots,x_n|a, b)$ はポリアの壺試行における確率を完全に記述している.
+例えば, $n=7$, $x_1x_2\cdots x_n=0110010$ のとき, $P(x_1,\ldots,x_n|a,b)$ は試行回数 $n=7$ のポリアの壺試行によって, 玉が「白赤赤白白赤白」の順で出る確率になる.
 
-$P(k|n,a,b)$ は $X_1,\ldots,X_n$ の中に $1$ が $k$ 個含まれる確率になるので,
+この $P(x_1,x_2,\ldots,x_n|a, b)$ はポリアの壺試行における確率を最も詳細に記述している.
+
+特に $n$ 回中赤玉が $k$ 回出る確率 $P(k|n,a,b)$ は $X_1,\ldots,X_n$ の中に $1$ が $k$ 個含まれる確率になるので,
 
 $$
 P(k|n,a,b) = \sum_{x_1+\cdots+x_n=k} P(x_1,\ldots,x_n|a, b).
@@ -363,7 +390,7 @@ $$
 
 $P(x_1,x_2,\ldots,x_n|a, b)$ を求めよう.
 
-例えば, $x_1x_2\cdots x_7 = 0110010$ (赤玉が $3$ 回, 白玉が $4$ 回)のとき,
+例えば, $n=7$, $x_1x_2\cdots x_7 = 0110010$ (赤玉が $3$ 回, 白玉が $4$ 回)のとき,
 
 $$
 \begin{aligned}
@@ -376,7 +403,7 @@ P(x_1,x_2,\ldots,x_7|a,b) &=
 \frac{a+2}{a+b+5}
 \frac{b+3}{a+b+6}
 \\ &=
-\frac{a(a+1)(a+2)\, b(b+1)(b+2)(b+3)}{(a+b)(a+b+1)\cdots(a+b+6)}.
+\frac{a(a+1)(a+2)\cdot b(b+1)(b+2)(b+3)}{(a+b)(a+b+1)\cdots(a+b+6)}.
 \end{aligned}
 $$
  
@@ -396,19 +423,24 @@ $$
 
 $A^{x_i}B^{1-x_i}$ が $x_i=1$ のときに $A$, $x_i=0$ のときに $B$ になることを使った.
 
-$a^{x_1}(a+r_1)^{x_2}\cdots(a+r_{n-1})^{x_n}$ の中の $x_i=0$ に対応する因子は $1$ になり, $x_i=1$ が現れるたびに $r_i$ が $1$ 増え, $b^{1-x_1}(b+2_1)^{1-x_2}\cdots(b+w_{n-1})^{1-x_n}$ についても同様のことが言える.
-
-例えば, $x_1x_2\cdots x_7 = 0110010$ (赤玉が $3$ 回, 白玉が $4$ 回)のとき,
+例えば, $n=7$, $x_1x_2\cdots x_7 = 0110010$ (赤玉が $3$ 回, 白玉が $4$ 回)のとき,
 
 $$
 \begin{aligned}
-a^{x_1}(a+r_1)^{x_2}\cdots(a+r_{n-1})^{x_n} &=
-a^0 a^1 (a+1)^1 (a+2)^0 (a+2)^0 (a+2)^1 (a+3)^0 \\ &= a(a+1)(a+2),
-\\
-b^{1-x_1}(b+2_1)^{1-x_2}\cdots(b+w_{n-1})^{1-x_n} &=
-b^1 (b+1)^0 (b+1)^0 (b+1)^1 (b+2)^1 (b+3)^0 (b+3)^1 \\ &= b(b+1)(b+2)(b+3).
+&
+a^{x_1}(a+r_1)^{x_2}\cdots(a+r_{n-1})^{x_n}
+\\ &=
+a^0 a^1 (a+1)^1 (a+2)^0 (a+2)^0 (a+2)^1 (a+3)^0
+\\ &= a(a+1)(a+2),
+\\ &
+b^{1-x_1}(b+2_1)^{1-x_2}\cdots(b+w_{n-1})^{1-x_n}
+\\ &=
+b^1 (b+1)^0 (b+1)^0 (b+1)^1 (b+2)^1 (b+3)^0 (b+3)^1
+\\ &= b(b+1)(b+2)(b+3).
 \end{aligned}
 $$
+
+$a^{x_1}(a+r_1)^{x_2}\cdots(a+r_{n-1})^{x_n}$ の中の $x_i=0$ に対応する因子は $1$ になり, $x_i=1$ が現れるたびに $r_i$ が $1$ 増え, $b^{1-x_1}(b+2_1)^{1-x_2}\cdots(b+w_{n-1})^{1-x_n}$ についても同様のことが言える.
 
 これより, $k = r_n$ とおくと($n$ 回中赤玉が $k$ 回出た場合を考えると), 次のようになることがわかる:
 
@@ -421,22 +453,24 @@ b^{1-x_1}(b+w_1)^{1-x_2}\cdots(b+w_{n-1})^{1-x_n} = b(b+1)\cdots(b+n-k-1).
 \end{aligned}
 $$
 
-したがって, $x_1+\cdots+x_n = k$ のとき, 
+したがって, $x_1,\ldots,x_n\in\{1,0\}$, $x_1+\cdots+x_n = k$ のとき, 
 
 $$
 P(x_1,x_2,\ldots,x_n|a, b) =
-\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k+1)}
+\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k-1)}
 {(a+b)(a+b+1)\cdots(a+b+n-1)}.
 $$
 
 特に $P(x_1,x_2,\ldots,x_n|a, b)$ は $n$ 回中に赤玉が出た回数 $x_1+\cdots+x_n = k$ だけで決まり, 赤玉が出る順序にはよらない.
 
-以上から次が成立することが出る:
+$P(k|n,a,b)$ は $r_n=k$ の場合の $P(x_1,x_2,\ldots,x_n|a, b)$ の $x_1,\ldots,x_n$ の中から $1$ になる $k$ 個を選ぶ組み合わせの数倍になっている. 
+
+ゆえに,
 
 $$
 P(k|n,a,b) =
 \binom{n}{k}
-\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k+1)}
+\frac{a(a+1)\cdots(a+k-1)\,b(b+1)\cdots(b+n-k-1)}
 {(a+b)(a+b+1)\cdots(a+b+n-1)}.
 $$
 
@@ -471,7 +505,7 @@ __数学の問題を楽に解く極意は, より一般的な場合を考える�
 $$
 P_{\BetaBinom}(k|n,a,b) =
 \binom{n}{k}
-\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k+1)}
+\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k-1)}
 {(a+b)(a+b+1)\cdots(a+b+n-1)}.
 $$
 
@@ -493,7 +527,7 @@ $$
 \frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)} \frac{\Gamma(a+k)\Gamma(b+n-k)}{\Gamma(a+b+n)}
 \\ &=
 \binom{n}{k}
-\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k+1)}
+\frac{a(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k-1)}
 {(a+b)(a+b+1)\cdots(a+b+n-1)}
 \\ &=
 P_{\BetaBinom}(k|n,a,b).
@@ -597,7 +631,9 @@ $$
 
 さらに, この式は $a,b,d$ が整数ではなく, 正の実数であっても, $0$ 以上の整数 $k$ に関する確率分布を定める.
 
-この離散分布は __ポリア分布__ ([Pólya distribution](https://encyclopediaofmath.org/wiki/P%C3%B3lya_distribution))と呼ばれている.
+この離散分布は __ポリア分布__ (Pólya distribution)と呼ばれている.
+
+* https://encyclopediaofmath.org/wiki/P%C3%B3lya_distribution
 
 このとき,
 
@@ -1084,6 +1120,21 @@ end
 ```
 
 ```julia
+using Random
+Random.seed!(4648373)
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+@show rand_polya_urn(10, 3, 7);
+```
+
+```julia
 # ポリアの壺試行の結果をプロット
 # 横軸は試行回数で縦軸は1の割合
 function plot_polya_urn(a, b; n = 10^4, e=0.1, kwargs...)
@@ -1093,6 +1144,25 @@ function plot_polya_urn(a, b; n = 10^4, e=0.1, kwargs...)
     plot(prob; label="")
     plot!(; ylim, kwargs...)
 end
+```
+
+Julia言語の環境で `?cumsum!` のように入力すればその解説を読むことができる.
+
+```julia
+?cumsum!
+```
+
+__問題:__ `?cumsum` の結果も表示させてみよ.
+
+
+例えば, $a = [1, 2, 3, 4, 5]$ のとき $\op{cumsum!(a, a)}$ によって $a$ とその戻り値は $[1, 3, 6, 10, 15]$ になる.
+
+```julia
+a = [1, 2, 3, 4, 5]
+@show a
+cs = cumsum!(a, a)
+@show a
+@show cs;
 ```
 
 ```julia
@@ -1129,7 +1199,7 @@ end
 
 ```julia
 using Random
-Random.seed!(464937337564)
+Random.seed!(5963)
 anim_polya_urn(30, 70)
 ```
 
@@ -1161,6 +1231,8 @@ ENV["JULIA_NUM_THREADS"]
 function mc_polya_urn_lln(a, b; n = 10^4, L = 10^5)
     prob = Vector{Float64}(undef, L)
     tmp = [Vector{Int}(undef, n) for _ in 1:Threads.nthreads()]
+    # Threads.@threads for ... end でスレッド並列化.
+    # ループの内側は互いに独立に実行できなければいけない.
     Threads.@threads for i in 1:L
         X = rand_polya_urn(n, a, b; X = tmp[Threads.threadid()])
         prob[i] = sum(X)/n
