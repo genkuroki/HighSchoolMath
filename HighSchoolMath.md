@@ -78,7 +78,7 @@ $
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}, "toc": true} -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#三角函数の加法定理" data-toc-modified-id="三角函数の加法定理-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>三角函数の加法定理</a></span><ul class="toc-item"><li><span><a href="#三角函数の加法定理の導出は易しい" data-toc-modified-id="三角函数の加法定理の導出は易しい-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>三角函数の加法定理の導出は易しい</a></span></li><li><span><a href="#三角函数の加法定理の導出は中学校レベル" data-toc-modified-id="三角函数の加法定理の導出は中学校レベル-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>三角函数の加法定理の導出は中学校レベル</a></span></li><li><span><a href="#三角函数の加法定理は複数の方法で得られる" data-toc-modified-id="三角函数の加法定理は複数の方法で得られる-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>三角函数の加法定理は複数の方法で得られる</a></span></li><li><span><a href="#三角函数の加法定理と内積の関係" data-toc-modified-id="三角函数の加法定理と内積の関係-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>三角函数の加法定理と内積の関係</a></span></li></ul></li><li><span><a href="#3次方程式と4次方程式の解法" data-toc-modified-id="3次方程式と4次方程式の解法-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>3次方程式と4次方程式の解法</a></span><ul class="toc-item"><li><span><a href="#ある3次式の因数分解から3次方程式の解法へ" data-toc-modified-id="ある3次式の因数分解から3次方程式の解法へ-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ある3次式の因数分解から3次方程式の解法へ</a></span><ul class="toc-item"><li><span><a href="#巡回行列式" data-toc-modified-id="巡回行列式-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>巡回行列式</a></span></li></ul></li><li><span><a href="#ある4次式の展開公式から4次方程式の解法へ" data-toc-modified-id="ある4次式の展開公式から4次方程式の解法へ-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>ある4次式の展開公式から4次方程式の解法へ</a></span></li></ul></li><li><span><a href="#べき乗和とベルヌイ多項式" data-toc-modified-id="べき乗和とベルヌイ多項式-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>べき乗和とベルヌイ多項式</a></span><ul class="toc-item"><li><span><a href="#Bernoulli多項式" data-toc-modified-id="Bernoulli多項式-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Bernoulli多項式</a></span></li><li><span><a href="#Bernoulli多項式とべき乗和の関係" data-toc-modified-id="Bernoulli多項式とべき乗和の関係-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Bernoulli多項式とべき乗和の関係</a></span></li><li><span><a href="#べき乗和の直接的な取り扱い" data-toc-modified-id="べき乗和の直接的な取り扱い-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>べき乗和の直接的な取り扱い</a></span></li><li><span><a href="#第2種Stirling数とべき乗和" data-toc-modified-id="第2種Stirling数とべき乗和-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>第2種Stirling数とべき乗和</a></span></li><li><span><a href="#第2種Stirling数とBernoulli数の関係" data-toc-modified-id="第2種Stirling数とBernoulli数の関係-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>第2種Stirling数とBernoulli数の関係</a></span></li><li><span><a href="#べき乗和とHurwitzのゼータ函数の関係" data-toc-modified-id="べき乗和とHurwitzのゼータ函数の関係-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>べき乗和とHurwitzのゼータ函数の関係</a></span></li></ul></li><li><span><a href="#平面上の点と直線の距離" data-toc-modified-id="平面上の点と直線の距離-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>平面上の点と直線の距離</a></span></li><li><span><a href="#Jensenの不等式と相加相乗調和平均" data-toc-modified-id="Jensenの不等式と相加相乗調和平均-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Jensenの不等式と相加相乗調和平均</a></span><ul class="toc-item"><li><span><a href="#Jensenの不等式" data-toc-modified-id="Jensenの不等式-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>Jensenの不等式</a></span></li><li><span><a href="#相加相乗調和平均の不等式" data-toc-modified-id="相加相乗調和平均の不等式-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>相加相乗調和平均の不等式</a></span></li><li><span><a href="#p乗平均" data-toc-modified-id="p乗平均-5.3"><span class="toc-item-num">5.3&nbsp;&nbsp;</span>p乗平均</a></span></li><li><span><a href="#p→0でのp乗平均の挙動" data-toc-modified-id="p→0でのp乗平均の挙動-5.4"><span class="toc-item-num">5.4&nbsp;&nbsp;</span>p→0でのp乗平均の挙動</a></span></li><li><span><a href="#p乗平均のpに関する依存性(1)" data-toc-modified-id="p乗平均のpに関する依存性(1)-5.5"><span class="toc-item-num">5.5&nbsp;&nbsp;</span>p乗平均のpに関する依存性(1)</a></span></li><li><span><a href="#p乗平均のpに関する依存性(2)" data-toc-modified-id="p乗平均のpに関する依存性(2)-5.6"><span class="toc-item-num">5.6&nbsp;&nbsp;</span>p乗平均のpに関する依存性(2)</a></span></li><li><span><a href="#単位円に内接する多角形の周長と面積の最大値" data-toc-modified-id="単位円に内接する多角形の周長と面積の最大値-5.7"><span class="toc-item-num">5.7&nbsp;&nbsp;</span>単位円に内接する多角形の周長と面積の最大値</a></span></li></ul></li><li><span><a href="#三角函数の微積分" data-toc-modified-id="三角函数の微積分-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>三角函数の微積分</a></span><ul class="toc-item"><li><span><a href="#高校の数学の教科書の方針" data-toc-modified-id="高校の数学の教科書の方針-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>高校の数学の教科書の方針</a></span></li><li><span><a href="#曲線の長さが速さの積分になることの応用" data-toc-modified-id="曲線の長さが速さの積分になることの応用-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>曲線の長さが速さの積分になることの応用</a></span></li><li><span><a href="#楕円積分,-楕円函数,-楕円曲線暗号" data-toc-modified-id="楕円積分,-楕円函数,-楕円曲線暗号-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>楕円積分, 楕円函数, 楕円曲線暗号</a></span></li></ul></li><li><span><a href="#Gauss積分の大学入試問題" data-toc-modified-id="Gauss積分の大学入試問題-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Gauss積分の大学入試問題</a></span></li><li><span><a href="#ガンマ函数の応用" data-toc-modified-id="ガンマ函数の応用-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ガンマ函数の応用</a></span><ul class="toc-item"><li><span><a href="#多項式×指数函数の積分" data-toc-modified-id="多項式×指数函数の積分-8.1"><span class="toc-item-num">8.1&nbsp;&nbsp;</span>多項式×指数函数の積分</a></span></li><li><span><a href="#Stirlingの公式" data-toc-modified-id="Stirlingの公式-8.2"><span class="toc-item-num">8.2&nbsp;&nbsp;</span>Stirlingの公式</a></span></li><li><span><a href="#Stirlingの公式を使うと簡単に解ける大学入試問題" data-toc-modified-id="Stirlingの公式を使うと簡単に解ける大学入試問題-8.3"><span class="toc-item-num">8.3&nbsp;&nbsp;</span>Stirlingの公式を使うと簡単に解ける大学入試問題</a></span></li></ul></li><li><span><a href="#ベータ函数の応用" data-toc-modified-id="ベータ函数の応用-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>ベータ函数の応用</a></span><ul class="toc-item"><li><span><a href="#1/6公式" data-toc-modified-id="1/6公式-9.1"><span class="toc-item-num">9.1&nbsp;&nbsp;</span>1/6公式</a></span></li><li><span><a href="#sinのべきの定積分" data-toc-modified-id="sinのべきの定積分-9.2"><span class="toc-item-num">9.2&nbsp;&nbsp;</span>sinのべきの定積分</a></span></li><li><span><a href="#ガンマ函数とベータ函数の関係" data-toc-modified-id="ガンマ函数とベータ函数の関係-9.3"><span class="toc-item-num">9.3&nbsp;&nbsp;</span>ガンマ函数とベータ函数の関係</a></span></li><li><span><a href="#ベータ函数の極限によるガンマ函数の表示とWallisの公式" data-toc-modified-id="ベータ函数の極限によるガンマ函数の表示とWallisの公式-9.4"><span class="toc-item-num">9.4&nbsp;&nbsp;</span>ベータ函数の極限によるガンマ函数の表示とWallisの公式</a></span></li><li><span><a href="#Gaussの超幾何函数への一般化" data-toc-modified-id="Gaussの超幾何函数への一般化-9.5"><span class="toc-item-num">9.5&nbsp;&nbsp;</span>Gaussの超幾何函数への一般化</a></span></li><li><span><a href="#Kummerの超幾何函数" data-toc-modified-id="Kummerの超幾何函数-9.6"><span class="toc-item-num">9.6&nbsp;&nbsp;</span>Kummerの超幾何函数</a></span></li></ul></li><li><span><a href="#Taylor展開" data-toc-modified-id="Taylor展開-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>Taylor展開</a></span><ul class="toc-item"><li><span><a href="#Taylorの公式の証明" data-toc-modified-id="Taylorの公式の証明-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>Taylorの公式の証明</a></span></li><li><span><a href="#Taylorの公式の剰余項の評価" data-toc-modified-id="Taylorの公式の剰余項の評価-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>Taylorの公式の剰余項の評価</a></span></li><li><span><a href="#有名な交代級数の例" data-toc-modified-id="有名な交代級数の例-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>有名な交代級数の例</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#三角函数の加法定理" data-toc-modified-id="三角函数の加法定理-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>三角函数の加法定理</a></span><ul class="toc-item"><li><span><a href="#三角函数の加法定理の導出は易しい" data-toc-modified-id="三角函数の加法定理の導出は易しい-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>三角函数の加法定理の導出は易しい</a></span></li><li><span><a href="#三角函数の加法定理の導出は中学校レベル" data-toc-modified-id="三角函数の加法定理の導出は中学校レベル-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>三角函数の加法定理の導出は中学校レベル</a></span></li><li><span><a href="#三角函数の加法定理は複数の方法で得られる" data-toc-modified-id="三角函数の加法定理は複数の方法で得られる-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>三角函数の加法定理は複数の方法で得られる</a></span></li><li><span><a href="#三角函数の加法定理と内積の関係" data-toc-modified-id="三角函数の加法定理と内積の関係-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>三角函数の加法定理と内積の関係</a></span></li></ul></li><li><span><a href="#3次方程式と4次方程式の解法" data-toc-modified-id="3次方程式と4次方程式の解法-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>3次方程式と4次方程式の解法</a></span><ul class="toc-item"><li><span><a href="#ある3次式の因数分解から3次方程式の解法へ" data-toc-modified-id="ある3次式の因数分解から3次方程式の解法へ-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ある3次式の因数分解から3次方程式の解法へ</a></span></li><li><span><a href="#巡回行列式" data-toc-modified-id="巡回行列式-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>巡回行列式</a></span></li><li><span><a href="#ある4次式の展開公式から4次方程式の解法へ" data-toc-modified-id="ある4次式の展開公式から4次方程式の解法へ-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>ある4次式の展開公式から4次方程式の解法へ</a></span></li></ul></li><li><span><a href="#4次方程式の解法で使える4次式の行列式表示" data-toc-modified-id="4次方程式の解法で使える4次式の行列式表示-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>4次方程式の解法で使える4次式の行列式表示</a></span></li><li><span><a href="#べき乗和とベルヌイ多項式" data-toc-modified-id="べき乗和とベルヌイ多項式-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>べき乗和とベルヌイ多項式</a></span><ul class="toc-item"><li><span><a href="#Bernoulli多項式" data-toc-modified-id="Bernoulli多項式-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Bernoulli多項式</a></span></li><li><span><a href="#Bernoulli多項式とべき乗和の関係" data-toc-modified-id="Bernoulli多項式とべき乗和の関係-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Bernoulli多項式とべき乗和の関係</a></span></li><li><span><a href="#べき乗和の直接的な取り扱い" data-toc-modified-id="べき乗和の直接的な取り扱い-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>べき乗和の直接的な取り扱い</a></span></li><li><span><a href="#第2種Stirling数とべき乗和" data-toc-modified-id="第2種Stirling数とべき乗和-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>第2種Stirling数とべき乗和</a></span></li><li><span><a href="#第2種Stirling数とBernoulli数の関係" data-toc-modified-id="第2種Stirling数とBernoulli数の関係-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span>第2種Stirling数とBernoulli数の関係</a></span></li><li><span><a href="#べき乗和とHurwitzのゼータ函数の関係" data-toc-modified-id="べき乗和とHurwitzのゼータ函数の関係-4.6"><span class="toc-item-num">4.6&nbsp;&nbsp;</span>べき乗和とHurwitzのゼータ函数の関係</a></span></li></ul></li><li><span><a href="#平面上の点と直線の距離" data-toc-modified-id="平面上の点と直線の距離-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>平面上の点と直線の距離</a></span></li><li><span><a href="#Jensenの不等式と相加相乗調和平均" data-toc-modified-id="Jensenの不等式と相加相乗調和平均-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Jensenの不等式と相加相乗調和平均</a></span><ul class="toc-item"><li><span><a href="#Jensenの不等式" data-toc-modified-id="Jensenの不等式-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>Jensenの不等式</a></span></li><li><span><a href="#相加相乗調和平均の不等式" data-toc-modified-id="相加相乗調和平均の不等式-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>相加相乗調和平均の不等式</a></span></li><li><span><a href="#p乗平均" data-toc-modified-id="p乗平均-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>p乗平均</a></span></li><li><span><a href="#p→0でのp乗平均の挙動" data-toc-modified-id="p→0でのp乗平均の挙動-6.4"><span class="toc-item-num">6.4&nbsp;&nbsp;</span>p→0でのp乗平均の挙動</a></span></li><li><span><a href="#p乗平均のpに関する依存性(1)" data-toc-modified-id="p乗平均のpに関する依存性(1)-6.5"><span class="toc-item-num">6.5&nbsp;&nbsp;</span>p乗平均のpに関する依存性(1)</a></span></li><li><span><a href="#p乗平均のpに関する依存性(2)" data-toc-modified-id="p乗平均のpに関する依存性(2)-6.6"><span class="toc-item-num">6.6&nbsp;&nbsp;</span>p乗平均のpに関する依存性(2)</a></span></li><li><span><a href="#単位円に内接する多角形の周長と面積の最大値" data-toc-modified-id="単位円に内接する多角形の周長と面積の最大値-6.7"><span class="toc-item-num">6.7&nbsp;&nbsp;</span>単位円に内接する多角形の周長と面積の最大値</a></span></li></ul></li><li><span><a href="#三角函数の微積分" data-toc-modified-id="三角函数の微積分-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>三角函数の微積分</a></span><ul class="toc-item"><li><span><a href="#高校の数学の教科書の方針" data-toc-modified-id="高校の数学の教科書の方針-7.1"><span class="toc-item-num">7.1&nbsp;&nbsp;</span>高校の数学の教科書の方針</a></span></li><li><span><a href="#曲線の長さが速さの積分になることの応用" data-toc-modified-id="曲線の長さが速さの積分になることの応用-7.2"><span class="toc-item-num">7.2&nbsp;&nbsp;</span>曲線の長さが速さの積分になることの応用</a></span></li><li><span><a href="#楕円積分,-楕円函数,-楕円曲線暗号" data-toc-modified-id="楕円積分,-楕円函数,-楕円曲線暗号-7.3"><span class="toc-item-num">7.3&nbsp;&nbsp;</span>楕円積分, 楕円函数, 楕円曲線暗号</a></span></li></ul></li><li><span><a href="#Gauss積分の大学入試問題" data-toc-modified-id="Gauss積分の大学入試問題-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Gauss積分の大学入試問題</a></span></li><li><span><a href="#ガンマ函数の応用" data-toc-modified-id="ガンマ函数の応用-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>ガンマ函数の応用</a></span><ul class="toc-item"><li><span><a href="#多項式×指数函数の積分" data-toc-modified-id="多項式×指数函数の積分-9.1"><span class="toc-item-num">9.1&nbsp;&nbsp;</span>多項式×指数函数の積分</a></span></li><li><span><a href="#Stirlingの公式" data-toc-modified-id="Stirlingの公式-9.2"><span class="toc-item-num">9.2&nbsp;&nbsp;</span>Stirlingの公式</a></span></li><li><span><a href="#Stirlingの公式を使うと簡単に解ける大学入試問題" data-toc-modified-id="Stirlingの公式を使うと簡単に解ける大学入試問題-9.3"><span class="toc-item-num">9.3&nbsp;&nbsp;</span>Stirlingの公式を使うと簡単に解ける大学入試問題</a></span></li></ul></li><li><span><a href="#ベータ函数の応用" data-toc-modified-id="ベータ函数の応用-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>ベータ函数の応用</a></span><ul class="toc-item"><li><span><a href="#1/6公式" data-toc-modified-id="1/6公式-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>1/6公式</a></span></li><li><span><a href="#sinのべきの定積分" data-toc-modified-id="sinのべきの定積分-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>sinのべきの定積分</a></span></li><li><span><a href="#ガンマ函数とベータ函数の関係" data-toc-modified-id="ガンマ函数とベータ函数の関係-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>ガンマ函数とベータ函数の関係</a></span></li><li><span><a href="#ベータ函数の極限によるガンマ函数の表示とWallisの公式" data-toc-modified-id="ベータ函数の極限によるガンマ函数の表示とWallisの公式-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>ベータ函数の極限によるガンマ函数の表示とWallisの公式</a></span></li><li><span><a href="#Gaussの超幾何函数への一般化" data-toc-modified-id="Gaussの超幾何函数への一般化-10.5"><span class="toc-item-num">10.5&nbsp;&nbsp;</span>Gaussの超幾何函数への一般化</a></span></li><li><span><a href="#Kummerの超幾何函数" data-toc-modified-id="Kummerの超幾何函数-10.6"><span class="toc-item-num">10.6&nbsp;&nbsp;</span>Kummerの超幾何函数</a></span></li></ul></li><li><span><a href="#Taylor展開" data-toc-modified-id="Taylor展開-11"><span class="toc-item-num">11&nbsp;&nbsp;</span>Taylor展開</a></span><ul class="toc-item"><li><span><a href="#Taylorの公式の証明" data-toc-modified-id="Taylorの公式の証明-11.1"><span class="toc-item-num">11.1&nbsp;&nbsp;</span>Taylorの公式の証明</a></span></li><li><span><a href="#Taylorの公式の剰余項の評価" data-toc-modified-id="Taylorの公式の剰余項の評価-11.2"><span class="toc-item-num">11.2&nbsp;&nbsp;</span>Taylorの公式の剰余項の評価</a></span></li><li><span><a href="#有名な交代級数の例" data-toc-modified-id="有名な交代級数の例-11.3"><span class="toc-item-num">11.3&nbsp;&nbsp;</span>有名な交代級数の例</a></span></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "subslide"}
@@ -100,6 +100,7 @@ using LaTeXStrings
 using SpecialFunctions
 using QuadGK
 using Elliptic.Jacobi: cd, sn
+using LinearAlgebra: det
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -199,7 +200,7 @@ $$
 \end{aligned}
 $$
 
-これらを成分がを極座標された2つの2次元ベクトル
+これらを成分が極座標された2つの2次元ベクトル
 
 $$
 \vec{a} = 
@@ -408,7 +409,7 @@ latexstring(raw"\ds x_3 = ", sympy.latex(sol[3])) |> display
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
-#### 巡回行列式
+### 巡回行列式
 
 1の原始3乗根 $\omega$ を用いた因数分解の公式
 
@@ -444,7 +445,7 @@ $$
 
 * 佐武一郎, 線型代数学, 数学選書1, 裳華房
 
-の第II章の研究課題に書いてある.
+の第II章の研究課題「1) 巡回行列式」に書いてある.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -575,6 +576,52 @@ c3 = sympy.Poly(g3, M).all_coeffs()
 ```julia slideshow={"slide_type": "-"}
 # w, p, q, r = symbols("w p q r")
 # factor.(solve(w^4 - 2p*w^2 + 8q*w + (p^2-4r), w))
+```
+
+## 4次方程式の解法で使える4次式の行列式表示
+
+前節で用いた $f$ は次のように表される:
+
+$$
+f = \begin{vmatrix}
+w & x & y & z \\
+x & w & z & y \\
+y & z & w & x \\
+z & y & x & w \\
+\end{vmatrix}.
+$$
+
+右辺の行列式はKleinの四元群 $\{1, (1,2)(3,4), (1,3)(2,4), (1,4)(2,3)\}\lhd S_4$ (4次の置換群の非自明な正規部分群)の群行列式と呼ばれるものになっている.
+
+このノートで詳しく説明はできないが, 4次方程式が四則演算とべき根を取る操作だけでいつでも解ける理由は, 4次の置換群がKleinの四元群という非自明な正規部分群を持つからである. そのKleinの四元群由来の行列式を考えれば, 4次方程式が解けるわけである.
+
+__注意:__ 上の形の行列式は
+
+* 佐武一郎, 線型代数学, 数学選書1, 裳華房
+
+の第II章の研究課題の問1にある.
+
+この佐武一郎著『線型代数学』は数学的にかなり強力な本なので, 数学的教養を深めたい人は熟読する価値がある.
+
+```julia
+A = [
+    w x y z
+    x w z y
+    y z w x
+    z y x w
+]
+```
+
+```julia
+d4 = det(A)
+```
+
+```julia
+d4 == f4
+```
+
+```julia
+sympy.Poly(d4, w).all_coeffs()
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -1378,7 +1425,7 @@ $$
 
 が成立している. ゆえに $\sqrt{(\Delta x)^2+(\Delta y)^2}=1$ という条件のもとでの $a\Delta x+b\Delta y$ の最大値は $\ds(\Delta x,\Delta y)=\frac{(a,b)}{\sqrt{a^2+b^2}}$ のときの $\sqrt{a^2+b^2}$ である. $\QED$
 
-このように $z = ax+by+c$ における $(a,b)$ は平面の傾きの方向と大きさを記述している.  
+このように, ベクトル $(a,b)$ は傾いている平面 $z = ax+by+c$ の傾きの方向と大きさを記述している.  
 
 $xy$ 平面上の点 $(X,Y)$ から直線 $ax+by+c=0$ への距離を $d$ と書き, 点 $(X,Y)$ から直線 $ax+by+c=0$ におろした垂線の足を点 $(X_0, Y_0)$ と書くことにする. このとき, 点 $(X,Y)$ は $(X_0, Y_0)$ からベクトル $\pm (a,b)$ と同じ方向に距離 $d$ の位置にある. したがって, $z = ax+by+c$ の点 $(X,Y)$ における値は
 
@@ -1404,6 +1451,17 @@ $$
 
 高校での授業で「点と直線の距離の公式は内積を使えば容易に導ける」と習った人がいるかもしれないが, 内積の使用は実質的に「平面 $z=ax+by+c$ の傾き方」を調べていることに他ならない. $\QED$
 <!-- #endregion -->
+
+```julia
+a, b, c = 0.8, 0.5, 1.0
+f(x,y) = a*x + b*y + c
+x = -10:0.1:5
+y = -10:0.1:15
+surface(x, y, f.(x',y), colorbar=false, size=(400,300))
+plot!(x, @.(-(a*x + c)/b), zero(x); label="", c=:black, lw=0.5)
+plot!(; ylim=extrema(y))
+title!("\$z = $a x + $b y + $c\$")
+```
 
 ```julia slideshow={"slide_type": "subslide"}
 a, b, c = 0.8, 0.5, 1.0
@@ -1960,7 +2018,7 @@ showimg("image/jpeg", "images/Jikkyo20140125ArcLength2.jpg", scale="60%")
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
 これを使えば(曲線の長さを上の公式で定義すれば), 三角函数の微分の導出を非常に簡潔な議論で行うことができる. そのことを以下で説明しよう.
 
-$(x(t),y(t)) = (\sqrt{1-t^2}, t)$, $-1<t<1$ は単位円 $x^2+y^2=1$ の右半分の上を動き, $t$ は単位円上の点の $y$ 座標になる. このとき,  
+$(x(t),y(t)) = (\sqrt{1-t^2}, t)$, $-1<t<1$ は単位円 $x^2+y^2=1$ の右半分上を動き, $t$ は単位円上の点の $y$ 座標になる. このとき,  
 
 $$
 x'(t) = -\frac{t}{\sqrt{1-t^2}}, \quad

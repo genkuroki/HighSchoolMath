@@ -16,7 +16,7 @@ jupyter:
 # 統計学入門
 
 * 黒木玄
-* 2022-08-28～2022-08-30
+* 2022-08-28～2022-08-31
 $
 \newcommand\R{\mathbb{R}}
 \newcommand\ds{\displaystyle}

@@ -125,11 +125,11 @@ using Elliptic.Jacobi: cd, sn
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/kaisekigairon-bibun1.jpg", scale="70%")
+showimg("image/jpeg", "images/kaisekigairon-bibun1.jpg", scale="90%")
 ```
 
 ```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/kaisekigairon-bibun2.jpg", scale="70%")
+showimg("image/jpeg", "images/kaisekigairon-bibun2.jpg", scale="90%")
 ```
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
@@ -141,7 +141,7 @@ showimg("image/jpeg", "images/kaisekigairon-bibun2.jpg", scale="70%")
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/bibun.jpg", scale="30%")
+showimg("image/jpeg", "images/bibun.jpg", scale="50%")
 ```
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
@@ -160,7 +160,7 @@ $df$ の定義を $f(x+dx)-f(x)$ とするのではなく, 上の図のように
 $f(x)$ が閉区間 $[a,b]$ 上の連続函数であれば, 区間 $[a,b]$ を $a=x_0 < x_1 < x_2 < \cdots < x_n=b$ と分割し, $x_i^*\in[x_{i-1}, x_i]$ 達を任意に取って, $\Delta x_i = x_i - x_{i-1}$ とおくと, 
 
 $$
-\sum_{i=1}^n f(x_i)\,\Delta x_i
+\sum_{i=1}^n f(x_i^*)\,\Delta x_i
 $$
 
 は $\max\{\Delta x_1,\ldots,\Delta x_n\}\to 0$ で収束し, その収束先を(Riemannの意味での)積分と呼び,
@@ -553,7 +553,7 @@ Aさんが正解を解説して曰く
 >$x=-1/2$
 
 質問していたBさん曰く
->4を右に持っていけいいんですね！<br>
+>4を右に持っていけばいいんですね！<br>
 >**反対側に数字を動かす時には符号変わるんじゃなかったっけ？**
 
 Bさんは $4x=-2$ の $4$ を右辺に移すときに符号を変える必要があるんじゃないかと誤解していた. そうなってしまう理由は「項」や「移す」の意味を覚え難いからである. 「項を移す」という教え方を全廃すればこのような誤解が生じる恐れはなくなるだろう. $\QED$
@@ -569,7 +569,7 @@ Cさんの答案
 >　　　↓<br>
 >　　以下略
 
-Bさんの指摘
+Dさんの指摘
 >$12x$ の前の**マイナスが違うと思います！**
 
 Cさん曰く
@@ -585,7 +585,7 @@ Cさん曰く
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/19chuu_houkoku4_2_152.png"; scale="50%")
+showimg("image/jpeg", "images/19chuu_houkoku4_2_152.png"; scale="70%")
 showimg("image/jpeg", "images/19chuu_houkoku4_2_153.png"; scale="70%")
 ```
 
