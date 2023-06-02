@@ -9,17 +9,19 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.10.3
   kernelspec:
-    display_name: Julia 1.8.5
+    display_name: Julia 1.9.0
     language: julia
-    name: julia-1.8
+    name: julia-1.9
 ---
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # 高校数学の話題
 
-黒木玄 (Gen Kuroki)
+* 黒木玄 (Gen Kuroki)
+* Copyright (c) 2018, 2019, 2020, 2021, 2022, 2023 Gen Kuroki
+* <a href="https://licenses.opensource.jp/MIT/MIT.html">MIT License</a>
 
-2018-08-15～2019-09-24, 2020-08-27～2020-08-30, 2021-08-30～2021-09-02, 2022-08-31
+2018-08-15～2019-09-24, 2020-08-27～2020-08-30, 2021-08-30～2021-09-02, 2022-08-31, 2023-05-29
 
 このノートでは高校の数学の教科書にあるような話題を扱い, その数学的背景について解説する.
 
@@ -87,7 +89,7 @@ using Printf
 using Base64
 
 using Plots
-pyplot(fmt=:png)
+pythonplot(fmt=:png)
 
 showimg(mime, fn; scale="") = open(fn) do f
     base64 = base64encode(f)
