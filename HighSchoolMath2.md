@@ -8,9 +8,9 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.10.3
   kernelspec:
-    display_name: Julia 1.8.5
+    display_name: Julia 1.9.3
     language: julia
-    name: julia-1.8
+    name: julia-1.9
 ---
 
 # 高校数学の話題2
@@ -1226,29 +1226,38 @@ plot_polya_urns(30, 70)
 
 ```julia
 # 動画の作成
-function anim_polya_urn(a, b; n = 10^4, e=0.15, fps=20, kwargs...)
+function anim_polya_urn(a, b;
+        n = 10^4, e=0.15, fps=20,
+        gifname = "anim_polya_urn.gif", kwargs...)
     X = rand_polya_urn(n, a, b)
     prob = cumsum!(X, X) ./ (1:n)
     ylim = prob[end] - e, prob[end] + e
     s = n ÷ 200
     anim = @animate for t in [fill(s, fps); s:s:n; fill(n, fps)]
         plot(view(prob, 1:t); label="")
-        title!("Polya’s urn trial: n=$n, a=$a, b=$b")
+        title!("Polya’s urn trials: n=$n, a=$a, b=$b")
         plot!(; ylim)
     end
-    gif(anim, "anim_polya_urn.gif"; fps)
+    gif(anim, gifname; fps)
 end
 ```
 
 ```julia
 using Random
 Random.seed!(5963)
-anim_polya_urn(30, 70)
+anim_polya_urn(30, 70; gifname = "anim_polya_urn5963.gif")
+```
+
+```julia
+using Random
+Random.seed!(464933)
+anim_polya_urn(30, 70; gifname = "anim_polya_urn449373.gif")
 ```
 
 上の動画はpdf版では動かない.  pdf版の閲覧者は動画を見るためには以下のリンク先を参照せよ:
 
-* https://github.com/genkuroki/HighSchoolMath/blob/master/anim_polya_urn.gif
+* https://github.com/genkuroki/HighSchoolMath/blob/master/anim_polya_urn5963.gif
+* https://github.com/genkuroki/HighSchoolMath/blob/master/anim_polya_urn4649373.gif
 
 
 #### ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認
