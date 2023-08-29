@@ -41,7 +41,7 @@ $
 
 <!-- #region toc=true -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#はじめに" data-toc-modified-id="はじめに-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>はじめに</a></span><ul class="toc-item"><li><span><a href="#この解説の動機" data-toc-modified-id="この解説の動機-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>この解説の動機</a></span></li><li><span><a href="#基本文献と動画の紹介" data-toc-modified-id="基本文献と動画の紹介-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>基本文献と動画の紹介</a></span></li></ul></li><li><span><a href="#二項分布と正規分布" data-toc-modified-id="二項分布と正規分布-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>二項分布と正規分布</a></span><ul class="toc-item"><li><span><a href="#二項分布" data-toc-modified-id="二項分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>二項分布</a></span></li><li><span><a href="#二項分布に関する問題" data-toc-modified-id="二項分布に関する問題-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>二項分布に関する問題</a></span></li><li><span><a href="#二項分布に関する問題の解答例" data-toc-modified-id="二項分布に関する問題の解答例-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>二項分布に関する問題の解答例</a></span><ul class="toc-item"><li><span><a href="#二項分布に関する問題(1)の解答例" data-toc-modified-id="二項分布に関する問題(1)の解答例-2.3.1"><span class="toc-item-num">2.3.1&nbsp;&nbsp;</span>二項分布に関する問題(1)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(2)の解答例" data-toc-modified-id="二項分布に関する問題(2)の解答例-2.3.2"><span class="toc-item-num">2.3.2&nbsp;&nbsp;</span>二項分布に関する問題(2)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(3)の解答例" data-toc-modified-id="二項分布に関する問題(3)の解答例-2.3.3"><span class="toc-item-num">2.3.3&nbsp;&nbsp;</span>二項分布に関する問題(3)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(4)の解答例" data-toc-modified-id="二項分布に関する問題(4)の解答例-2.3.4"><span class="toc-item-num">2.3.4&nbsp;&nbsp;</span>二項分布に関する問題(4)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(5)の解答例" data-toc-modified-id="二項分布に関する問題(5)の解答例-2.3.5"><span class="toc-item-num">2.3.5&nbsp;&nbsp;</span>二項分布に関する問題(5)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(6)の解答例" data-toc-modified-id="二項分布に関する問題(6)の解答例-2.3.6"><span class="toc-item-num">2.3.6&nbsp;&nbsp;</span>二項分布に関する問題(6)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(7)の解答例" data-toc-modified-id="二項分布に関する問題(7)の解答例-2.3.7"><span class="toc-item-num">2.3.7&nbsp;&nbsp;</span>二項分布に関する問題(7)の解答例</a></span></li><li><span><a href="#よりシンプルな証明があることの注意" data-toc-modified-id="よりシンプルな証明があることの注意-2.3.8"><span class="toc-item-num">2.3.8&nbsp;&nbsp;</span>よりシンプルな証明があることの注意</a></span></li></ul></li><li><span><a href="#正規分布" data-toc-modified-id="正規分布-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>正規分布</a></span></li><li><span><a href="#正規分布に関する問題" data-toc-modified-id="正規分布に関する問題-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>正規分布に関する問題</a></span></li><li><span><a href="#正規分布に関する問題の解答例" data-toc-modified-id="正規分布に関する問題の解答例-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>正規分布に関する問題の解答例</a></span><ul class="toc-item"><li><span><a href="#正規分布に関する問題(1)の解答例" data-toc-modified-id="正規分布に関する問題(1)の解答例-2.6.1"><span class="toc-item-num">2.6.1&nbsp;&nbsp;</span>正規分布に関する問題(1)の解答例</a></span></li><li><span><a href="#正規分布に関する問題(2)の解答例" data-toc-modified-id="正規分布に関する問題(2)の解答例-2.6.2"><span class="toc-item-num">2.6.2&nbsp;&nbsp;</span>正規分布に関する問題(2)の解答例</a></span></li><li><span><a href="#正規分布に関する問題(3)の解答例" data-toc-modified-id="正規分布に関する問題(3)の解答例-2.6.3"><span class="toc-item-num">2.6.3&nbsp;&nbsp;</span>正規分布に関する問題(3)の解答例</a></span></li></ul></li><li><span><a href="#Gauss積分とガンマ函数の関係" data-toc-modified-id="Gauss積分とガンマ函数の関係-2.7"><span class="toc-item-num">2.7&nbsp;&nbsp;</span>Gauss積分とガンマ函数の関係</a></span></li><li><span><a href="#二項分布の中心極限定理の大雑把な説明" data-toc-modified-id="二項分布の中心極限定理の大雑把な説明-2.8"><span class="toc-item-num">2.8&nbsp;&nbsp;</span>二項分布の中心極限定理の大雑把な説明</a></span></li><li><span><a href="#二項分布の視覚化の問題" data-toc-modified-id="二項分布の視覚化の問題-2.9"><span class="toc-item-num">2.9&nbsp;&nbsp;</span>二項分布の視覚化の問題</a></span></li><li><span><a href="#二項分布の視覚化の問題の解答例" data-toc-modified-id="二項分布の視覚化の問題の解答例-2.10"><span class="toc-item-num">2.10&nbsp;&nbsp;</span>二項分布の視覚化の問題の解答例</a></span></li><li><span><a href="#おまけ：二項分布はnpが小さな場合はPoisson分布で近似される" data-toc-modified-id="おまけ：二項分布はnpが小さな場合はPoisson分布で近似される-2.11"><span class="toc-item-num">2.11&nbsp;&nbsp;</span>おまけ：二項分布はnpが小さな場合はPoisson分布で近似される</a></span></li><li><span><a href="#おまけ：npが小さな場合の二項分布のPoisson分布による近似の視覚化" data-toc-modified-id="おまけ：npが小さな場合の二項分布のPoisson分布による近似の視覚化-2.12"><span class="toc-item-num">2.12&nbsp;&nbsp;</span>おまけ：npが小さな場合の二項分布のPoisson分布による近似の視覚化</a></span></li></ul></li><li><span><a href="#P値と信頼区間の一般論" data-toc-modified-id="P値と信頼区間の一般論-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>P値と信頼区間の一般論</a></span><ul class="toc-item"><li><span><a href="#P値の大雑把な定義" data-toc-modified-id="P値の大雑把な定義-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>P値の大雑把な定義</a></span></li><li><span><a href="#P値の使い方" data-toc-modified-id="P値の使い方-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>P値の使い方</a></span></li><li><span><a href="#信頼区間の定義" data-toc-modified-id="信頼区間の定義-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>信頼区間の定義</a></span></li><li><span><a href="#信頼区間の解釈" data-toc-modified-id="信頼区間の解釈-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>信頼区間の解釈</a></span></li><li><span><a href="#有意水準と信頼度のモデル内確率としての解釈" data-toc-modified-id="有意水準と信頼度のモデル内確率としての解釈-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>有意水準と信頼度のモデル内確率としての解釈</a></span></li><li><span><a href="#課題：動画の視聴" data-toc-modified-id="課題：動画の視聴-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>課題：動画の視聴</a></span></li></ul></li><li><span><a href="#二項分布モデルの場合" data-toc-modified-id="二項分布モデルの場合-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>二項分布モデルの場合</a></span><ul class="toc-item"><li><span><a href="#記号の準備：標準正規分布の累積分布函数と分位点函数" data-toc-modified-id="記号の準備：標準正規分布の累積分布函数と分位点函数-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>記号の準備：標準正規分布の累積分布函数と分位点函数</a></span></li><li><span><a href="#記号の準備：標準正規分布の補累積分布函数" data-toc-modified-id="記号の準備：標準正規分布の補累積分布函数-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>記号の準備：標準正規分布の補累積分布函数</a></span></li><li><span><a href="#Waldの信頼区間に対応するP値" data-toc-modified-id="Waldの信頼区間に対応するP値-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>Waldの信頼区間に対応するP値</a></span></li><li><span><a href="#WaldのP値と信頼区間の計算問題" data-toc-modified-id="WaldのP値と信頼区間の計算問題-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>WaldのP値と信頼区間の計算問題</a></span></li><li><span><a href="#WaldのP値と信頼区間の計算問題の解答例" data-toc-modified-id="WaldのP値と信頼区間の計算問題の解答例-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span>WaldのP値と信頼区間の計算問題の解答例</a></span></li><li><span><a href="#WaldのP値と信頼区間の実装例" data-toc-modified-id="WaldのP値と信頼区間の実装例-4.6"><span class="toc-item-num">4.6&nbsp;&nbsp;</span>WaldのP値と信頼区間の実装例</a></span></li><li><span><a href="#Waldの信頼区間の視覚化の例" data-toc-modified-id="Waldの信頼区間の視覚化の例-4.7"><span class="toc-item-num">4.7&nbsp;&nbsp;</span>Waldの信頼区間の視覚化の例</a></span></li><li><span><a href="#Wilsonの信頼区間に対応するP値函数" data-toc-modified-id="Wilsonの信頼区間に対応するP値函数-4.8"><span class="toc-item-num">4.8&nbsp;&nbsp;</span>Wilsonの信頼区間に対応するP値函数</a></span></li><li><span><a href="#WilsonのP値と信頼区間の計算問題" data-toc-modified-id="WilsonのP値と信頼区間の計算問題-4.9"><span class="toc-item-num">4.9&nbsp;&nbsp;</span>WilsonのP値と信頼区間の計算問題</a></span></li><li><span><a href="#WilsonのP値と信頼区間の計算問題の解答例" data-toc-modified-id="WilsonのP値と信頼区間の計算問題の解答例-4.10"><span class="toc-item-num">4.10&nbsp;&nbsp;</span>WilsonのP値と信頼区間の計算問題の解答例</a></span></li><li><span><a href="#WilsonのP値と信頼区間の実装例" data-toc-modified-id="WilsonのP値と信頼区間の実装例-4.11"><span class="toc-item-num">4.11&nbsp;&nbsp;</span>WilsonのP値と信頼区間の実装例</a></span></li><li><span><a href="#Wilsonの信頼区間の視覚化の例" data-toc-modified-id="Wilsonの信頼区間の視覚化の例-4.12"><span class="toc-item-num">4.12&nbsp;&nbsp;</span>Wilsonの信頼区間の視覚化の例</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(1)" data-toc-modified-id="P値と信頼区間の解釈に関する問題(1)-4.13"><span class="toc-item-num">4.13&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(1)</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(2)" data-toc-modified-id="P値と信頼区間の解釈に関する問題(2)-4.14"><span class="toc-item-num">4.14&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(2)</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(1)の解答例" data-toc-modified-id="P値と信頼区間の解釈に関する問題(1)の解答例-4.15"><span class="toc-item-num">4.15&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(1)の解答例</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(2)の解答例" data-toc-modified-id="P値と信頼区間の解釈に関する問題(2)の解答例-4.16"><span class="toc-item-num">4.16&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(2)の解答例</a></span></li><li><span><a href="#P値函数と信頼区間の関係の視覚化" data-toc-modified-id="P値函数と信頼区間の関係の視覚化-4.17"><span class="toc-item-num">4.17&nbsp;&nbsp;</span>P値函数と信頼区間の関係の視覚化</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#はじめに" data-toc-modified-id="はじめに-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>はじめに</a></span><ul class="toc-item"><li><span><a href="#この解説の動機" data-toc-modified-id="この解説の動機-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>この解説の動機</a></span></li><li><span><a href="#基本文献と動画の紹介" data-toc-modified-id="基本文献と動画の紹介-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>基本文献と動画の紹介</a></span></li></ul></li><li><span><a href="#二項分布と正規分布" data-toc-modified-id="二項分布と正規分布-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>二項分布と正規分布</a></span><ul class="toc-item"><li><span><a href="#二項分布" data-toc-modified-id="二項分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>二項分布</a></span></li><li><span><a href="#二項分布に関する問題" data-toc-modified-id="二項分布に関する問題-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>二項分布に関する問題</a></span></li><li><span><a href="#二項分布に関する問題の解答例" data-toc-modified-id="二項分布に関する問題の解答例-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>二項分布に関する問題の解答例</a></span><ul class="toc-item"><li><span><a href="#二項分布に関する問題(1)の解答例" data-toc-modified-id="二項分布に関する問題(1)の解答例-2.3.1"><span class="toc-item-num">2.3.1&nbsp;&nbsp;</span>二項分布に関する問題(1)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(2)の解答例" data-toc-modified-id="二項分布に関する問題(2)の解答例-2.3.2"><span class="toc-item-num">2.3.2&nbsp;&nbsp;</span>二項分布に関する問題(2)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(3)の解答例" data-toc-modified-id="二項分布に関する問題(3)の解答例-2.3.3"><span class="toc-item-num">2.3.3&nbsp;&nbsp;</span>二項分布に関する問題(3)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(4)の解答例" data-toc-modified-id="二項分布に関する問題(4)の解答例-2.3.4"><span class="toc-item-num">2.3.4&nbsp;&nbsp;</span>二項分布に関する問題(4)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(5)の解答例" data-toc-modified-id="二項分布に関する問題(5)の解答例-2.3.5"><span class="toc-item-num">2.3.5&nbsp;&nbsp;</span>二項分布に関する問題(5)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(6)の解答例" data-toc-modified-id="二項分布に関する問題(6)の解答例-2.3.6"><span class="toc-item-num">2.3.6&nbsp;&nbsp;</span>二項分布に関する問題(6)の解答例</a></span></li><li><span><a href="#二項分布に関する問題(7)の解答例" data-toc-modified-id="二項分布に関する問題(7)の解答例-2.3.7"><span class="toc-item-num">2.3.7&nbsp;&nbsp;</span>二項分布に関する問題(7)の解答例</a></span></li><li><span><a href="#よりシンプルな証明があることの注意" data-toc-modified-id="よりシンプルな証明があることの注意-2.3.8"><span class="toc-item-num">2.3.8&nbsp;&nbsp;</span>よりシンプルな証明があることの注意</a></span></li></ul></li><li><span><a href="#正規分布" data-toc-modified-id="正規分布-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>正規分布</a></span></li><li><span><a href="#正規分布に関する問題" data-toc-modified-id="正規分布に関する問題-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>正規分布に関する問題</a></span></li><li><span><a href="#正規分布に関する問題の解答例" data-toc-modified-id="正規分布に関する問題の解答例-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>正規分布に関する問題の解答例</a></span><ul class="toc-item"><li><span><a href="#正規分布に関する問題(1)の解答例" data-toc-modified-id="正規分布に関する問題(1)の解答例-2.6.1"><span class="toc-item-num">2.6.1&nbsp;&nbsp;</span>正規分布に関する問題(1)の解答例</a></span></li><li><span><a href="#正規分布に関する問題(2)の解答例" data-toc-modified-id="正規分布に関する問題(2)の解答例-2.6.2"><span class="toc-item-num">2.6.2&nbsp;&nbsp;</span>正規分布に関する問題(2)の解答例</a></span></li><li><span><a href="#正規分布に関する問題(3)の解答例" data-toc-modified-id="正規分布に関する問題(3)の解答例-2.6.3"><span class="toc-item-num">2.6.3&nbsp;&nbsp;</span>正規分布に関する問題(3)の解答例</a></span></li></ul></li><li><span><a href="#Gauss積分とガンマ函数の関係" data-toc-modified-id="Gauss積分とガンマ函数の関係-2.7"><span class="toc-item-num">2.7&nbsp;&nbsp;</span>Gauss積分とガンマ函数の関係</a></span></li><li><span><a href="#二項分布の中心極限定理の大雑把な説明" data-toc-modified-id="二項分布の中心極限定理の大雑把な説明-2.8"><span class="toc-item-num">2.8&nbsp;&nbsp;</span>二項分布の中心極限定理の大雑把な説明</a></span></li><li><span><a href="#二項分布の視覚化の問題" data-toc-modified-id="二項分布の視覚化の問題-2.9"><span class="toc-item-num">2.9&nbsp;&nbsp;</span>二項分布の視覚化の問題</a></span></li><li><span><a href="#二項分布の視覚化の問題の解答例" data-toc-modified-id="二項分布の視覚化の問題の解答例-2.10"><span class="toc-item-num">2.10&nbsp;&nbsp;</span>二項分布の視覚化の問題の解答例</a></span></li><li><span><a href="#おまけ：二項分布はnpが小さな場合はPoisson分布で近似される" data-toc-modified-id="おまけ：二項分布はnpが小さな場合はPoisson分布で近似される-2.11"><span class="toc-item-num">2.11&nbsp;&nbsp;</span>おまけ：二項分布はnpが小さな場合はPoisson分布で近似される</a></span></li><li><span><a href="#おまけ：npが小さな場合の二項分布のPoisson分布による近似の視覚化" data-toc-modified-id="おまけ：npが小さな場合の二項分布のPoisson分布による近似の視覚化-2.12"><span class="toc-item-num">2.12&nbsp;&nbsp;</span>おまけ：npが小さな場合の二項分布のPoisson分布による近似の視覚化</a></span></li></ul></li><li><span><a href="#P値と信頼区間の一般論" data-toc-modified-id="P値と信頼区間の一般論-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>P値と信頼区間の一般論</a></span><ul class="toc-item"><li><span><a href="#P値の大雑把な定義" data-toc-modified-id="P値の大雑把な定義-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>P値の大雑把な定義</a></span></li><li><span><a href="#P値の使い方" data-toc-modified-id="P値の使い方-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>P値の使い方</a></span></li><li><span><a href="#信頼区間の定義" data-toc-modified-id="信頼区間の定義-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>信頼区間の定義</a></span></li><li><span><a href="#信頼区間の解釈" data-toc-modified-id="信頼区間の解釈-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>信頼区間の解釈</a></span></li><li><span><a href="#有意水準と信頼水準のモデル内確率としての解釈" data-toc-modified-id="有意水準と信頼水準のモデル内確率としての解釈-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>有意水準と信頼水準のモデル内確率としての解釈</a></span></li><li><span><a href="#課題：動画の視聴" data-toc-modified-id="課題：動画の視聴-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>課題：動画の視聴</a></span></li></ul></li><li><span><a href="#二項分布モデルの場合" data-toc-modified-id="二項分布モデルの場合-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>二項分布モデルの場合</a></span><ul class="toc-item"><li><span><a href="#記号の準備：標準正規分布の累積分布函数と分位点函数" data-toc-modified-id="記号の準備：標準正規分布の累積分布函数と分位点函数-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>記号の準備：標準正規分布の累積分布函数と分位点函数</a></span></li><li><span><a href="#記号の準備：標準正規分布の補累積分布函数" data-toc-modified-id="記号の準備：標準正規分布の補累積分布函数-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>記号の準備：標準正規分布の補累積分布函数</a></span></li><li><span><a href="#Waldの信頼区間に対応するP値" data-toc-modified-id="Waldの信頼区間に対応するP値-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>Waldの信頼区間に対応するP値</a></span></li><li><span><a href="#WaldのP値と信頼区間の計算問題" data-toc-modified-id="WaldのP値と信頼区間の計算問題-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>WaldのP値と信頼区間の計算問題</a></span></li><li><span><a href="#WaldのP値と信頼区間の計算問題の解答例" data-toc-modified-id="WaldのP値と信頼区間の計算問題の解答例-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span>WaldのP値と信頼区間の計算問題の解答例</a></span></li><li><span><a href="#WaldのP値と信頼区間の実装例" data-toc-modified-id="WaldのP値と信頼区間の実装例-4.6"><span class="toc-item-num">4.6&nbsp;&nbsp;</span>WaldのP値と信頼区間の実装例</a></span></li><li><span><a href="#Waldの信頼区間の視覚化の例" data-toc-modified-id="Waldの信頼区間の視覚化の例-4.7"><span class="toc-item-num">4.7&nbsp;&nbsp;</span>Waldの信頼区間の視覚化の例</a></span></li><li><span><a href="#Wilsonの信頼区間に対応するP値函数" data-toc-modified-id="Wilsonの信頼区間に対応するP値函数-4.8"><span class="toc-item-num">4.8&nbsp;&nbsp;</span>Wilsonの信頼区間に対応するP値函数</a></span></li><li><span><a href="#WilsonのP値と信頼区間の計算問題" data-toc-modified-id="WilsonのP値と信頼区間の計算問題-4.9"><span class="toc-item-num">4.9&nbsp;&nbsp;</span>WilsonのP値と信頼区間の計算問題</a></span></li><li><span><a href="#WilsonのP値と信頼区間の計算問題の解答例" data-toc-modified-id="WilsonのP値と信頼区間の計算問題の解答例-4.10"><span class="toc-item-num">4.10&nbsp;&nbsp;</span>WilsonのP値と信頼区間の計算問題の解答例</a></span></li><li><span><a href="#WilsonのP値と信頼区間の実装例" data-toc-modified-id="WilsonのP値と信頼区間の実装例-4.11"><span class="toc-item-num">4.11&nbsp;&nbsp;</span>WilsonのP値と信頼区間の実装例</a></span></li><li><span><a href="#Wilsonの信頼区間の視覚化の例" data-toc-modified-id="Wilsonの信頼区間の視覚化の例-4.12"><span class="toc-item-num">4.12&nbsp;&nbsp;</span>Wilsonの信頼区間の視覚化の例</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(1)" data-toc-modified-id="P値と信頼区間の解釈に関する問題(1)-4.13"><span class="toc-item-num">4.13&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(1)</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(2)" data-toc-modified-id="P値と信頼区間の解釈に関する問題(2)-4.14"><span class="toc-item-num">4.14&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(2)</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(1)の解答例" data-toc-modified-id="P値と信頼区間の解釈に関する問題(1)の解答例-4.15"><span class="toc-item-num">4.15&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(1)の解答例</a></span></li><li><span><a href="#P値と信頼区間の解釈に関する問題(2)の解答例" data-toc-modified-id="P値と信頼区間の解釈に関する問題(2)の解答例-4.16"><span class="toc-item-num">4.16&nbsp;&nbsp;</span>P値と信頼区間の解釈に関する問題(2)の解答例</a></span></li><li><span><a href="#P値函数と信頼区間の関係の視覚化" data-toc-modified-id="P値函数と信頼区間の関係の視覚化-4.17"><span class="toc-item-num">4.17&nbsp;&nbsp;</span>P値函数と信頼区間の関係の視覚化</a></span></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia
@@ -964,7 +964,7 @@ __注意:__ ここでは, 通常の入門的教科書にある信頼区間の定
 
 しかし, P値(もしくは検定)と信頼区間が表裏一体であるという事実を使えば, 通常の入門的教科書にあるスタイルの信頼区間の導入の仕方と以上における信頼区間の定義の仕方は同等であることがわかる. 
 
-検定と信頼区間の表裏一体性(双対性)に興味がある人は以下の文献を参照せよ:
+検定法と信頼区間の表裏一体性(双対性)に興味がある人は以下の文献を参照せよ:
 
 * 竹内啓『数理統計学』p.103
 * 竹村彰通『現代数理統計学』p.202
@@ -978,11 +978,11 @@ __注意:__ $\alpha$ は __有意水準__ (significance level) と呼ばれ, $1-
 
 P値の使い方の基本より, データの数値 $x$ に関する仮説 $\theta=\theta_0$ のP値 $\pvalue(x|\theta=\theta_0)$ は
 
-* データの数値 $x$ と統計モデル＋パラメータ値 $\theta=\theta_0$ の整合性または両立性の指標の1つ
+* データの数値 $x$ と統計モデル＋パラメータ値 $\theta=\theta_0$ の整合性または相性の良さの指標の1つ
 
 とみなされる. 
 
-有意水準と呼ばれる閾値 $\alpha$ を設定し, 整合性または両立性の指標であるP値が $\alpha$ 未満になるとき, 
+有意水準と呼ばれる閾値 $\alpha$ を設定し, 整合性または相性の良さの指標であるP値が $\alpha$ 未満になるとき, 
 
 * 統計モデルの下で, データの数値 $x$ によって仮説 $\theta=\theta_0$ が有意水準 $\alpha$ で __棄却__ された
 
@@ -990,13 +990,13 @@ P値の使い方の基本より, データの数値 $x$ に関する仮説 $\the
 
 * 閾値 $\alpha$ によって, データの数値 $x$ と統計モデル＋仮説 $\theta=\theta_0$ の整合性が無さ過ぎる
 
-と判断することを意味している.
+と判断することを示唆している.
 
-一方, 信頼度 $1-\alpha$ の信頼区間の定義はP値が $\alpha$ 以上になるパラメータ値全体の集合であった.
+一方, 信頼水準 $1-\alpha$ の信頼区間の定義はP値が $\alpha$ 以上になるパラメータ値全体の集合であった.
 
 このことから, データの数値 $x$ に関するパラメータ $\theta$ の $100(1-\alpha)\%$ 信頼区間は
 
-* データの数値 $x$ から有意水準 $\alpha$ で棄却されないパラメータ値全体の集合
+* データの数値 $x$ から有意水準 $\alpha$ で __棄却されない__ パラメータ値全体の集合
 
 であり,
 
@@ -1019,7 +1019,7 @@ __注意:__ 仮説 $\theta=\theta_0$ が棄却されたことは, 特定の統�
 __注意:__ [『統計的有意性とP値に関するASA声明』日本語版 (2017)](http://www.biometrics.gr.jp/news/all/ASA.pdf) を読めばわかるように, P値から得られる結論はささやかであり, 自信過剰になってはいけない.
 
 
-### 有意水準と信頼度のモデル内確率としての解釈
+### 有意水準と信頼水準のモデル内確率としての解釈
 
 以下において, $X$ はパラメータ値を $\theta=\theta_0$ と設定した統計モデルの確率分布に従う確率変数であるとする.
 
@@ -1069,7 +1069,7 @@ $$
 
 __注意:__ この解釈が存在することは, 異なる統計モデルにおける有意水準と信頼度をフェアに比較できることを保証するという意味では重要である.
 
-しかし, 個々のケースでは, P値と信頼区間についてそのような考え方をするよりも, __P値と信頼区間はデータとモデルの整合性または両立性の様子を表すための道具だと思った方が分かり易い.__
+しかし, 個々のケースでは, P値と信頼区間についてそのような考え方をするよりも, __P値と信頼区間はデータの数値と統計モデルの整合性または相性の良さの様子を表すための道具だと思った方が分かり易い.__
 
 __注意・警告:__ 有意水準と信頼度は統計分析の対象となる現実の母集団に関わる確率ではなく, 統計モデル内で定義された確率(の近似値)になっていることに注意せよ.
 
@@ -1115,6 +1115,8 @@ $$
 p = \cdf(\Normal(0, 1), x) = \int_{-\infty}^x \frac{e^{-t^2/2}}{\sqrt{2\pi}}\,dt.
 $$
 
+これは標準正規分布に従って生成された乱数の値が $x$ 以下になる確率になっている.
+
 これの逆函数を __分位点函数__ (quantile function)と呼び, 次のように表す:
 
 $$
@@ -1143,6 +1145,7 @@ plot!(size=(500, 250))
 plot(x -> cdf(Normal(0, 1), x), -5, 5; label="")
 title!("p = cdf(Normal(0, 1), x)")
 plot!(xtick=-10:10, ytick=0:0.1:1, xguide="x", yguide="p")
+plot!(size=(250, 250))
 ```
 
 このように, $p = \cdf(\Normal(0, 1), x)$ は $x$ に関する狭義単調増加函数で, 値域は $0 < p < 1$ になる.
@@ -1151,6 +1154,7 @@ plot!(xtick=-10:10, ytick=0:0.1:1, xguide="x", yguide="p")
 plot(p -> quantile(Normal(0, 1), p), 0, 1; label="")
 title!("x = quantile(Normal(0, 1), p)")
 plot!(ytick=-10:10, xtick=0:0.1:1, yguide="x", xguide="p")
+plot!(size=(250, 250))
 ```
 
 これが, 累積分布函数(cdf)の逆函数＝分位点函数(quantile function)の典型例である.
@@ -1197,6 +1201,12 @@ $$
 $$
 
 は $\cdf$ の逆函数である分位点函数(quantile function)を使うと次のように書き直される:
+
+$$
+\cdf(\Normal(0, 1), |z|) \le 1 - \alpha/2.
+$$
+
+さらにこれは次と同値である:
 
 $$
 |z| \le \quantile(\Normal(0, 1), 1 - \alpha/2).
@@ -1882,7 +1892,7 @@ $95\%$ 信頼区間も, Wald版は $[0.2102, 0.3889]$ で, Wilson版は $[0.2189
 
 その程度のことで, 「このルーレットでは当たりが出る確率は $1/3$ になるはずだ」というルーレット製作者の主張が科学的に正しいことが確認されたと考えてはいけない.
 
-大きめのP値は単に, $p=1/3$ の二項分布と「$n=100$ 回中 $k=30$ 回」というデータの整合性(または両立性)が高いことを意味するに過ぎない.
+大きめのP値は単に, $p=1/3$ の二項分布と「$n=100$ 回中 $k=30$ 回」というデータの数値の整合性(または相性の良さ)が高いことを意味するに過ぎない.
 
 ルーレットで当たりが出る確率がどれだけ $1/3$ に近いかについては, もっと大量にデータを集めないと十分にわからないだろう. 実際, 信頼区間の幅はまだかなり広いように見える.
 
