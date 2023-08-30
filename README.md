@@ -16,3 +16,4 @@
 * 高校数学の話題2 [HTML版](https://nbviewer.org/github/genkuroki/HighSchoolMath/blob/master/HighSchoolMath2.ipynb) ([PDF版](https://github.com/genkuroki/HighSchoolMath/blob/master/HighSchoolMath2.pdf), [ダウンロードPDF](https://github.com/genkuroki/HighSchoolMath/raw/master/HighSchoolMath2.pdf))
 * 仮説検定に関する不適切な解説の例 [HTML版](https://nbviewer.org/github/genkuroki/HighSchoolMath/blob/master/StatIntro2.ipynb) ([PDF版](https://github.com/genkuroki/HighSchoolMath/blob/master/StatIntro2.pdf), [ダウンロードPDF](https://github.com/genkuroki/HighSchoolMath/raw/master/StatIntro2.pdf))
 * チェバの定理とメネラウスの定理について ([PDF版](https://github.com/genkuroki/HighSchoolMath/blob/master/Ceva%20and%20Menelaus.pdf), [ダウンロードPDF](https://github.com/genkuroki/HighSchoolMath/raw/master/Ceva%20and%20Menelaus.pdf))
+* 実射影平面の話(板書) ([PDF版](https://github.com/genkuroki/HighSchoolMath/blob/master/ProjectivePlane.pdf), [ダウンロードPDF](https://github.com/genkuroki/HighSchoolMath/raw/master/ProjectivePlane.pdf))
