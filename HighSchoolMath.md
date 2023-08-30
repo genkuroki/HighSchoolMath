@@ -3348,7 +3348,7 @@ $$
 $x\geqq 0$ のとき $0\leqq t\leqq x$ ならば $1/(1+t)\leqq 1$ となるので,
 
 $$
-0\leqq \int_0^x \frac{t^{n-1}}{1+t} \leqq
+0\leqq \int_0^x \frac{t^{n-1}}{1+t} \,dt \leqq
 \int_0^x t^{n-1}\,dt = \frac{x^n}{n}.
 $$
 
@@ -3365,7 +3365,14 @@ $$
 $$
 
 これは有名な交代級数である. $\QED$
+<!-- #endregion -->
 
+```julia
+@show log(2);
+@show sum((-1)^(k-1)/k for k in 1:10^8);
+```
+
+<!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 **例:** 次の公式から出発して1つ上の例と同様の議論を行ってみよう:
 
 $$
@@ -3414,3 +3421,12 @@ $$
 
 これも有名な交代級数である. **Leibniz級数**(ライプニッツ級数)と呼ばれているらしい. $\QED$
 <!-- #endregion -->
+
+```julia
+@show π/4;
+@show sum((-1)^(k-1)/(2k-1) for k in 1:10^8);
+```
+
+```julia
+
+```
