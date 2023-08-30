@@ -394,7 +394,9 @@ $P(x_1,x_2,\ldots,x_n|a, b)$ を求めよう.
 
 $$
 \begin{aligned}
-P(x_1,x_2,\ldots,x_7|a,b) &=
+&
+P(x_1,x_2,\ldots,x_7|a,b)
+\\ &=
 \frac{b}{a+b}
 \frac{a}{a+b+1}
 \frac{a+1}{a+b+2}
@@ -527,7 +529,9 @@ $$
 
 $$
 \begin{aligned}
-\int_0^1 \binom{n}{k} p^k (1-p)^{n-k} \frac{p^{a-1}(1-p)^{b-1}}{B(a, b)}\,dp &=
+&
+\int_0^1 \binom{n}{k} p^k (1-p)^{n-k} \frac{p^{a-1}(1-p)^{b-1}}{B(a, b)}\,dp
+\\ &=
 \binom{n}{k} \frac{1}{B(a,b)} \int_0^1 p^{a+k-1}(1-p)^{b+n-k-1}\,dp
 \\ &=
 \binom{n}{k}
