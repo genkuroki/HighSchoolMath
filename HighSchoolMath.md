@@ -1454,6 +1454,11 @@ $$
 高校での授業で「点と直線の距離の公式は内積を使えば容易に導ける」と習った人がいるかもしれないが, 内積の使用は実質的に「平面 $z=ax+by+c$ の傾き方」を調べていることに他ならない. $\QED$
 <!-- #endregion -->
 
+![ax+b.jpg](attachment:ax+b.jpg)
+
+
+![ax+by+c.jpg](attachment:ax+by+c.jpg)
+
 ```julia
 a, b, c = 0.8, 0.5, 1.0
 f(x,y) = a*x + b*y + c
