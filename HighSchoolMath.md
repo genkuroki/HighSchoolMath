@@ -314,6 +314,8 @@ $$
 y = \sqrt[3]{\frac{q + \sqrt{q^2-4p^3}}{2}}, \quad z = \sqrt[3]{\frac{q-\sqrt{q^2-4p^3}}{2}}.
 $$
 
+ただし, $y$ と $z$ は $yz=p$ を満たすように取る. (すなわち, $y$ が得られたときに $z$ を $z=p/y$ とおけばよい.)
+
 上の $x^3 -3px + q$ の因数分解の公式より, $x^3-3px+q=0$ の解はこの $y,z$ を使って,
 
 $$
@@ -1412,7 +1414,7 @@ $xyz$ 空間内の傾いた平面 $z=ax+by+c$ を考えよう. この平面の�
 
 **定理:** $xyz$ 空間内における $z=ax+by+c$ のグラフはベクトル $(a,b)$ の方向が登り方向の傾いた平面になり, その方向の傾きの大きさは $\ds\sqrt{a^2+b^2}$ になる. すなわち, 単位ベクトル $\ds\frac{(a,b)}{\sqrt{a^2+b^2}}$ の分だけ $(x,y)$ をずらすと高さが $\sqrt{a^2+b^2}$ だけ増す.
 
-**証明:** $z=ax+by+c$ は $(x,y)$ を $(\Delta x, \Delta y)$ だけずらすと, $a\Delta x+b\Delta y$ の分だけ変化する. Cauchy-Schwartzの不等式より,
+**証明:** $z=ax+by+c$ は $(x,y)$ を $(\Delta x, \Delta y)$ だけずらすと, $a\Delta x+b\Delta y$ の分だけ変化する. Cauchy-Schwarzの不等式より,
 
 $$
 \begin{aligned}
@@ -1604,18 +1606,18 @@ E[x] = \frac{a_1+\cdots+a_n}{n}
 \end{aligned}
 $$
 
-なので, Jensenの不等式より, 
+であり, Jensenの不等式より, 
 
 $$
-\begin{aligned}
-&
-\log(a_1\cdots a_n)^{1/n} = E[\log x], 
-\\ &
-\log E[x] = \log \frac{a_1+\cdots+a_n}{n}
-\end{aligned}
+%\begin{aligned}
+%&
+\log(a_1\cdots a_n)^{1/n} = E[\log x] 
+%\\ &
+\leqq \log E[x] = \log \frac{a_1+\cdots+a_n}{n}
+%\end{aligned}
 $$
 
-なので, $\log x$ が単調増加函数であることより,
+ゆえに, $\log$ が単調増加函数であることより,
 
 $$
 (a_1\cdots a_n)^{1/n} \leqq \frac{a_1+\cdots+a_n}{n}.

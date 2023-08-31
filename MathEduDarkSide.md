@@ -9,9 +9,9 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.10.3
   kernelspec:
-    display_name: Julia 1.8.0
+    display_name: Julia 1.9.3
     language: julia
-    name: julia-1.8
+    name: julia-1.9
 ---
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -19,9 +19,9 @@ jupyter:
 
 黒木玄 (Gen Kuroki)
 
-2018-08-21～2018-09-11, 2020-08-28, 2021-09-01, 2022-08-31
+2018-08-21～2018-09-11, 2020-08-28, 2021-09-01, 2022-08-31, 2023-08-31
 
-* Copyright 2018, 2020, 2021, 2022 Gen Kuroki
+* Copyright 2018, 2020, 2021, 2022, 2023 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 
@@ -184,8 +184,8 @@ $$
 と教わっている人達がいるらしい.  前節の記号のもとで, 
 
 $$
-\sum_{i=1}^n f(x_i)\,\Delta x_i =
-\sum_{i=1}^n \Delta x_i\, f(x_i)
+\sum_{i=1}^n f(x_i^*)\,\Delta x_i =
+\sum_{i=1}^n \Delta x_i\, f(x_i^*)
 $$
 
 であり, その極限が
@@ -545,7 +545,7 @@ showimg("image/jpeg", "images/equation1892.jpg", scale="40%")
 
 一般に生徒がどのように誤解しているかを知るにはインターネット上での生徒どうしが勉強を教え合っている場面を検索して見つけるとよい. 多くの場合に教え方に問題があるせいで, 当然のごとく誤解が生じている場合を多数見付けることができる. これを生徒の側の理解力の問題にするようでは教育者として失格になってしまうので注意して欲しい.
 
-**やりとり1:** https://twitter.com/genkuroki/status/999661788890251265 から孫引き
+**やりとり1:** <!-- https://twitter.com/genkuroki/status/999661788890251265 から孫引き -->
 
 Aさんが正解を解説して曰く
 >$4x=-2$<br>
@@ -558,7 +558,7 @@ Aさんが正解を解説して曰く
 
 Bさんは $4x=-2$ の $4$ を右辺に移すときに符号を変える必要があるんじゃないかと誤解していた. そうなってしまう理由は「項」や「移す」の意味を覚え難いからである. 「項を移す」という教え方を全廃すればこのような誤解が生じる恐れはなくなるだろう. $\QED$
 
-**やりとり2:** https://twitter.com/genkuroki/status/999671200023429120
+**やりとり2:** <!-- https://twitter.com/genkuroki/status/999671200023429120 -->
 
 Cさんの答案
 >$30x+12y=138$<br>
