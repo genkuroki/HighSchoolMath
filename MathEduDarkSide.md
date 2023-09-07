@@ -17,13 +17,11 @@ jupyter:
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # 算数数学教育の暗黒面
 
-黒木玄 (Gen Kuroki)
-
-2018-08-21～2018-09-11, 2020-08-28, 2021-09-01, 2022-08-31, 2023-08-31
-
+* 黒木玄 (Gen Kuroki)
 * Copyright 2018, 2020, 2021, 2022, 2023 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
+* 更新: 2018-08-21～2018-09-11, 2020-08-28, 2021-09-01, 2022-08-31, 2023-08-31～2023-09-07
 
 このファイルは次の場所できれいに閲覧できる:
 
@@ -74,7 +72,7 @@ $
 
 <!-- #region {"slideshow": {"slide_type": "-"}, "toc": true} -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#微積分における記号法について" data-toc-modified-id="微積分における記号法について-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>微積分における記号法について</a></span><ul class="toc-item"><li><span><a href="#微分は分数商ではないのか？" data-toc-modified-id="微分は分数商ではないのか？-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>微分は分数商ではないのか？</a></span></li><li><span><a href="#積分の書き方について" data-toc-modified-id="積分の書き方について-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>積分の書き方について</a></span><ul class="toc-item"><li><span><a href="#積分記号-$\ds\int$-は和を意味する" data-toc-modified-id="積分記号-$\ds\int$-は和を意味する-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>積分記号 $\ds\int$ は和を意味する</a></span></li><li><span><a href="#積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい" data-toc-modified-id="積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>積分を $\ds\int_a^b\!\!dx\;f(x)$ と書いてもよい</a></span></li><li><span><a href="#積分で-$dx$-を左側に書くスタイルのメリット" data-toc-modified-id="積分で-$dx$-を左側に書くスタイルのメリット-1.2.3"><span class="toc-item-num">1.2.3&nbsp;&nbsp;</span>積分で $dx$ を左側に書くスタイルのメリット</a></span></li></ul></li></ul></li><li><span><a href="#高校数学における三角函数の微積分は循環論法なのか？" data-toc-modified-id="高校数学における三角函数の微積分は循環論法なのか？-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>高校数学における三角函数の微積分は循環論法なのか？</a></span></li><li><span><a href="#無理式とは根号内に文字を含む式のことなのか？" data-toc-modified-id="無理式とは根号内に文字を含む式のことなのか？-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>無理式とは根号内に文字を含む式のことなのか？</a></span></li><li><span><a href="#単項式は多項式ではないのか？" data-toc-modified-id="単項式は多項式ではないのか？-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>単項式は多項式ではないのか？</a></span></li><li><span><a href="#等式は方程式と恒等式に分類されるのか？" data-toc-modified-id="等式は方程式と恒等式に分類されるのか？-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>等式は方程式と恒等式に分類されるのか？</a></span></li><li><span><a href="#「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？" data-toc-modified-id="「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？</a></span><ul class="toc-item"><li><span><a href="#誤解の例" data-toc-modified-id="誤解の例-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>誤解の例</a></span></li><li><span><a href="#教科書通りの教え方の問題点" data-toc-modified-id="教科書通りの教え方の問題点-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>教科書通りの教え方の問題点</a></span><ul class="toc-item"><li><span><a href="#枠で囲まれた「等式の性質」の記述はよろしくない" data-toc-modified-id="枠で囲まれた「等式の性質」の記述はよろしくない-6.2.1"><span class="toc-item-num">6.2.1&nbsp;&nbsp;</span>枠で囲まれた「等式の性質」の記述はよろしくない</a></span></li><li><span><a href="#「どんな等式の性質を使っているでしょうか」という問いもよろしくない" data-toc-modified-id="「どんな等式の性質を使っているでしょうか」という問いもよろしくない-6.2.2"><span class="toc-item-num">6.2.2&nbsp;&nbsp;</span>「どんな等式の性質を使っているでしょうか」という問いもよろしくない</a></span></li><li><span><a href="#「項を移すことができる」と教えることもよろしくない" data-toc-modified-id="「項を移すことができる」と教えることもよろしくない-6.2.3"><span class="toc-item-num">6.2.3&nbsp;&nbsp;</span>「項を移すことができる」と教えることもよろしくない</a></span></li></ul></li></ul></li><li><span><a href="#問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？" data-toc-modified-id="問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>問題 6÷2(1+2)=?, 2a÷2a=? の答えは唯一つに決まるか？</a></span></li><li><span><a href="#ゼロは倍数ではないのか？" data-toc-modified-id="ゼロは倍数ではないのか？-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ゼロは倍数ではないのか？</a></span></li><li><span><a href="#括弧やかけ算の式は1つの数量を表すか？" data-toc-modified-id="括弧やかけ算の式は1つの数量を表すか？-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>括弧やかけ算の式は1つの数量を表すか？</a></span></li><li><span><a href="#かけ算の順序が逆の「式」は誤りなのか？" data-toc-modified-id="かけ算の順序が逆の「式」は誤りなのか？-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>かけ算の順序が逆の「式」は誤りなのか？</a></span><ul class="toc-item"><li><span><a href="#掛け算順序問題の実態" data-toc-modified-id="掛け算順序問題の実態-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>掛け算順序問題の実態</a></span></li><li><span><a href="#掛け算順序問題が生じる原因" data-toc-modified-id="掛け算順序問題が生じる原因-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>掛け算順序問題が生じる原因</a></span></li><li><span><a href="#かけ算の式が数値や数量ではなく場面を表わすと教えている！" data-toc-modified-id="かけ算の式が数値や数量ではなく場面を表わすと教えている！-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>かけ算の式が数値や数量ではなく場面を表わすと教えている！</a></span></li><li><span><a href="#掛け算順序固定強制指導には教育的効果がない" data-toc-modified-id="掛け算順序固定強制指導には教育的効果がない-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>掛け算順序固定強制指導には教育的効果がない</a></span></li><li><span><a href="#1951年の文部省学習指導要領算数科編試案" data-toc-modified-id="1951年の文部省学習指導要領算数科編試案-10.5"><span class="toc-item-num">10.5&nbsp;&nbsp;</span>1951年の文部省学習指導要領算数科編試案</a></span></li><li><span><a href="#100年以上の歴史がある！" data-toc-modified-id="100年以上の歴史がある！-10.6"><span class="toc-item-num">10.6&nbsp;&nbsp;</span>100年以上の歴史がある！</a></span></li><li><span><a href="#パターンマッチ教育の恐怖" data-toc-modified-id="パターンマッチ教育の恐怖-10.7"><span class="toc-item-num">10.7&nbsp;&nbsp;</span>パターンマッチ教育の恐怖</a></span></li><li><span><a href="#パターンマッチ教育の極北" data-toc-modified-id="パターンマッチ教育の極北-10.8"><span class="toc-item-num">10.8&nbsp;&nbsp;</span>パターンマッチ教育の極北</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#微積分における記号法について" data-toc-modified-id="微積分における記号法について-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>微積分における記号法について</a></span><ul class="toc-item"><li><span><a href="#微分は分数商ではないのか？" data-toc-modified-id="微分は分数商ではないのか？-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>微分は分数商ではないのか？</a></span></li><li><span><a href="#積分の書き方について" data-toc-modified-id="積分の書き方について-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>積分の書き方について</a></span><ul class="toc-item"><li><span><a href="#積分記号-$\ds\int$-は和を意味する" data-toc-modified-id="積分記号-$\ds\int$-は和を意味する-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>積分記号 $\ds\int$ は和を意味する</a></span></li><li><span><a href="#積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい" data-toc-modified-id="積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>積分を $\ds\int_a^b\!\!dx\;f(x)$ と書いてもよい</a></span></li><li><span><a href="#積分で-$dx$-を左側に書くスタイルのメリット" data-toc-modified-id="積分で-$dx$-を左側に書くスタイルのメリット-1.2.3"><span class="toc-item-num">1.2.3&nbsp;&nbsp;</span>積分で $dx$ を左側に書くスタイルのメリット</a></span></li></ul></li></ul></li><li><span><a href="#高校数学における三角函数の微積分は循環論法なのか？" data-toc-modified-id="高校数学における三角函数の微積分は循環論法なのか？-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>高校数学における三角函数の微積分は循環論法なのか？</a></span><ul class="toc-item"><li><span><a href="#補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例" data-toc-modified-id="補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例</a></span></li></ul></li><li><span><a href="#無理式とは根号内に文字を含む式のことなのか？" data-toc-modified-id="無理式とは根号内に文字を含む式のことなのか？-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>無理式とは根号内に文字を含む式のことなのか？</a></span></li><li><span><a href="#単項式は多項式ではないのか？" data-toc-modified-id="単項式は多項式ではないのか？-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>単項式は多項式ではないのか？</a></span></li><li><span><a href="#等式は方程式と恒等式に分類されるのか？" data-toc-modified-id="等式は方程式と恒等式に分類されるのか？-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>等式は方程式と恒等式に分類されるのか？</a></span></li><li><span><a href="#「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？" data-toc-modified-id="「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？</a></span><ul class="toc-item"><li><span><a href="#誤解の例" data-toc-modified-id="誤解の例-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>誤解の例</a></span></li><li><span><a href="#教科書通りの教え方の問題点" data-toc-modified-id="教科書通りの教え方の問題点-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>教科書通りの教え方の問題点</a></span><ul class="toc-item"><li><span><a href="#枠で囲まれた「等式の性質」の記述はよろしくない" data-toc-modified-id="枠で囲まれた「等式の性質」の記述はよろしくない-6.2.1"><span class="toc-item-num">6.2.1&nbsp;&nbsp;</span>枠で囲まれた「等式の性質」の記述はよろしくない</a></span></li><li><span><a href="#「どんな等式の性質を使っているでしょうか」という問いもよろしくない" data-toc-modified-id="「どんな等式の性質を使っているでしょうか」という問いもよろしくない-6.2.2"><span class="toc-item-num">6.2.2&nbsp;&nbsp;</span>「どんな等式の性質を使っているでしょうか」という問いもよろしくない</a></span></li><li><span><a href="#「項を移すことができる」と教えることもよろしくない" data-toc-modified-id="「項を移すことができる」と教えることもよろしくない-6.2.3"><span class="toc-item-num">6.2.3&nbsp;&nbsp;</span>「項を移すことができる」と教えることもよろしくない</a></span></li></ul></li></ul></li><li><span><a href="#問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？" data-toc-modified-id="問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>問題 6÷2(1+2)=?, 2a÷2a=? の答えは唯一つに決まるか？</a></span></li><li><span><a href="#ゼロは倍数ではないのか？" data-toc-modified-id="ゼロは倍数ではないのか？-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ゼロは倍数ではないのか？</a></span></li><li><span><a href="#括弧やかけ算の式は1つの数量を表すか？" data-toc-modified-id="括弧やかけ算の式は1つの数量を表すか？-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>括弧やかけ算の式は1つの数量を表すか？</a></span></li><li><span><a href="#かけ算の順序が逆の「式」は誤りなのか？" data-toc-modified-id="かけ算の順序が逆の「式」は誤りなのか？-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>かけ算の順序が逆の「式」は誤りなのか？</a></span><ul class="toc-item"><li><span><a href="#掛け算順序問題の実態" data-toc-modified-id="掛け算順序問題の実態-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>掛け算順序問題の実態</a></span></li><li><span><a href="#掛け算順序問題が生じる原因" data-toc-modified-id="掛け算順序問題が生じる原因-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>掛け算順序問題が生じる原因</a></span></li><li><span><a href="#かけ算の式が数値や数量ではなく場面を表わすと教えている！" data-toc-modified-id="かけ算の式が数値や数量ではなく場面を表わすと教えている！-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>かけ算の式が数値や数量ではなく場面を表わすと教えている！</a></span></li><li><span><a href="#掛け算順序固定強制指導には教育的効果がない" data-toc-modified-id="掛け算順序固定強制指導には教育的効果がない-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>掛け算順序固定強制指導には教育的効果がない</a></span></li><li><span><a href="#1951年の文部省学習指導要領算数科編試案" data-toc-modified-id="1951年の文部省学習指導要領算数科編試案-10.5"><span class="toc-item-num">10.5&nbsp;&nbsp;</span>1951年の文部省学習指導要領算数科編試案</a></span></li><li><span><a href="#100年以上の歴史がある！" data-toc-modified-id="100年以上の歴史がある！-10.6"><span class="toc-item-num">10.6&nbsp;&nbsp;</span>100年以上の歴史がある！</a></span></li><li><span><a href="#パターンマッチ教育の恐怖" data-toc-modified-id="パターンマッチ教育の恐怖-10.7"><span class="toc-item-num">10.7&nbsp;&nbsp;</span>パターンマッチ教育の恐怖</a></span></li><li><span><a href="#パターンマッチ教育の極北" data-toc-modified-id="パターンマッチ教育の極北-10.8"><span class="toc-item-num">10.8&nbsp;&nbsp;</span>パターンマッチ教育の極北</a></span></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
@@ -102,6 +100,27 @@ using LaTeXStrings
 using SpecialFunctions
 using QuadGK
 using Elliptic.Jacobi: cd, sn
+```
+
+```julia
+# Override the Base.show definition of SymPy.jl:
+# https://github.com/JuliaPy/SymPy.jl/blob/29c5bfd1d10ac53014fa7fef468bc8deccadc2fc/src/types.jl#L87-L105
+
+@eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::SymbolicObject)
+    print(io, as_markdown("\\displaystyle " * sympy.latex(x, mode="plain", fold_short_frac=false)))
+end
+@eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::AbstractArray{Sym})
+    function toeqnarray(x::Vector{Sym})
+        a = join(["\\displaystyle " * sympy.latex(x[i]) for i in 1:length(x)], "\\\\")
+        """\\left[ \\begin{array}{r}$a\\end{array} \\right]"""
+    end
+    function toeqnarray(x::AbstractArray{Sym,2})
+        sz = size(x)
+        a = join([join("\\displaystyle " .* map(sympy.latex, x[i,:]), "&") for i in 1:sz[1]], "\\\\")
+        "\\left[ \\begin{array}{" * repeat("r",sz[2]) * "}" * a * "\\end{array}\\right]"
+    end
+    print(io, as_markdown(toeqnarray(x)))
+end
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -353,6 +372,67 @@ t = symbols("t", real=true)
 u = t/√(1-t^2)
 simplify(1/(1+u^2) * diff(u, t))
 ```
+
+### 補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例
+
+
+以下の添付画像は, 非常に有名な教科書である
+
+* 杉浦光夫『解析入門Ⅰ』東京大学出版会、1980年
+
+のp.175からの引用である。そこには
+
+>三角函数は通常幾何学的に定義されるが, 解析学で扱うためにはどうしても一度は解析的にそれを捕えなければならない.  このことは幾何学的に定義された $\sin t$ に対し, その導函数が $\cos t$ となることの証明の本質的な部分として, $t=O$ における導値を求める
+
+>$
+(*)\qquad\qquad\qquad\qquad\qquad \lim\limits_{t\to 0}\dfrac{\sin t}{t} = 1
+$
+
+>の「証明」をふり返って見ると了解される.  この式は幾何学的には, 弧の長さが $0$ に近づくとき円弧と弦の長さの比が1に近づくことを意味する.  このことは直銭的に明らかなように見えるが「円弧の長さ」がどのようにして定義されるのかをはっきりさせなければ, 数学的な証明とは言い難い.  また円弧の長さを例えば積分で定義したとしても, その積分を計尊するのに(＊)を用いなければならぬのでは循環論法になってしまう.
+
+と書いてある.
+
+
+![Sugiura-Kaiseki1-p175.png](attachment:Sugiura-Kaiseki1-p175.png)
+
+<!-- #region -->
+この説明はひどくミスリーディング(misleading, 誤解誘導的)である.
+
+なぜならば, 高校数学Ⅲにある曲線の長さを速さの積分で表す公式を曲線の長さの定義とすれば「円弧の長さ」が($*$)を経由せずに明瞭に定義されるからである.  「円弧の長さを速さの積分で定義する」という方針を採用すれば, 高校数学での三角函数の幾何学的な導入から($*$)よりも一般的な
+
+
+$(**)\qquad\qquad\qquad\qquad\qquad \dfrac{d}{dt}\sin t = \cos t \qquad\left(-\dfrac{\pi}{2} < t < \dfrac{\pi}{2}\right)$
+
+がただちに得られてしまう.  円弧の長さを意味する積分
+
+$$
+L = \int_0^y \frac{ds}{\sqrt{1-s^2}}
+$$
+
+を $s = \sin t$ による置換積分で計算しようとするのであれば確かに $\sin t$ の導函数が $\cos t$ になることを使うので($*$)を経由していることになるかもしれない.  しかし, この積分が $(x(s), y(s)) = (\sqrt{1-s^2}, s)$ の速さの積分になっていることから, 円弧の長さを表すことが自明であることに注意すれば, $s = \sin t$ による置換積分を経由せずに $L$ が弧度法の意味での角度になっていることがわかる.
+
+杉浦光夫『解析入門Ⅰ』を読んで以下のように信じてしまうのは非常にまずい.
+
+❌円弧の長さを積分で定義しても, その取扱いでは($*$)を経由する必要がある.
+
+❌高校数学での三角函数の微積分は循環論法になっている.
+
+❌循環論法を避けるためには三角函数をべき級数展開で定義しなければいけない.
+
+❌曲線の長さは折れ線による近似によって定義する必要がある.
+
+以上はすべて __誤り__ である. 正しくは, 
+
+⭕円弧の長さを速さの積分で定義すれば, 三角函数の幾何学的な導入から($*$)の一般化($**$)がただちに得られる.
+
+⭕高校数学での三角函数の微積分は円弧の長さを速さの積分で定義すれば循環論法になりようがない.
+
+⭕循環論法になりようがない三角函数論の展開の仕方は沢山ある.
+
+⭕滑らかな曲線の長さは速さの積分で定義できる.
+
+__注意:__ 杉浦光夫『解析入門Ⅰ』では三角函数などを天降り的に与えたべき級数展開によって定義することによって本当は存在しない「循環論法」を避けている.  その方針は有用な函数を得るための常套手段の1つであり, 知っておいた方が良い考え方の1つである.  しかし, その考え方にこだわることは誤りである.
+<!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## 無理式とは根号内に文字を含む式のことなのか？
