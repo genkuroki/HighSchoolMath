@@ -1343,7 +1343,69 @@ k!\stirlingsecond{n}{k} = \sum_{a=0}^k (-1)^{k-a}\binom{k}{a} a^n.
 $$
 
 
-__証明:__ 上の方の系の別証明と似た組合せ論的方法で証明しよう.
+__証明:__ $\partial = \partial/\partial x$ とおき, $\Delta = e^\partial - 1$ とおく.  $\Delta$ は多項式 $f(x)$ に $\Delta f(x) = f(x+1) - f(x)$ と作用する.
+
+$\Delta^k = (e^\partial - 1)^k$ に二項定理を適用すると,
+
+$$
+\Delta^k f(x) =
+\sum_{a=0}^k (-1)^{k-a}\binom{k}{a} e^{a\partial} f(x) =
+\sum_{a=0}^k (-1)^{k-a}\binom{k}{a} f(x+a).
+$$
+
+特に,
+
+$$
+\Delta^k x^n = \sum_{a=0}^k (-1)^{k-a}\binom{k}{a} (x+a)^n.
+$$
+
+前節で示した第2種Stirling数の母函数表示
+
+$$
+\exp(x(e^t - 1)) =
+\sum_{m=0}^\infty\sum_{k=0}^m\stirlingsecond{m}{k} x^k \frac{t^m}{m!} =
+\sum_{k=0}^\infty \frac{x^k}{k!} k! \sum_{m=k}^\infty \stirlingsecond{m}{k}\frac{t^m}{m!}
+$$
+
+を使おう.  この公式中の $x$ を $z$ で置き換え, $t$ に $\partial$ を代入すると, 
+
+$$
+\exp(z\Delta) = 
+\sum_{k=0}^\infty \frac{z^k}{k!}\Delta^k =
+\sum_{k=0}^\infty \frac{x^k}{k!} k! \sum_{m=k}^\infty \stirlingsecond{m}{k}\frac{\partial^m}{m!}.
+$$
+
+これの両辺を $x^n$ に作用させると,
+
+$$
+\sum_{k=0}^n \frac{z^k}{k!}\Delta^k x^n =
+\sum_{k=0}^n \frac{z^k}{k!} k! \sum_{m=k}^n \stirlingsecond{m}{k}\binom{n}{m}x^{n-m}.
+$$
+
+$z^k/k!$ の係数を比較すると,
+
+$$
+\Delta^k x^n = k! \sum_{m=k}^n \stirlingsecond{m}{k}\binom{n}{m}x^{n-m}.
+$$
+
+したがって, 
+
+$$
+\Delta^k x^n =
+\sum_{a=0}^k (-1)^{k-a}\binom{k}{a} (x+a)^n =
+k! \sum_{m=k}^n \stirlingsecond{m}{k}\binom{n}{m}x^{n-m}.
+$$
+
+特に $x=0$ とおけば
+
+$$
+\sum_{a=0}^k (-1)^{k-a}\binom{k}{a} a^n = k!\stirlingsecond{n}{k}.
+$$
+
+が得られる. $\QED$
+
+
+__別証明:__ 前節の系の別証明と似た組合せ論的方法で証明しよう.
 
 全射 $g:\nset{n}\to\nset{k}$ から, 集合 $\nset{n}$ の $k$ 分割 $P$ が
 
