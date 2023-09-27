@@ -1425,20 +1425,20 @@ $$
 
 写像 $g:\nset{n}\to\nset{k}$ 全体の集合を $Y$ と書く.
 
-各 $i\in\nset{k}$ に対して, $Y$ の部分集合 $Y_i を次のように定める:
+各 $i\in\nset{k}$ に対して, $Y$ の部分集合 $Y_i$ を次のように定める:
 
 $$
 Y_i = \{\,g:\nset{n}\to\nset{k}\mid g(\nset{n})\not\ni i\,\}.
 $$
 
-このとき, $1\le i_1<i_2<\cdots<i_r\le k$ について, $Y_{i_1}\cap Y_{i_2}\cap\cdots\cap Y_{i_r} = (k-r)^n$ となる.  ($r=k$ の場合には $n=0$ ならば $1$ になり, それ以外の場合には $0$ になる.)
+このとき, 有限集合 $A$ の元の個数を $|A|$ と書くことにすると, $1\le i_1<i_2<\cdots<i_r\le k$ について $|Y_{i_1}\cap Y_{i_2}\cap\cdots\cap Y_{i_r}| = (k-r)^n$ となる($r=k$ の場合には $n=0$ ならば $1$ になり, $n>0$ ならば $0$ になる).
 
 したがって, 
 
 * [包除原理](https://ja.wikipedia.org/wiki/%E5%8C%85%E9%99%A4%E5%8E%9F%E7%90%86)
 ([inclusion–exclusion principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle))
 
-より, 有限集合 $A$ の元の個数を $|A|$ と書くことにすると, 単射でない写像 $g:\nset{n}\to\nset{k}$ 全体の集合 $Y_1\cup Y_2\cup\cdots\cup Y_k$ の元の個数は次のように表される:
+より, 単射でない写像 $g:\nset{n}\to\nset{k}$ 全体の集合 $Y_1\cup Y_2\cup\cdots\cup Y_k$ の元の個数は次のように表される:
 
 $$
 \begin{aligned}
