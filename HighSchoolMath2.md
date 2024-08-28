@@ -16,8 +16,8 @@ jupyter:
 # 高校数学の話題2
 
 * 黒木玄 (Gen Kuroki)
-* 2022-08-30
-* Copyright 2022 Gen Kuroki
+* 2022-08-30, 2024-08-29
+* Copyright 2022, 2024 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 $
