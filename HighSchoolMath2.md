@@ -41,7 +41,7 @@ $
 
 <!-- #region toc=true -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#ポリアの壺" data-toc-modified-id="ポリアの壺-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>ポリアの壺</a></span><ul class="toc-item"><li><span><a href="#問題：n回目に赤玉が出る確率" data-toc-modified-id="問題：n回目に赤玉が出る確率-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>問題：n回目に赤玉が出る確率</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式による導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式による導出-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式による導出</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式を使わない導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式を使わない導出-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式を使わない導出</a></span></li><li><span><a href="#ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)" data-toc-modified-id="ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)</a></span></li><li><span><a href="#問題：名古屋大学2007年文系前期3(b)の一般化" data-toc-modified-id="問題：名古屋大学2007年文系前期3(b)の一般化-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>問題：名古屋大学2007年文系前期3(b)の一般化</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式による導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式による導出-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式による導出</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式を使わない導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式を使わない導出-1.7"><span class="toc-item-num">1.7&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式を使わない導出</a></span></li></ul></li><li><span><a href="#ポリアの壺と二項分布や超幾何分布の関係" data-toc-modified-id="ポリアの壺と二項分布や超幾何分布の関係-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>ポリアの壺と二項分布や超幾何分布の関係</a></span><ul class="toc-item"><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布</a></span></li><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布の統一的理解 (ポリア分布)</a></span></li><li><span><a href="#問題：二項分布がポリア分布の極限になっていること" data-toc-modified-id="問題：二項分布がポリア分布の極限になっていること-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>問題：二項分布がポリア分布の極限になっていること</a></span></li><li><span><a href="#解答例：二項分布がポリア分布の極限になっていること" data-toc-modified-id="解答例：二項分布がポリア分布の極限になっていること-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>解答例：二項分布がポリア分布の極限になっていること</a></span><ul class="toc-item"><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(素朴な方法)</a></span></li><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)-2.4.2"><span class="toc-item-num">2.4.2&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(1つの函数にまとめる方法)</a></span></li></ul></li><li><span><a href="#問題：ポリア分布の期待値と分散" data-toc-modified-id="問題：ポリア分布の期待値と分散-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>問題：ポリア分布の期待値と分散</a></span></li><li><span><a href="#解答例：ポリア分布の期待値と分散" data-toc-modified-id="解答例：ポリア分布の期待値と分散-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>解答例：ポリア分布の期待値と分散</a></span></li></ul></li><li><span><a href="#ポリアの壺試行の別の解釈" data-toc-modified-id="ポリアの壺試行の別の解釈-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>ポリアの壺試行の別の解釈</a></span><ul class="toc-item"><li><span><a href="#ベータ分布,-ベータ函数,-ガンマ函数" data-toc-modified-id="ベータ分布,-ベータ函数,-ガンマ函数-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>ベータ分布, ベータ函数, ガンマ函数</a></span></li><li><span><a href="#成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行" data-toc-modified-id="成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行</a></span></li><li><span><a href="#余談：生まれつきの才能か,-努力の結果か？" data-toc-modified-id="余談：生まれつきの才能か,-努力の結果か？-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>余談：生まれつきの才能か, 努力の結果か？</a></span></li><li><span><a href="#問題：ポリアの壺試行で大数の法則が成立することの確認" data-toc-modified-id="問題：ポリアの壺試行で大数の法則が成立することの確認-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>問題：ポリアの壺試行で大数の法則が成立することの確認</a></span></li><li><span><a href="#解答例：ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="解答例：ポリアの壺試行の側で大数の法則が成立することの確認-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>解答例：ポリアの壺試行の側で大数の法則が成立することの確認</a></span><ul class="toc-item"><li><span><a href="#ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="ポリアの壺試行の側で大数の法則が成立することの確認-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span>ポリアの壺試行の側で大数の法則が成立することの確認</a></span></li><li><span><a href="#ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認" data-toc-modified-id="ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span>ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認</a></span></li></ul></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#ポリアの壺" data-toc-modified-id="ポリアの壺-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>ポリアの壺</a></span><ul class="toc-item"><li><span><a href="#問題：n回目に赤玉が出る確率" data-toc-modified-id="問題：n回目に赤玉が出る確率-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>問題：n回目に赤玉が出る確率</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式による導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式による導出-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式による導出</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式を使わない導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式を使わない導出-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式を使わない導出</a></span></li><li><span><a href="#ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)" data-toc-modified-id="ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)</a></span></li><li><span><a href="#問題：名古屋大学2007年文系前期3(b)の一般化" data-toc-modified-id="問題：名古屋大学2007年文系前期3(b)の一般化-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>問題：名古屋大学2007年文系前期3(b)の一般化</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式による導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式による導出-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式による導出</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式を使わない導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式を使わない導出-1.7"><span class="toc-item-num">1.7&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式を使わない導出</a></span></li></ul></li><li><span><a href="#ポリアの壺と二項分布や超幾何分布の関係" data-toc-modified-id="ポリアの壺と二項分布や超幾何分布の関係-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>ポリアの壺と二項分布や超幾何分布の関係</a></span><ul class="toc-item"><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布</a></span></li><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布の統一的理解 (ポリア分布)</a></span></li><li><span><a href="#問題：二項分布がポリア分布の極限になっていること" data-toc-modified-id="問題：二項分布がポリア分布の極限になっていること-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>問題：二項分布がポリア分布の極限になっていること</a></span></li><li><span><a href="#解答例：二項分布がポリア分布の極限になっていること" data-toc-modified-id="解答例：二項分布がポリア分布の極限になっていること-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>解答例：二項分布がポリア分布の極限になっていること</a></span><ul class="toc-item"><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(素朴な方法)</a></span></li><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)-2.4.2"><span class="toc-item-num">2.4.2&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(1つの函数にまとめる方法)</a></span></li></ul></li><li><span><a href="#問題：ポリア分布の期待値と分散" data-toc-modified-id="問題：ポリア分布の期待値と分散-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>問題：ポリア分布の期待値と分散</a></span></li><li><span><a href="#解答例：ポリア分布の期待値と分散" data-toc-modified-id="解答例：ポリア分布の期待値と分散-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>解答例：ポリア分布の期待値と分散</a></span></li></ul></li><li><span><a href="#ポリアの壺試行の別の解釈" data-toc-modified-id="ポリアの壺試行の別の解釈-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>ポリアの壺試行の別の解釈</a></span><ul class="toc-item"><li><span><a href="#ベータ分布,-ベータ函数,-ガンマ函数" data-toc-modified-id="ベータ分布,-ベータ函数,-ガンマ函数-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>ベータ分布, ベータ函数, ガンマ函数</a></span></li><li><span><a href="#成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行" data-toc-modified-id="成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行</a></span></li><li><span><a href="#余談：生まれつきの才能か,-経験の結果か？" data-toc-modified-id="余談：生まれつきの才能か,-経験の結果か？-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>余談：生まれつきの才能か, 経験の結果か？</a></span></li><li><span><a href="#問題：ポリアの壺試行で大数の法則が成立することの確認" data-toc-modified-id="問題：ポリアの壺試行で大数の法則が成立することの確認-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>問題：ポリアの壺試行で大数の法則が成立することの確認</a></span></li><li><span><a href="#解答例：ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="解答例：ポリアの壺試行の側で大数の法則が成立することの確認-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>解答例：ポリアの壺試行の側で大数の法則が成立することの確認</a></span><ul class="toc-item"><li><span><a href="#ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="ポリアの壺試行の側で大数の法則が成立することの確認-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span>ポリアの壺試行の側で大数の法則が成立することの確認</a></span></li><li><span><a href="#ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認" data-toc-modified-id="ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span>ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認</a></span></li></ul></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia
@@ -281,14 +281,14 @@ P(0|2,a,b) &= \frac{b(b+1)}{(a+b)(a+b+1)}, \\
 \\
 P(3|3,a,b) &= \frac{a(a+1)(a+2)}{(a+b)(a+b+1)(a+b+2)}, \\
 P(2|3,a,b) &= 3\frac{a(a+1)b}{(a+b)(a+b+1)(a+b+2)}, \\
-P(1|3,a,b) &= 3\frac{ab(b+1)}{(a+b)(a+b+1)(a+b+2)(a+b+2)}, \\
+P(1|3,a,b) &= 3\frac{ab(b+1)}{(a+b)(a+b+1)(a+b+2)}, \\
 P(0|3,a,b) &= \frac{b(b+1)(b+2)}{(a+b)(a+b+1)(a+b+2)}, \\
 \\ &
 \\
 P(4|4,a,b) &= \frac{a(a+1)(a+2)(a+3)}{(a+b)(a+b+1)(a+b+2)(a+b+3)}, \\
 P(3|4,a,b) &= 4\frac{a(a+1)(a+2)b}{(a+b)(a+b+1)(a+b+2)(a+b+3)}, \\
 P(2|4,a,b) &= 6\frac{a(a+1)b(b+1)}{(a+b)(a+b+1)(a+b+2)(a+b+3)}, \\
-P(1|4,a,b) &= 4\frac{ab(b+1)(b+2)}{(a+b)(a+b+1)(a+b+2)(a+b+2)(a+b+3)}, \\
+P(1|4,a,b) &= 4\frac{ab(b+1)(b+2)}{(a+b)(a+b+1)(a+b+2)(a+b+3)}, \\
 P(0|4,a,b) &= \frac{b(b+1)(b+2)(b+3)}{(a+b)(a+b+1)(a+b+2)(a+b+3)}. \\
 \end{aligned}
 $$
@@ -320,7 +320,10 @@ $$
 
 $$
 \begin{aligned}
-P(k|n+1,a,b) &= \frac{a}{a+b}P(k-1|n,a+1,b) + \frac{b}{a+b}P(k|n,a,b+1)
+&
+P(k|n+1,a,b)
+\\ &=
+\frac{a}{a+b}P(k-1|n,a+1,b) + \frac{b}{a+b}P(k|n,a,b+1)
 \\ &=
 \frac{a}{a+b}\binom{n}{k-1}
 \frac{(a+1)\cdots(a+k-1)\cdot b(b+1)\cdots(b+n-k)}
@@ -545,6 +548,20 @@ $$
 {(a+b)(a+b+1)\cdots(a+b+n-1)}
 \\ &=
 P_{\BetaBinom}(k|n,a,b).
+\end{aligned}
+$$
+
+4番目の等号で次を使った: $m$ が0以上の整数のとき,
+
+$$
+\begin{aligned}
+\Gamma(s+m) &= (s+m-1)\Gamma(s+m-1)
+\\ &= (s+m-1)(s+m-2)\Gamma(s+m-2)
+\\ &= \cdots\cdots
+\\ &= (s+m-1)(s+m-2)\cdots (s+1)s\Gamma(s)
+\\
+\frac{\Gamma(s+m)}{\Gamma(s)}
+&= s(s+1)\cdots(s+m-2)(s+m-1).
 \end{aligned}
 $$
 
@@ -864,9 +881,14 @@ $m=0,1,\ldots,n$ であると仮定する.
 ポリア分布における確率の総和が $1$ であるという公式
 
 $$
-\sum_k P(k|n,a,b,d) =
+\begin{aligned}
+&
+\sum_k P(k|n,a,b,d)
+\\ &=
 \sum_k \binom{n}{k} \frac{a(a+d)\cdots(a+(k-1)d)\cdot b(b+d)\cdots(b+(n-k-1)d)}
-{(a+b)(a+b+d)\cdots (a+b+(n-1)d)} = 1
+{(a+b)(a+b+d)\cdots (a+b+(n-1)d)}
+\\ &= 1
+\end{aligned}
 $$
 
 の $n$, $a$ をそれぞれ $n-m$, $a+md$ で置き換え, 二項係数中の $k$ を $k-m$ で置き換えた場合を以下で使用する.
@@ -941,7 +963,7 @@ $$
 
 ```julia
 using SymPy
-@vars n a b d
+@syms n a b d
 expr = n*(n-1)*a*(a+d)/((a+b)*(a+b+d)) + n*a/(a+b) - (n*a/(a+b))^2
 Eq(expr, expr.factor())
 ```
@@ -1035,7 +1057,7 @@ $$
 
 ### 成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行
 
-次のようにして, $1$ と $0$ の長さ $n$ の列をランダムに生成することを考える.
+次のようにして, $1$ と $0$ からなる長さ $n$ の列をランダムに生成することを考える.
 
 (1) パラメータ $(a, b)$ のベータ分布に従って, $0<p<1$ をランダムに生成する.
 
@@ -1064,7 +1086,7 @@ $$
 要するに, __成功確率パラメータ $p$ がベータ分布に従ってランダムに決まっているようなベルヌーイ試行は, ポリアの壺試行と同等である.__
 
 
-### 余談：生まれつきの才能か, 努力の結果か？
+### 余談：生まれつきの才能か, 経験の結果か？
 
 以上によって, $1$ と $0$ のランダムな列を生成する2つの方法は確率的に同等であることがわかった.
 
@@ -1110,7 +1132,7 @@ __成功確率がベータ分布に従ってランダムに決められたベル
 
 そして, 成功の割合が近付く先の値 $p$ が従う分布はパラメータ $(a, b)$ のベータ分布になることもわかる.
 
-ポリアの壺試行におけるその $p$ は, 成功と失敗の試行錯誤によってたどりついた __努力の結果__ だと解釈される.
+ポリアの壺試行におけるその $p$ は, 成功と失敗の試行錯誤によってたどりついた __経験の結果__ だと解釈される.
 
 要するに, ポリアの壺試行と成功確率がベータ分布に従ってランダムに決まっているベルヌーイ試行が確率的に同等であるということは, 生まれつきの才能としての $p$ と努力の結果としての $p$ が成功失敗の列を眺めただけでは区別できないことを意味している.
 
