@@ -8,9 +8,9 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.10.3
   kernelspec:
-    display_name: Julia 1.10.4
+    display_name: Julia
     language: julia
-    name: julia-1.10
+    name: julia
 ---
 
 # 仮説検定に関する不適切な解説の例
