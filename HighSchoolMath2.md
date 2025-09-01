@@ -93,7 +93,6 @@ end
 ```julia
 @autoadd begin
 using Distributions
-#using StatsPlots
 using Plots
 default(fmt=:png, size=(400, 250), titlefontsize=10,
     tickfontsize=6, guidefontsize=9, plot_titlefontsize=12)
@@ -766,7 +765,7 @@ $$
 
 ```julia
 # 使用パッケージの読み込み (少し時間がかかｋる)
-using Distributions, StatsPlots
+using Distributions, Plots
 ```
 
 ```julia
@@ -1175,7 +1174,7 @@ __成功確率がベータ分布に従ってランダムに決められたベル
 
 ```julia
 # 使用パッケージの読み込み (少し時間がかかｋる)
-using Distributions, StatsPlots
+using Distributions, Plots
 ```
 
 ```julia
@@ -1343,7 +1342,7 @@ function plot_polya_urn_lln(a, b; n = 10^4, L = 10^5, bin = 100, kwargs...)
     prob = @time mc_polya_urn_lln(a, b; n, L)
     xlim = extrema(prob)
     histogram(prob; norm=true, alpha=0.3, label="final k/n", bin)
-    plot!(Beta(a, b), xlim...; label="Beta(a,b)", lw=1.5)
+    plot!(x -> pdf(Beta(a, b), x), xlim...; label="Beta(a,b)", lw=1.5)
     title!("n=$n, a=$a, b=$b  (L=$L)")
     plot!(; kwargs...)
 end
