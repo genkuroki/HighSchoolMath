@@ -44,8 +44,53 @@ $
 <!-- #endregion -->
 
 ```julia
+# Google Colabと自分のパソコンの両方で使えるようにするための工夫
+
+using Pkg
+
+"""すでにPkg.add済みのパッケージのリスト"""
+_packages_added = [sort!(readdir(Sys.STDLIB));
+    sort!([info.name for (uuid, info) in Pkg.dependencies() if info.is_direct_dep])]
+
+"""_packages_added内にないパッケージをPkg.addする"""
+add_pkg_if_not_added_yet(pkg) = if isnothing(Base.find_package(pkg))
+    println(stderr, "# $(pkg).jl is not added yet, so let's add it.")
+    Pkg.add(pkg)
+end
+
+"""expr::Exprからusing内の`.`を含まないモジュール名を抽出"""
+function find_using_pkgs(expr::Expr)
+    pkgs = String[]
+    function traverse(expr::Expr)
+        if expr.head == :using
+            for arg in expr.args
+                if arg.head == :. && length(arg.args) == 1
+                    push!(pkgs, string(arg.args[1]))
+                elseif arg.head == :(:) && length(arg.args[1].args) == 1
+                    push!(pkgs, string(arg.args[1].args[1]))
+                end
+            end
+        else
+            for arg in expr.args arg isa Expr && traverse(arg) end
+        end
+    end
+    traverse(expr)
+    pkgs
+end
+
+"""必要そうなPkg.addを追加するマクロ"""
+macro autoadd(expr)
+    pkgs = find_using_pkgs(expr)
+    :(add_pkg_if_not_added_yet.($(pkgs)); $expr)
+end
+```
+
+```julia
+@autoadd begin
 using Distributions
 using Plots
+end
+
 default(fmt=:png, size=(400, 250),
     titlefontsize=10, guidefontsize=8, tickfontsize=6)
 mypdf(dist, x) = pdf(dist, x)

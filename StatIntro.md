@@ -1265,8 +1265,8 @@ $$
 
 ```julia
 x = 1.0
-plot(Normal(0, 1), -4, x; fillrange=0, la=0, fc=:pink, label="cdf(Normal(0,1), $x)")
-plot!(Normal(0, 1), -4, 5; label="pdf(Normal(0,1), x)", c=1)
+plotdist(Normal(0, 1), -4, x; fillrange=0, la=0, fc=:pink, label="cdf(Normal(0,1), $x)")
+plotdist!(Normal(0, 1), -4, 5; label="pdf(Normal(0,1), x)", c=1)
 plot!(xtick=-10:10, xguide="x")
 plot!(size=(500, 250))
 ```
