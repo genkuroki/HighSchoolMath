@@ -9,26 +9,24 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.10.3
   kernelspec:
-    display_name: Julia 1.10.4
+    display_name: Julia
     language: julia
-    name: julia-1.10
+    name: julia
 ---
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # 高校数学の話題
 
 * 黒木玄 (Gen Kuroki)
-* Copyright (c) 2018, 2019, 2020, 2021, 2022, 2023, 2024 Gen Kuroki
+* Copyright (c) 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Gen Kuroki
 * <a href="https://licenses.opensource.jp/MIT/MIT.html">MIT License</a>
-* 更新: 2018-08-15～2019-09-24, 2020-08-27～2020-08-30, 2021-08-30～2021-09-02, 2022-08-31, 2023-05-29, 2023-09-07～2023-09-27, 2024-08-28
+* 更新: 2018-08-15～2019-09-24, 2020-08-27～2020-08-30, 2021-08-30～2021-09-02, 2022-08-31, 2023-05-29, 2023-09-07～2023-09-27, 2024-08-28, 2025-09-02
+* License: MIT https://opensource.org/licenses/MIT
+* Repository: https://github.com/genkuroki/HighSchoolMath
 
 このノートでは高校の数学の教科書にあるような話題を扱い, その数学的背景について解説する.
 
 タイポや自明な誤りは自分で訂正して読むこと. 本質的な誤りがあれば著者に教えて欲しい.
-
-* Copyright 2018, 2019, 2020, 2021, 2022, 2023, 2024 Gen Kuroki
-* License: MIT https://opensource.org/licenses/MIT
-* Repository: https://github.com/genkuroki/HighSchoolMath
 
 このファイルは次の場所できれいに閲覧できる:
 
@@ -80,49 +78,62 @@ $
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}, "toc": true} -->
 <h1>目次<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#三角函数の加法定理" data-toc-modified-id="三角函数の加法定理-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>三角函数の加法定理</a></span><ul class="toc-item"><li><span><a href="#三角函数の加法定理の導出は易しい" data-toc-modified-id="三角函数の加法定理の導出は易しい-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>三角函数の加法定理の導出は易しい</a></span></li><li><span><a href="#三角函数の加法定理の導出は中学校レベル" data-toc-modified-id="三角函数の加法定理の導出は中学校レベル-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>三角函数の加法定理の導出は中学校レベル</a></span></li><li><span><a href="#三角函数の加法定理は複数の方法で得られる" data-toc-modified-id="三角函数の加法定理は複数の方法で得られる-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>三角函数の加法定理は複数の方法で得られる</a></span></li><li><span><a href="#三角函数の加法定理と内積の関係" data-toc-modified-id="三角函数の加法定理と内積の関係-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>三角函数の加法定理と内積の関係</a></span></li><li><span><a href="#三角関数の加法定理と複素数" data-toc-modified-id="三角関数の加法定理と複素数-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>三角関数の加法定理と複素数</a></span></li></ul></li><li><span><a href="#3次方程式と4次方程式の解法" data-toc-modified-id="3次方程式と4次方程式の解法-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>3次方程式と4次方程式の解法</a></span><ul class="toc-item"><li><span><a href="#ある3次式の因数分解から3次方程式の解法へ" data-toc-modified-id="ある3次式の因数分解から3次方程式の解法へ-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ある3次式の因数分解から3次方程式の解法へ</a></span></li><li><span><a href="#巡回行列式" data-toc-modified-id="巡回行列式-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>巡回行列式</a></span></li><li><span><a href="#ある4次式の展開公式から4次方程式の解法へ" data-toc-modified-id="ある4次式の展開公式から4次方程式の解法へ-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>ある4次式の展開公式から4次方程式の解法へ</a></span></li><li><span><a href="#4次方程式の解法で使える4次式の行列式表示" data-toc-modified-id="4次方程式の解法で使える4次式の行列式表示-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>4次方程式の解法で使える4次式の行列式表示</a></span></li></ul></li><li><span><a href="#べき乗和とベルヌイ多項式" data-toc-modified-id="べき乗和とベルヌイ多項式-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>べき乗和とベルヌイ多項式</a></span><ul class="toc-item"><li><span><a href="#Bernoulli多項式" data-toc-modified-id="Bernoulli多項式-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Bernoulli多項式</a></span></li><li><span><a href="#Bernoulli多項式とべき乗和の関係" data-toc-modified-id="Bernoulli多項式とべき乗和の関係-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Bernoulli多項式とべき乗和の関係</a></span></li><li><span><a href="#べき乗和の直接的な取り扱い" data-toc-modified-id="べき乗和の直接的な取り扱い-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>べき乗和の直接的な取り扱い</a></span></li><li><span><a href="#第2種Stirling数とべき乗和" data-toc-modified-id="第2種Stirling数とべき乗和-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>第2種Stirling数とべき乗和</a></span></li><li><span><a href="#第2種Stirling数の二項係数を用いた表示" data-toc-modified-id="第2種Stirling数の二項係数を用いた表示-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>第2種Stirling数の二項係数を用いた表示</a></span></li><li><span><a href="#第2種Stirling数とBernoulli数の関係" data-toc-modified-id="第2種Stirling数とBernoulli数の関係-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>第2種Stirling数とBernoulli数の関係</a></span></li><li><span><a href="#べき乗和とHurwitzのゼータ函数の関係" data-toc-modified-id="べき乗和とHurwitzのゼータ函数の関係-3.7"><span class="toc-item-num">3.7&nbsp;&nbsp;</span>べき乗和とHurwitzのゼータ函数の関係</a></span></li></ul></li><li><span><a href="#平面上の点と直線の距離" data-toc-modified-id="平面上の点と直線の距離-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>平面上の点と直線の距離</a></span></li><li><span><a href="#Jensenの不等式と相加相乗調和平均" data-toc-modified-id="Jensenの不等式と相加相乗調和平均-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Jensenの不等式と相加相乗調和平均</a></span><ul class="toc-item"><li><span><a href="#Jensenの不等式" data-toc-modified-id="Jensenの不等式-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>Jensenの不等式</a></span></li><li><span><a href="#相加相乗調和平均の不等式" data-toc-modified-id="相加相乗調和平均の不等式-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>相加相乗調和平均の不等式</a></span></li><li><span><a href="#p乗平均" data-toc-modified-id="p乗平均-5.3"><span class="toc-item-num">5.3&nbsp;&nbsp;</span>p乗平均</a></span></li><li><span><a href="#p→0でのp乗平均の挙動" data-toc-modified-id="p→0でのp乗平均の挙動-5.4"><span class="toc-item-num">5.4&nbsp;&nbsp;</span>p→0でのp乗平均の挙動</a></span></li><li><span><a href="#p乗平均のpに関する依存性(1)" data-toc-modified-id="p乗平均のpに関する依存性(1)-5.5"><span class="toc-item-num">5.5&nbsp;&nbsp;</span>p乗平均のpに関する依存性(1)</a></span></li><li><span><a href="#p乗平均のpに関する依存性(2)" data-toc-modified-id="p乗平均のpに関する依存性(2)-5.6"><span class="toc-item-num">5.6&nbsp;&nbsp;</span>p乗平均のpに関する依存性(2)</a></span></li><li><span><a href="#単位円に内接する多角形の周長と面積の最大値" data-toc-modified-id="単位円に内接する多角形の周長と面積の最大値-5.7"><span class="toc-item-num">5.7&nbsp;&nbsp;</span>単位円に内接する多角形の周長と面積の最大値</a></span></li></ul></li><li><span><a href="#三角函数の微積分" data-toc-modified-id="三角函数の微積分-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>三角函数の微積分</a></span><ul class="toc-item"><li><span><a href="#高校の数学の教科書の方針" data-toc-modified-id="高校の数学の教科書の方針-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>高校の数学の教科書の方針</a></span></li><li><span><a href="#曲線の長さが速さの積分になることの応用" data-toc-modified-id="曲線の長さが速さの積分になることの応用-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>曲線の長さが速さの積分になることの応用</a></span></li><li><span><a href="#楕円積分,-楕円函数,-楕円曲線暗号" data-toc-modified-id="楕円積分,-楕円函数,-楕円曲線暗号-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>楕円積分, 楕円函数, 楕円曲線暗号</a></span></li></ul></li><li><span><a href="#Gauss積分の大学入試問題" data-toc-modified-id="Gauss積分の大学入試問題-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Gauss積分の大学入試問題</a></span></li><li><span><a href="#ガンマ函数の応用" data-toc-modified-id="ガンマ函数の応用-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ガンマ函数の応用</a></span><ul class="toc-item"><li><span><a href="#多項式×指数函数の積分" data-toc-modified-id="多項式×指数函数の積分-8.1"><span class="toc-item-num">8.1&nbsp;&nbsp;</span>多項式×指数函数の積分</a></span></li><li><span><a href="#Stirlingの公式" data-toc-modified-id="Stirlingの公式-8.2"><span class="toc-item-num">8.2&nbsp;&nbsp;</span>Stirlingの公式</a></span></li><li><span><a href="#Stirlingの公式を使うと簡単に解ける大学入試問題" data-toc-modified-id="Stirlingの公式を使うと簡単に解ける大学入試問題-8.3"><span class="toc-item-num">8.3&nbsp;&nbsp;</span>Stirlingの公式を使うと簡単に解ける大学入試問題</a></span></li></ul></li><li><span><a href="#ベータ函数の応用" data-toc-modified-id="ベータ函数の応用-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>ベータ函数の応用</a></span><ul class="toc-item"><li><span><a href="#1/6公式" data-toc-modified-id="1/6公式-9.1"><span class="toc-item-num">9.1&nbsp;&nbsp;</span>1/6公式</a></span></li><li><span><a href="#sinのべきの定積分" data-toc-modified-id="sinのべきの定積分-9.2"><span class="toc-item-num">9.2&nbsp;&nbsp;</span>sinのべきの定積分</a></span></li><li><span><a href="#ガンマ函数とベータ函数の関係" data-toc-modified-id="ガンマ函数とベータ函数の関係-9.3"><span class="toc-item-num">9.3&nbsp;&nbsp;</span>ガンマ函数とベータ函数の関係</a></span></li><li><span><a href="#ベータ函数の極限によるガンマ函数の表示とWallisの公式" data-toc-modified-id="ベータ函数の極限によるガンマ函数の表示とWallisの公式-9.4"><span class="toc-item-num">9.4&nbsp;&nbsp;</span>ベータ函数の極限によるガンマ函数の表示とWallisの公式</a></span></li><li><span><a href="#Gaussの超幾何函数への一般化" data-toc-modified-id="Gaussの超幾何函数への一般化-9.5"><span class="toc-item-num">9.5&nbsp;&nbsp;</span>Gaussの超幾何函数への一般化</a></span></li><li><span><a href="#Kummerの超幾何函数" data-toc-modified-id="Kummerの超幾何函数-9.6"><span class="toc-item-num">9.6&nbsp;&nbsp;</span>Kummerの超幾何函数</a></span></li></ul></li><li><span><a href="#Taylor展開" data-toc-modified-id="Taylor展開-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>Taylor展開</a></span><ul class="toc-item"><li><span><a href="#Taylorの公式の証明" data-toc-modified-id="Taylorの公式の証明-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>Taylorの公式の証明</a></span></li><li><span><a href="#Taylorの公式の剰余項の評価-(1)" data-toc-modified-id="Taylorの公式の剰余項の評価-(1)-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>Taylorの公式の剰余項の評価 (1)</a></span></li><li><span><a href="#Taylorの公式の剰余項の評価-(2)" data-toc-modified-id="Taylorの公式の剰余項の評価-(2)-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>Taylorの公式の剰余項の評価 (2)</a></span></li><li><span><a href="#有名な交代級数の例" data-toc-modified-id="有名な交代級数の例-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>有名な交代級数の例</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#三角函数の加法定理" data-toc-modified-id="三角函数の加法定理-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>三角函数の加法定理</a></span><ul class="toc-item"><li><span><a href="#三角函数の加法定理の導出は易しい" data-toc-modified-id="三角函数の加法定理の導出は易しい-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>三角函数の加法定理の導出は易しい</a></span></li><li><span><a href="#三角函数の加法定理の導出は中学校レベル" data-toc-modified-id="三角函数の加法定理の導出は中学校レベル-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>三角函数の加法定理の導出は中学校レベル</a></span></li><li><span><a href="#三角函数の加法定理は複数の方法で得られる" data-toc-modified-id="三角函数の加法定理は複数の方法で得られる-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>三角函数の加法定理は複数の方法で得られる</a></span></li><li><span><a href="#三角函数の加法定理と内積の関係" data-toc-modified-id="三角函数の加法定理と内積の関係-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>三角函数の加法定理と内積の関係</a></span></li><li><span><a href="#三角関数の加法定理と複素数" data-toc-modified-id="三角関数の加法定理と複素数-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>三角関数の加法定理と複素数</a></span></li></ul></li><li><span><a href="#3次方程式と4次方程式の解法" data-toc-modified-id="3次方程式と4次方程式の解法-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>3次方程式と4次方程式の解法</a></span><ul class="toc-item"><li><span><a href="#ある3次式の因数分解から3次方程式の解法へ" data-toc-modified-id="ある3次式の因数分解から3次方程式の解法へ-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ある3次式の因数分解から3次方程式の解法へ</a></span></li><li><span><a href="#巡回行列式" data-toc-modified-id="巡回行列式-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>巡回行列式</a></span></li><li><span><a href="#ある4次式の展開公式から4次方程式の解法へ" data-toc-modified-id="ある4次式の展開公式から4次方程式の解法へ-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>ある4次式の展開公式から4次方程式の解法へ</a></span></li><li><span><a href="#4次方程式の解法で使える4次式の行列式表示" data-toc-modified-id="4次方程式の解法で使える4次式の行列式表示-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>4次方程式の解法で使える4次式の行列式表示</a></span></li></ul></li><li><span><a href="#べき乗和とベルヌイ多項式" data-toc-modified-id="べき乗和とベルヌイ多項式-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>べき乗和とベルヌイ多項式</a></span><ul class="toc-item"><li><span><a href="#Bernoulli多項式" data-toc-modified-id="Bernoulli多項式-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Bernoulli多項式</a></span></li><li><span><a href="#Bernoulli多項式とべき乗和の関係" data-toc-modified-id="Bernoulli多項式とべき乗和の関係-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Bernoulli多項式とべき乗和の関係</a></span></li><li><span><a href="#べき乗和の直接的な取り扱い" data-toc-modified-id="べき乗和の直接的な取り扱い-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>べき乗和の直接的な取り扱い</a></span></li><li><span><a href="#第2種Stirling数とべき乗和" data-toc-modified-id="第2種Stirling数とべき乗和-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>第2種Stirling数とべき乗和</a></span></li><li><span><a href="#第2種Stirling数の二項係数を用いた表示" data-toc-modified-id="第2種Stirling数の二項係数を用いた表示-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>第2種Stirling数の二項係数を用いた表示</a></span></li><li><span><a href="#第2種Stirling数とBernoulli数の関係" data-toc-modified-id="第2種Stirling数とBernoulli数の関係-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>第2種Stirling数とBernoulli数の関係</a></span></li><li><span><a href="#べき乗和とHurwitzのゼータ函数の関係" data-toc-modified-id="べき乗和とHurwitzのゼータ函数の関係-3.7"><span class="toc-item-num">3.7&nbsp;&nbsp;</span>べき乗和とHurwitzのゼータ函数の関係</a></span></li></ul></li><li><span><a href="#平面上の点と直線の距離" data-toc-modified-id="平面上の点と直線の距離-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>平面上の点と直線の距離</a></span></li><li><span><a href="#Jensenの不等式と相加相乗調和平均" data-toc-modified-id="Jensenの不等式と相加相乗調和平均-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Jensenの不等式と相加相乗調和平均</a></span><ul class="toc-item"><li><span><a href="#Jensenの不等式" data-toc-modified-id="Jensenの不等式-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>Jensenの不等式</a></span></li><li><span><a href="#相加相乗調和平均の不等式" data-toc-modified-id="相加相乗調和平均の不等式-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>相加相乗調和平均の不等式</a></span></li><li><span><a href="#p乗平均" data-toc-modified-id="p乗平均-5.3"><span class="toc-item-num">5.3&nbsp;&nbsp;</span>p乗平均</a></span></li><li><span><a href="#p→0でのp乗平均の挙動" data-toc-modified-id="p→0でのp乗平均の挙動-5.4"><span class="toc-item-num">5.4&nbsp;&nbsp;</span>p→0でのp乗平均の挙動</a></span></li><li><span><a href="#p乗平均のpに関する依存性(1)" data-toc-modified-id="p乗平均のpに関する依存性(1)-5.5"><span class="toc-item-num">5.5&nbsp;&nbsp;</span>p乗平均のpに関する依存性(1)</a></span></li><li><span><a href="#p乗平均のpに関する依存性(2)" data-toc-modified-id="p乗平均のpに関する依存性(2)-5.6"><span class="toc-item-num">5.6&nbsp;&nbsp;</span>p乗平均のpに関する依存性(2)</a></span></li><li><span><a href="#単位円に内接する多角形の周長と面積の最大値" data-toc-modified-id="単位円に内接する多角形の周長と面積の最大値-5.7"><span class="toc-item-num">5.7&nbsp;&nbsp;</span>単位円に内接する多角形の周長と面積の最大値</a></span></li></ul></li><li><span><a href="#三角函数の微積分" data-toc-modified-id="三角函数の微積分-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>三角函数の微積分</a></span><ul class="toc-item"><li><span><a href="#高校の数学の教科書の方針" data-toc-modified-id="高校の数学の教科書の方針-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>高校の数学の教科書の方針</a></span></li><li><span><a href="#曲線の長さが速さの積分になることの応用" data-toc-modified-id="曲線の長さが速さの積分になることの応用-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>曲線の長さが速さの積分になることの応用</a></span></li><li><span><a href="#楕円積分,-楕円函数,-楕円曲線暗号" data-toc-modified-id="楕円積分,-楕円函数,-楕円曲線暗号-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>楕円積分, 楕円函数, 楕円曲線暗号</a></span></li></ul></li><li><span><a href="#Gauss積分の大学入試問題" data-toc-modified-id="Gauss積分の大学入試問題-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Gauss積分の大学入試問題</a></span></li><li><span><a href="#ガンマ函数の応用" data-toc-modified-id="ガンマ函数の応用-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ガンマ函数の応用</a></span><ul class="toc-item"><li><span><a href="#多項式×指数函数の積分" data-toc-modified-id="多項式×指数函数の積分-8.1"><span class="toc-item-num">8.1&nbsp;&nbsp;</span>多項式×指数函数の積分</a></span></li><li><span><a href="#Stirlingの公式" data-toc-modified-id="Stirlingの公式-8.2"><span class="toc-item-num">8.2&nbsp;&nbsp;</span>Stirlingの公式</a></span></li><li><span><a href="#Stirlingの公式を使うと簡単に解ける大学入試問題" data-toc-modified-id="Stirlingの公式を使うと簡単に解ける大学入試問題-8.3"><span class="toc-item-num">8.3&nbsp;&nbsp;</span>Stirlingの公式を使うと簡単に解ける大学入試問題</a></span></li></ul></li><li><span><a href="#ベータ函数の応用" data-toc-modified-id="ベータ函数の応用-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>ベータ函数の応用</a></span><ul class="toc-item"><li><span><a href="#1/6公式" data-toc-modified-id="1/6公式-9.1"><span class="toc-item-num">9.1&nbsp;&nbsp;</span>1/6公式</a></span></li><li><span><a href="#sinのべきの定積分" data-toc-modified-id="sinのべきの定積分-9.2"><span class="toc-item-num">9.2&nbsp;&nbsp;</span>sinのべきの定積分</a></span></li><li><span><a href="#ガンマ函数とベータ函数の関係" data-toc-modified-id="ガンマ函数とベータ函数の関係-9.3"><span class="toc-item-num">9.3&nbsp;&nbsp;</span>ガンマ函数とベータ函数の関係</a></span></li><li><span><a href="#ベータ函数の極限によるガンマ函数の表示とWallisの公式" data-toc-modified-id="ベータ函数の極限によるガンマ函数の表示とWallisの公式-9.4"><span class="toc-item-num">9.4&nbsp;&nbsp;</span>ベータ函数の極限によるガンマ函数の表示とWallisの公式</a></span></li><li><span><a href="#Gaussの超幾何函数への一般化" data-toc-modified-id="Gaussの超幾何函数への一般化-9.5"><span class="toc-item-num">9.5&nbsp;&nbsp;</span>Gaussの超幾何函数への一般化</a></span></li><li><span><a href="#Kummerの超幾何函数" data-toc-modified-id="Kummerの超幾何函数-9.6"><span class="toc-item-num">9.6&nbsp;&nbsp;</span>Kummerの超幾何函数</a></span><ul class="toc-item"><li><span><a href="#ベータ函数の現れ方(1)" data-toc-modified-id="ベータ函数の現れ方(1)-9.6.1"><span class="toc-item-num">9.6.1&nbsp;&nbsp;</span>ベータ函数の現れ方(1)</a></span></li><li><span><a href="#ベータ函数の現れ方(2)" data-toc-modified-id="ベータ函数の現れ方(2)-9.6.2"><span class="toc-item-num">9.6.2&nbsp;&nbsp;</span>ベータ函数の現れ方(2)</a></span></li><li><span><a href="#ガンマ函数の基礎" data-toc-modified-id="ガンマ函数の基礎-9.6.3"><span class="toc-item-num">9.6.3&nbsp;&nbsp;</span>ガンマ函数の基礎</a></span></li><li><span><a href="#Gaussの超幾何函数の現れ方(1)" data-toc-modified-id="Gaussの超幾何函数の現れ方(1)-9.6.4"><span class="toc-item-num">9.6.4&nbsp;&nbsp;</span>Gaussの超幾何函数の現れ方(1)</a></span></li><li><span><a href="#Gaussの超幾何函数の現れ方(2)" data-toc-modified-id="Gaussの超幾何函数の現れ方(2)-9.6.5"><span class="toc-item-num">9.6.5&nbsp;&nbsp;</span>Gaussの超幾何函数の現れ方(2)</a></span></li><li><span><a href="#Kummerの超幾何函数の現れ方" data-toc-modified-id="Kummerの超幾何函数の現れ方-9.6.6"><span class="toc-item-num">9.6.6&nbsp;&nbsp;</span>Kummerの超幾何函数の現れ方</a></span></li><li><span><a href="#ガンマ函数と正弦函数の関係" data-toc-modified-id="ガンマ函数と正弦函数の関係-9.6.7"><span class="toc-item-num">9.6.7&nbsp;&nbsp;</span>ガンマ函数と正弦函数の関係</a></span></li><li><span><a href="#Hurwitzのゼータ函数とガンマ函数の関係" data-toc-modified-id="Hurwitzのゼータ函数とガンマ函数の関係-9.6.8"><span class="toc-item-num">9.6.8&nbsp;&nbsp;</span>Hurwitzのゼータ函数とガンマ函数の関係</a></span></li></ul></li></ul></li><li><span><a href="#Taylor展開" data-toc-modified-id="Taylor展開-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>Taylor展開</a></span><ul class="toc-item"><li><span><a href="#Taylorの公式の証明" data-toc-modified-id="Taylorの公式の証明-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>Taylorの公式の証明</a></span></li><li><span><a href="#Taylorの公式の剰余項の評価-(1)" data-toc-modified-id="Taylorの公式の剰余項の評価-(1)-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>Taylorの公式の剰余項の評価 (1)</a></span></li><li><span><a href="#Taylorの公式の剰余項の評価-(2)" data-toc-modified-id="Taylorの公式の剰余項の評価-(2)-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>Taylorの公式の剰余項の評価 (2)</a></span></li><li><span><a href="#有名な交代級数の例" data-toc-modified-id="有名な交代級数の例-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>有名な交代級数の例</a></span></li></ul></li></ul></div>
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-using Logging; disable_logging(Logging.Warn)
-using Printf
-using Base64
+```julia
+# Google Colabと自分のパソコンの両方で使えるようにするための工夫
 
-using Plots
-pythonplot(fmt=:png)
+using Pkg
 
-showimg(mime, fn; scale="") = open(fn) do f
-    base64 = base64encode(f)
-    option = ifelse(scale == "", "", """ width="$scale" """)
-    display("text/html", """<img src="data:$mime;base64,$base64" $option />""")
+"""すでにPkg.add済みのパッケージのリスト"""
+_packages_added = [sort!(readdir(Sys.STDLIB));
+    sort!([info.name for (uuid, info) in Pkg.dependencies() if info.is_direct_dep])]
+
+"""_packages_added内にないパッケージをPkg.addする"""
+add_pkg_if_not_added_yet(pkg) = if isnothing(Base.find_package(pkg))
+    println(stderr, "# $(pkg).jl is not added yet, so let's add it.")
+    Pkg.add(pkg)
 end
 
+"""expr::Exprからusing内の`.`を含まないモジュール名を抽出"""
+function find_using_pkgs(expr::Expr)
+    pkgs = String[]
+    function traverse(expr::Expr)
+        if expr.head == :using
+            for arg in expr.args
+                if arg.head == :. && length(arg.args) == 1
+                    push!(pkgs, string(arg.args[1]))
+                elseif arg.head == :(:) && length(arg.args[1].args) == 1
+                    push!(pkgs, string(arg.args[1].args[1]))
+                end
+            end
+        else
+            for arg in expr.args arg isa Expr && traverse(arg) end
+        end
+    end
+    traverse(expr)
+    pkgs
+end
+
+"""必要そうなPkg.addを追加するマクロ"""
+macro autoadd(expr)
+    pkgs = find_using_pkgs(expr)
+    :(add_pkg_if_not_added_yet.($(pkgs)); $expr)
+end
+```
+
+```julia slideshow={"slide_type": "subslide"}
+using LinearAlgebra: det
+using Printf
+
+@autoadd begin
+using Plots
+default(fmt=:png)
 using SymPy
 using LaTeXStrings
 using SpecialFunctions
-using QuadGK
-using Elliptic.Jacobi: cd, sn
-using LinearAlgebra: det
-```
-
-```julia
-# Override the Base.show definition of SymPy.jl:
-# https://github.com/JuliaPy/SymPy.jl/blob/29c5bfd1d10ac53014fa7fef468bc8deccadc2fc/src/types.jl#L87-L105
-
-@eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::SymbolicObject)
-    print(io, as_markdown("\\displaystyle " * sympy.latex(x, mode="plain", fold_short_frac=false)))
-end
-@eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::AbstractArray{Sym})
-    function toeqnarray(x::Vector{Sym})
-        a = join(["\\displaystyle " * sympy.latex(x[i]) for i in 1:length(x)], "\\\\")
-        """\\left[ \\begin{array}{r}$a\\end{array} \\right]"""
-    end
-    function toeqnarray(x::AbstractArray{Sym,2})
-        sz = size(x)
-        a = join([join("\\displaystyle " .* map(sympy.latex, x[i,:]), "&") for i in 1:sz[1]], "\\\\")
-        "\\left[ \\begin{array}{" * repeat("r",sz[2]) * "}" * a * "\\end{array}\\right]"
-    end
-    print(io, as_markdown(toeqnarray(x)))
+using Elliptic
 end
 ```
 
@@ -156,17 +167,13 @@ $$
 以下の図を見て欲しい.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/trigonometric1.jpg", scale="40%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/trigonometric1.jpg" width=40%>
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
 縦の青の点線が黒線と重なっていることを嫌うなら次のように図を描けばよい.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/trigonometric2.jpg", scale="40%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/trigonometric2.jpg" width=40%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### 三角函数の加法定理の導出は中学校レベル
@@ -184,9 +191,7 @@ $$
 以下の図の問題を見て欲しい. それは実質的に三角函数の加法定理を示せという内容の問題である. そのことから, $\cos$, $\sin$ という記号を使わずに, 三角函数の加法定理と同等のことを述べることができることがわかる. そして, その問題の解答は完全に中学校数学の範囲内の議論で可能である. 
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/trigonometric3.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/trigonometric3.jpg" width=80%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### 三角函数の加法定理は複数の方法で得られる
@@ -194,9 +199,7 @@ showimg("image/jpeg", "images/trigonometric3.jpg", scale="80%")
 自力で何も知らない状態から三角函数の加法定理を証明しようとすれば, 図の描き方に複数の選択肢があることに気付く. 実際にやってみればわかるようにどのように図を描いても, 結果的に三角函数の加法定理が得られる. 要するに, 三角函数の加法定理の証明のためには, 知らなければできそうもないテクニカルな議論をする必要はなく, どのように図を描いても証明できる. ああやっても証明できるし, こうやっても証明できる. そのようなことに気付けば, 三角函数の加法定理は真に易しい結果であることを納得できるはずである.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/trigonometric4.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/trigonometric4.jpg" width=80%>
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
 $\sin$ の倍角の公式はこれの右上の図を使うと容易に証明可能である. 右上の図で $\alpha=\beta$ のとき $a=1$ となるので, 
@@ -1790,7 +1793,7 @@ a, b, c = 0.8, 0.5, 1.0
 f(x,y) = a*x + b*y + c
 x = -10:0.1:5
 y = -10:0.1:15
-surface(x, y, f.(x',y), colorbar=false, size=(400,300))
+surface(x, y, f.(x',y), colorbar=false, size=(400, 400))
 plot!(x, @.(-(a*x + c)/b), zero(x); label="", c=:black, lw=0.5)
 plot!(; ylim=extrema(y))
 title!("\$z = $a x + $b y + $c\$")
@@ -1801,7 +1804,7 @@ a, b, c = 0.8, 0.5, 1.0
 f(x,y) = a*x + b*y + c
 x = -10:0.1:5
 y = -10:0.1:15
-surface(x, y, abs.(f.(x',y)), colorbar=false, size=(400,300))
+surface(x, y, abs.(f.(x',y)), colorbar=false, size=(400, 400))
 plot!(title="\$z = |$a x + $b y + $c|\$")
 ```
 
@@ -2324,9 +2327,7 @@ $$
 しかし, 以上の方針は次の節の方針と比較すると, 非常に遠回りになっており, 弧度法の意味での角度の定義(単位円弧の長さで角度を定義すること)が不明瞭になっているという問題がある.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Jikkyo20140125limitsinc.jpg", scale="60%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125limitsinc.jpg" width=60%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### 曲線の長さが速さの積分になることの応用
@@ -2340,13 +2341,10 @@ $$
 と表せることが説明されている.  $t$ を時間変数とみなすとき, 点 $(x(t),y(t))$ の運動の時刻 $t$ における速度ベクトルは $(x'(t), y'(t))$ になり, 速さは $\sqrt{x'(t)^2 + y'(t)^2}$ と書ける. 上の公式は曲線の長さを速さの積分で表せることを意味している.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/Jikkyo20140125ArcLength1.jpg", scale="60%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125ArcLength1.jpg" width=60%>
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Jikkyo20140125ArcLength2.jpg", scale="60%")
-```
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125ArcLength2.jpg" width=60%>
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
 これを使えば(曲線の長さを上の公式で定義すれば), 三角函数の微分の導出を非常に簡潔な議論で行うことができる. そのことを以下で説明しよう.
@@ -2438,13 +2436,10 @@ latexstring(raw"\ds\left(\frac{dX}{dt}\right)^2+\left(\frac{dY}{dt}\right)^2=", 
 解答略.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/sin-sinh.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/sin-sinh.jpg" width=80%>
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/hyperbolicsine.jpg", scale="80%")
-```
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/hyperbolicsine.jpg" width=80%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### 楕円積分, 楕円函数, 楕円曲線暗号
@@ -2535,7 +2530,7 @@ plot!(-x, y, color=:red)
 u = 0:0.01:3
 P2 = plot(title="(cd u, sn u) for \$k^2=$k²\$", titlefontsize=10)
 plot!(aspectratio=1, legend=false)
-plot!(cd.(u,k²), sn.(u,k²))
+plot!(Jacobi.cd.(u,k²), Jacobi.sn.(u,k²))
 
 plot(P1, P2, size=(500, 260))
 ```
@@ -2546,8 +2541,8 @@ plot(P1, P2, size=(500, 260))
 k² = -20
 u = -5:0.01:5
 plot(title="Jacobi's elliptic functions for \$k^2=$k²\$", titlefontsize=10)
-plot!(u, cd.(u,k²), label="cd u", ls=:dash)
-plot!(u, sn.(u,k²), label="sn u")
+plot!(u, Jacobi.cd.(u,k²), label="cd u", ls=:dash)
+plot!(u, Jacobi.sn.(u,k²), label="sn u")
 plot!(size=(500, 200), legend=:bottomleft)
 ```
 
@@ -2578,9 +2573,7 @@ $$
 の高校数学の範囲内での証明である. 高校数学IIIの教科書にも以下のような問題が載っている. (前者の問題はGauss積分と関係しており, 後者の問題はゼータ函数と関係している.)
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Jikkyo20140125GaussZeta.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125GaussZeta.jpg" width=80%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 問題文では曲線 $y=e^{-x^2}$ を $y$ 軸のまわりに回転しているが, 以下では $xyz$ 空間内の $xz$ 平面上の曲線 $z=e^{-x^2}$ を $z$ 軸のまわりに回転して得られる曲面を扱う. さらに $a$ の代わりに $r$ と書く. 
@@ -2684,22 +2677,22 @@ r = 1/√2
 
 ```julia slideshow={"slide_type": "-"}
 # z = e^{-(x^2+y^2)} のグラフ
-surface(x, y, f.(x', y), size=(400,250), colorbar=false)
+surface(x, y, f.(x', y), size=(400,300), colorbar=false)
 ```
 
 ```julia slideshow={"slide_type": "-"}
 # A(r) のグラフ (r=1/√2)
-surface(x, y, g.(x', y, r), size=(400,250), colorbar=false)
+surface(x, y, g.(x', y, r), size=(400, 300), colorbar=false)
 ```
 
 ```julia slideshow={"slide_type": "-"}
 # B(r) のグラフ (r=1/√2)
-surface(x, y, h.(x', y, r), size=(400,250), colorbar=false)
+surface(x, y, h.(x', y, r), size=(400, 300), colorbar=false)
 ```
 
 ```julia slideshow={"slide_type": "-"}
 # A(√2 r) のグラフ (r=1/√2)
-surface(x, y, g.(x', y, √2*r), size=(400,250), colorbar=false)
+surface(x, y, g.(x', y, √2*r), size=(400, 300), colorbar=false)
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -2723,7 +2716,13 @@ $$
 \int x^n e^{-x}\,dx
 $$
 
-を扱う. 部分積分を次々に使うと,
+を扱う. $(-e^{-x})'=e^{-x}$ を用いた部分積分によって得られる公式
+
+$$
+\int x^k e^{-x}\,dx = -x^k e^{-x} + k\int x^{k-1}e^{-x}\,dx
+$$
+
+の $k=n,n-1,n-2,\ldots$ の場合を次々に使うと, もしくは $(-e^{-x})'=e^{-x}$ を用いた部分積分を次々に使うと,
 
 $$
 \begin{aligned}
@@ -2731,15 +2730,19 @@ $$
 \int x^n e^{-x}\,dx 
 \\ &= -x^n e^{-x} + n\int x^{n-1}e^{-x}\,dx
 \\ &= -x^n e^{-x} - nx^{n-1}e^{-x} 
-\\ &+ n(n-1)\int x^{n-2}e^{-x}\,dx
+%\\ &
++ n(n-1)\int x^{n-2}e^{-x}\,dx
 \\ &= -x^n e^{-x} - nx^{n-1}e^{-x} - n(n-1)x^{n-2}e^{-x} 
-\\ &\qquad + n(n-1)(n-2)\int x^{n-3}e^{-x}\,dx
+%\\ &\qquad 
++ n(n-1)(n-2)\int x^{n-3}e^{-x}\,dx
 \\ &=
 \cdots\cdots\cdots\cdots
 \\ &= -x^n e^{-x} - nx^{n-1}e^{-x} - n(n-1)x^{n-2}e^{-x} - \cdots 
-\\ &\qquad + n(n-1)\cdots 2 x e^{-x} - n!e^{-x}
-\\ &= -(x^n + nx^{n-1}e^{-x} + n(n-1)x^{n-2}+ \cdots 
-\\ &\qquad+ n(n-1)\cdots 2 x + n!)e^{-x}.
+%\\ &\qquad 
++ n(n-1)\cdots 2 x e^{-x} - n!e^{-x}
+\\ &= -(x^n + nx^{n-1} + n(n-1)x^{n-2}+ \cdots 
+%\\ &\qquad
++ n(n-1)\cdots 2 x + n!)e^{-x}.
 \end{aligned}
 $$
 
@@ -2778,9 +2781,7 @@ $$
 の形で使われることも多い. $\QED$
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Jikkyo20140125GammaLaplace.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125GammaLaplace.jpg" width=80%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### Stirlingの公式
@@ -2850,6 +2851,38 @@ $$
 
 これを**Stirlingの公式**(スターリングの公式)と呼ぶ. ここで $a_n\sim b_n$ は $a_n/b_n\to 1$ となることを意味する.
 <!-- #endregion -->
+
+__ガンマ函数の被積分関数のグラフ__
+
+```julia
+f(x, n) = exp(-x) * x^n
+PP = []
+for n in (10, 20, 50, 100)
+    P = plot(x -> f(x, n), 0, 2.5n; title="\$e^{-x} x^{$n}\$", legend=false)
+    push!(PP, P)
+end
+plot(PP...; layout=(2, 2))
+```
+
+```julia
+# 上の方法だと n = 200 で破綻する
+f(x, n) = exp(-x) * x^n
+n = 200
+@show f(n, n)
+plot(x -> f(x, n), 0, 2n; title="\$e^{-x} x^{$n}\$", size=(300, 200), legend=false)
+```
+
+```julia
+# 対数から対数の最大値を引き, expすると正常に表示される.
+logf(x, n) = -x + n*log(x)  # = log(f(x)) # これは x = n で最大になる
+g(x, n) = exp(logf(x, n) - logf(n, n)) # = f(x, n) / f(n, n) = f(x, n) / (e^{-n} n^n))
+PP = []
+for n in (100, 200, 500, 1000)
+    P = plot(x -> g(x, n), 0, 2n; title="\$e^{-x} x^{$n} / \\max\$", legend=false)
+    push!(PP, P)
+end
+plot(PP...; layout=(2, 2))
+```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 **問題:** Stirlingの公式の誤差が $n=1,2,\ldots,10$ でどの程度であるかを確認せよ. $\QED$
@@ -2966,9 +2999,7 @@ $$
 高校の教科書にもこの後者の問題が掲載されている.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Jikkyo20140125Stirling.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125Stirling.jpg" width=80%>
 
 ```julia slideshow={"slide_type": "subslide"}
 # 前者の問題の SymPy による解
@@ -3071,9 +3102,7 @@ $$
 **問題:** 高校の教科書にある次の問題をベータ函数を用いて解け.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "-"}
-showimg("image/jpeg", "images/Jikkyo20140125Beta.jpg", scale="80%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125Beta.jpg" width=80%>
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
 **解答例:** 求めるべき面積を $S$ と書くと, 
@@ -3258,13 +3287,10 @@ $$
 正規分布の確率密度函数を理解するためには, Gauss積分の公式を理解しておかないといけない. Stirlingの公式の導出でもGauss積分の公式を利用した. Gauss積分は多くの数学的場面に普遍的に現われる重要な積分である.
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Gamma-Beta-01.jpg", scale="60%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Gamma-Beta-01.jpg" width=60%>
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Gamma-Beta-02.jpg", scale="60%")
-```
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Gamma-Beta-02.jpg" width=60%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### ベータ函数の極限によるガンマ函数の表示とWallisの公式
@@ -3350,9 +3376,7 @@ $$
 **ヒント:** すでに証明した前者のWallisの公式を使えば後者を示せる. $B(1/2,n+1)/B(1/2,n+1/2)\to 1$ を書き直しても後者のWallisの公式が得られる. もしくは高校の教科書の掲載されている $\sin$ のべきの $0$ から $\pi/2$ までの定積分の計算結果と上で述べたことを合わせて使ってみよ. 偶数べきと奇数べきの比を考えよ. $\QED$
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-showimg("image/jpeg", "images/Jikkyo20140125Wallis.jpg", scale="50%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125Wallis.jpg" width=50%>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 **参考:** 以上で扱った大学レベルの微分積分学については
@@ -3450,45 +3474,48 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 * https://twitter.com/genkuroki/status/1093510712125583360
 <!-- #endregion -->
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>ベータ函数の現れ方(1)</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-01.jpg", scale="50%")
-```
+#### ベータ函数の現れ方(1)
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>ベータ函数の現れ方(2)</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-02.jpg", scale="50%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-02.jpg" width=50%>
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>ガンマ函数の基礎</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-03.jpg", scale="80%")
-```
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>Gaussの超幾何函数の現れ方(1)</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-04.jpg", scale="60%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-01.jpg" width=50%>
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>Gaussの超幾何函数の現れ方(2)</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-05.jpg", scale="70%")
-```
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>Kummerの超幾何函数の現れ方</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-06.jpg", scale="70%")
-```
+#### ベータ函数の現れ方(2)
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>ガンマ函数と正弦函数の関係</h4>")
-showimg("image/jpeg", "images/Beta-Gamma-Gauss-Kummer-07.jpg", scale="70%")
-```
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-02.jpg" width=50%>
 
-```julia slideshow={"slide_type": "subslide"}
-display("text/html", "<h4>Hurwitzのゼータ函数とガンマ函数の関係</h4>")
-showimg("image/jpeg", "images/Hurwitz-Gamma.jpg", scale="70%")
-```
+
+#### ガンマ函数の基礎
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-03.jpg" width=80%>
+
+
+#### Gaussの超幾何函数の現れ方(1)
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-04.jpg" width=60%>
+
+
+#### Gaussの超幾何函数の現れ方(2)
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-05.jpg" width=70%>
+
+
+#### Kummerの超幾何函数の現れ方
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-06.jpg" width=70%>
+
+
+#### ガンマ函数と正弦函数の関係
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-07.jpg" width=70%>
+
+<!-- #region {"slideshow": {"slide_type": "subslide"}} -->
+#### Hurwitzのゼータ函数とガンマ函数の関係
+
+<img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Hurwitz-Gamma.jpg" width=70%>
+<!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## Taylor展開
@@ -3586,7 +3613,7 @@ Taylorの公式において $\ds\frac{(x-a)^k}{k!}$ の項が出て来る理由�
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 ### Taylorの公式の剰余項の評価 (1)
 
-$R_n$ の絶対値の大きさの評価不等式を作ろう. ある定数 $M_n$ が存在して, $a$ と $x$ のあいだの実数 $x_n$ について  $|f^{(n)}(x_n)|\leqq M_n$ が成立しているとする. このとき,
+$R_n$ の絶対値の大きさの評価不等式を作ろう. ある定数 $M_n$ が存在して, $a$ と $x$ のあいだのすべての実数 $x_n$ について  $|f^{(n)}(x_n)|\leqq M_n$ が成立しているとする. このとき,
 
 $$
 |R_n| \leqq \left|\int_a^x dx_1\int_a^{x_1}dx_2\cdots\int_a^{x_{n-1}}dx_n\,M_n\right| =
@@ -3659,11 +3686,11 @@ $$
 ゆえに,
 
 $$
-\sum_{k=0}^\infty f^{(k)}(a)\frac{(x-a)^k}{k!} + A\frac{(x-a)^n}{n!}
+\sum_{k=0}^{n-1} f^{(k)}(a)\frac{(x-a)^k}{k!} + A\frac{(x-a)^n}{n!}
 \leqq
 f(x)
 \leqq
-\sum_{k=0}^\infty f^{(k)}(a)\frac{(x-a)^k}{k!} + B\frac{(x-a)^n}{n!}.
+\sum_{k=0}^{n-1} f^{(k)}(a)\frac{(x-a)^k}{k!} + B\frac{(x-a)^n}{n!}.
 $$
 
 $A$, $B$ の値を具体的に求められる場合にはこの不等式を用いて $f(x)$ が含まれる範囲が分かる.
@@ -3682,7 +3709,7 @@ $$
 $f(t)=\sqrt{t}$, $0<a<x$ と仮定する. このとき, 
 
 $$
-f'(t) = \frac{1}{2}t^{-1\2} = \dfrac{1}{2\sqrt{t}}, \quad
+f'(t) = \frac{1}{2}t^{-1/2} = \dfrac{1}{2\sqrt{t}}, \quad
 f''(t) = -\frac{1}{4}t^{-3/2} = -\dfrac{1}{4t\sqrt{t}}
 $$
 
@@ -3709,7 +3736,7 @@ $$
 3 + \frac{1}{2\cdot 3} - \frac{1}{8\cdot 9\cdot 3}
 \leqq
 \sqrt{10}
-<
+\leqq
 3 + \frac{1}{2\cdot 3} - \frac{1}{8\cdot 10\cdot 4}.
 $$
 
@@ -3726,6 +3753,10 @@ $$
 @show 3 + 1/(2*3) - 1/(8*9*3)
 @show 3 + 1/(2*3) - 1/(8*10*4)
 @show √10;
+```
+
+```julia
+√9.9
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
