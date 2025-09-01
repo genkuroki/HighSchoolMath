@@ -18,10 +18,14 @@ jupyter:
 # 算数数学教育の暗黒面
 
 * 黒木玄 (Gen Kuroki)
-* Copyright 2018, 2020, 2021, 2022, 2023, 2024 Gen Kuroki
+* Copyright 2018, 2020, 2021, 2022, 2023, 2024, 2025 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
-* 更新: 2018-08-21～2018-09-11, 2020-08-28, 2021-09-01, 2022-08-31, 2023-08-31～2023-09-07, 2024-08-28
+* 更新: 2018-08-21～2018-09-11, 2020-08-28, 2021-09-01, 2022-08-31, 2023-08-31～2023-09-07, 2024-08-28, 2025-09-02
+
+このファイルは次の場所で実行できる:
+
+* <a href = "https://colab.research.google.com/github/genkuroki/HighSchoolMath/blob/master/MathEduDarkSide.ipynb">Google Colabでこのノートを開く</a> (ランライム→すべてのセルを実行)
 
 このファイルは次の場所できれいに閲覧できる:
 
@@ -76,51 +80,19 @@ $
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
-using Logging; disable_logging(Logging.Warn)
-using Printf
-using Base64
-
-using Plots
-pyplot(fmt=:png)
-
-function showimg(mime, fns...; scale="")
+function showimg(mime, fns...; scale="", 
+        head = "https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/")
     option = ifelse(scale == "", "", """ width="$scale" """)
     html = ""
     for fn in fns
-        open(fn) do f
-            base64 = base64encode(f)
-            html *= """<img src="data:$mime;base64,$base64" $option />"""
-        end
+        html *= """<img src="$head/$fn" $option />"""
     end
     display("text/html", html)
 end
 
+using Plots
+default(fmt=:png)
 using SymPy
-using LaTeXStrings
-using SpecialFunctions
-using QuadGK
-using Elliptic.Jacobi: cd, sn
-```
-
-```julia
-# Override the Base.show definition of SymPy.jl:
-# https://github.com/JuliaPy/SymPy.jl/blob/29c5bfd1d10ac53014fa7fef468bc8deccadc2fc/src/types.jl#L87-L105
-
-# @eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::SymbolicObject)
-#     print(io, as_markdown("\\displaystyle " * sympy.latex(x, mode="plain", fold_short_frac=false)))
-# end
-# @eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::AbstractArray{Sym})
-#     function toeqnarray(x::Vector{Sym})
-#         a = join(["\\displaystyle " * sympy.latex(x[i]) for i in 1:length(x)], "\\\\")
-#         """\\left[ \\begin{array}{r}$a\\end{array} \\right]"""
-#     end
-#     function toeqnarray(x::AbstractArray{Sym,2})
-#         sz = size(x)
-#         a = join([join("\\displaystyle " .* map(sympy.latex, x[i,:]), "&") for i in 1:sz[1]], "\\\\")
-#         "\\left[ \\begin{array}{" * repeat("r",sz[2]) * "}" * a * "\\end{array}\\right]"
-#     end
-#     print(io, as_markdown(toeqnarray(x)))
-# end
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
