@@ -28,6 +28,10 @@ jupyter:
 
 タイポや自明な誤りは自分で訂正して読むこと. 本質的な誤りがあれば著者に教えて欲しい.
 
+このファイルは次の場所で実行できる:
+
+* <a href = "https://colab.research.google.com/github/genkuroki/HighSchoolMath/blob/master/HighSchoolMath.ipynb">Google Colabでこのノートを開く</a> (ランライム→すべてのセルを実行)
+
 このファイルは次の場所できれいに閲覧できる:
 
 * <a href="http://nbviewer.jupyter.org/github/genkuroki/HighSchoolMath/blob/master/HighSchoolMath.ipynb">高校数学の話題 HTML版</a>
@@ -422,7 +426,7 @@ $$
 
 x, y, z = symbols("x y z")
 ω₃ = factor((-1+√Sym(-3))/2)
-latexstring(raw"\ds ω =", sympy.latex(ω₃))
+latexstring(raw"\displaystyle ω =", sympy.latex(ω₃))
 ```
 
 ```julia slideshow={"slide_type": "-"}
@@ -462,7 +466,7 @@ p, q = symbols("p q")
 equ = m^2-q*m+p^3
 sol = factor.(solve(equ, m))
 latexstring(sympy.latex(equ), "=0") |> display
-latexstring(raw"\ds m = ", sympy.latex(sol[1]), ",", sympy.latex(sol[2]))
+latexstring(raw"\displaystyle m = ", sympy.latex(sol[1]), ",", sympy.latex(sol[2]))
 ```
 
 ```julia slideshow={"slide_type": "-"}
@@ -480,9 +484,9 @@ res = @.(simplify((f->f(ω=>ω₃))(equ)))
 for i in 1:3
     latexstring("x_{$i}^3-3px_{$i}+q=", sympy.latex(res[i])) |> display
 end
-latexstring(raw"\ds x_1 = ", sympy.latex(X[1])) |> display
-latexstring(raw"\ds x_2 = ", sympy.latex(X[2])) |> display
-latexstring(raw"\ds x_3 = ", sympy.latex(X[3])) |> display
+latexstring(raw"\displaystyle x_1 = ", sympy.latex(X[1])) |> display
+latexstring(raw"\displaystyle x_2 = ", sympy.latex(X[2])) |> display
+latexstring(raw"\displaystyle x_3 = ", sympy.latex(X[3])) |> display
 ```
 
 ```julia slideshow={"slide_type": "-"}
@@ -493,9 +497,9 @@ equ = x^3-3p*x+q
 sol = solve(equ, x)
 latexstring("x^3-3px+q=0") |> display
 display(L"x = x_1,x_2,x_3")
-latexstring(raw"\ds x_1 = ", sympy.latex(sol[1])) |> display
-latexstring(raw"\ds x_2 = ", sympy.latex(sol[2])) |> display
-latexstring(raw"\ds x_3 = ", sympy.latex(sol[3])) |> display
+latexstring(raw"\displaystyle x_1 = ", sympy.latex(sol[1])) |> display
+latexstring(raw"\displaystyle x_2 = ", sympy.latex(sol[2])) |> display
+latexstring(raw"\displaystyle x_3 = ", sympy.latex(sol[3])) |> display
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -2394,7 +2398,7 @@ y = t
 equ = diff(x, t)^2 + diff(y, t)^2
 sol = simplify(equ)
 latexstring("x=", sympy.latex(x), raw",\quad y=", sympy.latex(y)) |> display
-latexstring(raw"\ds\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2=", sympy.latex(sol))
+latexstring(raw"\displaystyle\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2=", sympy.latex(sol))
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -2426,8 +2430,8 @@ latexstring(raw"\text{solution:}\; x = ", sympy.latex(s[2][1]), ", y = ", sympy.
 ```julia slideshow={"slide_type": "-"}
 X, Y= s[2][1], s[2][2]
 sol = simplify(diff(X,t)^2 + diff(Y,t)^2)
-latexstring(raw"\ds X=", sympy.latex(X), raw",\quad Y=", sympy.latex(Y)) |> display
-latexstring(raw"\ds\left(\frac{dX}{dt}\right)^2+\left(\frac{dY}{dt}\right)^2=", sympy.latex(sol))
+latexstring(raw"\displaystyle X=", sympy.latex(X), raw",\quad Y=", sympy.latex(Y)) |> display
+latexstring(raw"\displaystyle\left(\frac{dX}{dt}\right)^2+\left(\frac{dY}{dt}\right)^2=", sympy.latex(sol))
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -3007,7 +3011,7 @@ $$
 n = symbols("n", positive=true)
 binom(n,k) = gamma(n+1)/(gamma(k+1)*gamma(n-k+1))
 sol = limit((binom(3n,n)/binom(2n,n))^(1/n), n=>oo)
-latexstring(raw"\ds\lim_{n\to\infty}\left(\frac{\binom{3n}{n}}{\binom{2n}{n}}\right)^{1/n}=", sympy.latex(sol))
+latexstring(raw"\displaystyle\lim_{n\to\infty}\left(\frac{\binom{3n}{n}}{\binom{2n}{n}}\right)^{1/n}=", sympy.latex(sol))
 ```
 
 ```julia slideshow={"slide_type": "-"}
@@ -3015,7 +3019,7 @@ latexstring(raw"\ds\lim_{n\to\infty}\left(\frac{\binom{3n}{n}}{\binom{2n}{n}}\ri
 
 n = symbols("n", positive=true)
 sol = limit((1/n)*(gamma(2n+1)/gamma(n+1))^(1/n), n=>oo)
-latexstring(raw"\ds\lim_{n\to\infty}\frac{1}{n}\left(\frac{(2n)!}{n!}\right)^{1/n}=", sympy.latex(sol))
+latexstring(raw"\displaystyle\lim_{n\to\infty}\frac{1}{n}\left(\frac{(2n)!}{n!}\right)^{1/n}=", sympy.latex(sol))
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -3143,7 +3147,7 @@ $$
 ```julia slideshow={"slide_type": "-"}
 x = symbols("x", real=true)
 sol = 2integrate(√(x*(1-x)^2), (x,0,1))
-latexstring(raw"\ds 2\int_0^1\sqrt{x(1-x^2)}\,dx=", sympy.latex(sol))
+latexstring(raw"\displaystyle 2\int_0^1\sqrt{x(1-x^2)}\,dx=", sympy.latex(sol))
 ```
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
