@@ -16,8 +16,8 @@ jupyter:
 # 高校数学の話題2
 
 * 黒木玄 (Gen Kuroki)
-* 2022-08-30, 2024-08-29
-* Copyright 2022, 2024 Gen Kuroki
+* 2022-08-30, 2024-08-29, 2025-09-02
+* Copyright 2022, 2024, 2025 Gen Kuroki
 * License: MIT https://opensource.org/licenses/MIT
 * Repository: https://github.com/genkuroki/HighSchoolMath
 $
@@ -39,49 +39,66 @@ $
 
 このノートは未完成であり, 後で新たな話題を追加する可能性がある.
 
+このファイルは次の場所で実行できる:
+
+* <a href = "https://colab.research.google.com/github/genkuroki/HighSchoolMath/blob/master/HighSchoolMath2.ipynb">Google Colabでこのノートを開く</a> (ランライム→すべてのセルを実行)
+
 <!-- #region toc=true -->
 <h1>目次<span class="tocSkip"></span></h1>
 <div class="toc"><ul class="toc-item"><li><span><a href="#ポリアの壺" data-toc-modified-id="ポリアの壺-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>ポリアの壺</a></span><ul class="toc-item"><li><span><a href="#問題：n回目に赤玉が出る確率" data-toc-modified-id="問題：n回目に赤玉が出る確率-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>問題：n回目に赤玉が出る確率</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式による導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式による導出-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式による導出</a></span></li><li><span><a href="#解答例：n回目に赤玉が出る確率の漸化式を使わない導出" data-toc-modified-id="解答例：n回目に赤玉が出る確率の漸化式を使わない導出-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>解答例：n回目に赤玉が出る確率の漸化式を使わない導出</a></span></li><li><span><a href="#ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)" data-toc-modified-id="ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>ポリアの壺の大学入試問題の例：名古屋大学2007年文系前期3(b)</a></span></li><li><span><a href="#問題：名古屋大学2007年文系前期3(b)の一般化" data-toc-modified-id="問題：名古屋大学2007年文系前期3(b)の一般化-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>問題：名古屋大学2007年文系前期3(b)の一般化</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式による導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式による導出-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式による導出</a></span></li><li><span><a href="#解答例：P(k|n,a,b)の漸化式を使わない導出" data-toc-modified-id="解答例：P(k|n,a,b)の漸化式を使わない導出-1.7"><span class="toc-item-num">1.7&nbsp;&nbsp;</span>解答例：P(k|n,a,b)の漸化式を使わない導出</a></span></li></ul></li><li><span><a href="#ポリアの壺と二項分布や超幾何分布の関係" data-toc-modified-id="ポリアの壺と二項分布や超幾何分布の関係-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>ポリアの壺と二項分布や超幾何分布の関係</a></span><ul class="toc-item"><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布</a></span></li><li><span><a href="#ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)" data-toc-modified-id="ベータ二項分布,-二項分布,-超幾何分布の統一的理解-(ポリア分布)-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>ベータ二項分布, 二項分布, 超幾何分布の統一的理解 (ポリア分布)</a></span></li><li><span><a href="#問題：二項分布がポリア分布の極限になっていること" data-toc-modified-id="問題：二項分布がポリア分布の極限になっていること-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>問題：二項分布がポリア分布の極限になっていること</a></span></li><li><span><a href="#解答例：二項分布がポリア分布の極限になっていること" data-toc-modified-id="解答例：二項分布がポリア分布の極限になっていること-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>解答例：二項分布がポリア分布の極限になっていること</a></span><ul class="toc-item"><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(素朴な方法)-2.4.1"><span class="toc-item-num">2.4.1&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(素朴な方法)</a></span></li><li><span><a href="#二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)" data-toc-modified-id="二項分布,-ベータ二項分布,-超幾何分布の同時プロット(1つの函数にまとめる方法)-2.4.2"><span class="toc-item-num">2.4.2&nbsp;&nbsp;</span>二項分布, ベータ二項分布, 超幾何分布の同時プロット(1つの函数にまとめる方法)</a></span></li></ul></li><li><span><a href="#問題：ポリア分布の期待値と分散" data-toc-modified-id="問題：ポリア分布の期待値と分散-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>問題：ポリア分布の期待値と分散</a></span></li><li><span><a href="#解答例：ポリア分布の期待値と分散" data-toc-modified-id="解答例：ポリア分布の期待値と分散-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>解答例：ポリア分布の期待値と分散</a></span></li></ul></li><li><span><a href="#ポリアの壺試行の別の解釈" data-toc-modified-id="ポリアの壺試行の別の解釈-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>ポリアの壺試行の別の解釈</a></span><ul class="toc-item"><li><span><a href="#ベータ分布,-ベータ函数,-ガンマ函数" data-toc-modified-id="ベータ分布,-ベータ函数,-ガンマ函数-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>ベータ分布, ベータ函数, ガンマ函数</a></span></li><li><span><a href="#成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行" data-toc-modified-id="成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>成功確率がベータ分布に従ってランダムに決まっているようなベルヌーイ試行</a></span></li><li><span><a href="#余談：生まれつきの才能か,-経験の結果か？" data-toc-modified-id="余談：生まれつきの才能か,-経験の結果か？-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>余談：生まれつきの才能か, 経験の結果か？</a></span></li><li><span><a href="#問題：ポリアの壺試行で大数の法則が成立することの確認" data-toc-modified-id="問題：ポリアの壺試行で大数の法則が成立することの確認-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>問題：ポリアの壺試行で大数の法則が成立することの確認</a></span></li><li><span><a href="#解答例：ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="解答例：ポリアの壺試行の側で大数の法則が成立することの確認-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>解答例：ポリアの壺試行の側で大数の法則が成立することの確認</a></span><ul class="toc-item"><li><span><a href="#ポリアの壺試行の側で大数の法則が成立することの確認" data-toc-modified-id="ポリアの壺試行の側で大数の法則が成立することの確認-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span>ポリアの壺試行の側で大数の法則が成立することの確認</a></span></li><li><span><a href="#ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認" data-toc-modified-id="ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span>ポリアの壺試行での大数の法則の収束先の分布がベータ分布になることの確認</a></span></li></ul></li></ul></li></ul></div>
 <!-- #endregion -->
 
 ```julia
+# Google Colabと自分のパソコンの両方で使えるようにするための工夫
+
+using Pkg
+
+"""すでにPkg.add済みのパッケージのリスト"""
+_packages_added = [sort!(readdir(Sys.STDLIB));
+    sort!([info.name for (uuid, info) in Pkg.dependencies() if info.is_direct_dep])]
+
+"""_packages_added内にないパッケージをPkg.addする"""
+add_pkg_if_not_added_yet(pkg) = if isnothing(Base.find_package(pkg))
+    println(stderr, "# $(pkg).jl is not added yet, so let's add it.")
+    Pkg.add(pkg)
+end
+
+"""expr::Exprからusing内の`.`を含まないモジュール名を抽出"""
+function find_using_pkgs(expr::Expr)
+    pkgs = String[]
+    function traverse(expr::Expr)
+        if expr.head == :using
+            for arg in expr.args
+                if arg.head == :. && length(arg.args) == 1
+                    push!(pkgs, string(arg.args[1]))
+                elseif arg.head == :(:) && length(arg.args[1].args) == 1
+                    push!(pkgs, string(arg.args[1].args[1]))
+                end
+            end
+        else
+            for arg in expr.args arg isa Expr && traverse(arg) end
+        end
+    end
+    traverse(expr)
+    pkgs
+end
+
+"""必要そうなPkg.addを追加するマクロ"""
+macro autoadd(expr)
+    pkgs = find_using_pkgs(expr)
+    :(add_pkg_if_not_added_yet.($(pkgs)); $expr)
+end
+```
+
+```julia
+@autoadd begin
 using Distributions
 using StatsPlots
 default(fmt=:png, size=(400, 250), titlefontsize=10,
     tickfontsize=6, guidefontsize=9, plot_titlefontsize=12)
 using Random
 Random.seed!(4649373)
-```
-
-```julia
-# SymPy.jl はjuliaを起動した後に以下のようにすると良いだろう.
-#
-# julia> ENV["Python"] = ""
-# julia> ]
-# pkg> add SymPy
-# pkg> バックスペースを押す.
-# julia> using SymPy
-# Python環境がJulia環境の中にインストールされる.
-
 using SymPy
-
-# Override the Base.show definition of SymPy.jl:
-# https://github.com/JuliaPy/SymPy.jl/blob/29c5bfd1d10ac53014fa7fef468bc8deccadc2fc/src/types.jl#L87-L105
-
-@eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::SymbolicObject)
-    print(io, as_markdown("\\displaystyle " * sympy.latex(x, mode="plain", fold_short_frac=false)))
-end
-@eval SymPy function Base.show(io::IO, ::MIME"text/latex", x::AbstractArray{Sym})
-    function toeqnarray(x::Vector{Sym})
-        a = join(["\\displaystyle " * sympy.latex(x[i]) for i in 1:length(x)], "\\\\")
-        """\\left[ \\begin{array}{r}$a\\end{array} \\right]"""
-    end
-    function toeqnarray(x::AbstractArray{Sym,2})
-        sz = size(x)
-        a = join([join("\\displaystyle " .* map(sympy.latex, x[i,:]), "&") for i in 1:sz[1]], "\\\\")
-        "\\left[ \\begin{array}{" * repeat("r",sz[2]) * "}" * a * "\\end{array}\\right]"
-    end
-    print(io, as_markdown(toeqnarray(x)))
 end
 ```
 
