@@ -16,7 +16,7 @@ jupyter:
 # 仮説検定に関する不適切な解説の例
 
 * 黒木玄
-* 2023-08-27～2023-09-03, 2024-08-27
+* 2023-08-27～2023-09-03, 2024-08-27, 2025-09-02
 $
 \newcommand\R{\mathbb{R}}
 \newcommand\ds{\displaystyle}
@@ -34,10 +34,9 @@ $
 \newcommand\phat{\hat{p}}
 $
 
-このノートブックで用いた[Julia言語](https://julialang.org/)の使い方については以下の資料が参考になるだろう:
+このファイルは次の場所で実行できる:
 
-* https://nbviewer.org/github/genkuroki/msfd28/blob/master/msfd28genkuroki.ipynb
-* https://nbviewer.org/github/genkuroki/msfd28/blob/master/install.ipynb
+* <a href = "https://colab.research.google.com/github/genkuroki/HighSchoolMath/blob/master/StatIntro2.ipynb">Google Colabでこのノートを開く</a> (ランライム→すべてのセルを実行)
 
 <!-- #region toc=true -->
 <h1>目次<span class="tocSkip"></span></h1>
@@ -46,10 +45,23 @@ $
 
 ```julia
 using Distributions
-using StatsPlots
+using Plots
 default(fmt=:png, size=(400, 250),
     titlefontsize=10, guidefontsize=8, tickfontsize=6)
+mypdf(dist, x) = pdf(dist, x)
 mypdf(dist::DiscreteUnivariateDistribution, x) = pdf(dist, round(Int, x))
+function plotdist!(dist,
+        a=max(minimum(dist), mean(dist)-5std(dist)),
+        b=min(maximum(dist), mean(dist)+5std(dist)); 
+        kwargs...)
+    plot!(x -> mypdf(dist, x), a, b; kwargs...)
+end
+function plotdist(dist,
+        a=max(minimum(dist), mean(dist)-5std(dist)),
+        b=min(maximum(dist), mean(dist)+5std(dist)); 
+        kwargs...)
+    plot(x -> mypdf(dist, x), a, b; kwargs...)
+end
 ```
 
 ## 仮説検定を用いて自信過剰になってはいけない
