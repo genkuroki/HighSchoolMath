@@ -93,7 +93,8 @@ end
 ```julia
 @autoadd begin
 using Distributions
-using StatsPlots
+#using StatsPlots
+using Plots
 default(fmt=:png, size=(400, 250), titlefontsize=10,
     tickfontsize=6, guidefontsize=9, plot_titlefontsize=12)
 using Random
