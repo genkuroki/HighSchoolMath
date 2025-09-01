@@ -79,6 +79,48 @@ $
 <div class="toc"><ul class="toc-item"><li><span><a href="#微積分における記号法について" data-toc-modified-id="微積分における記号法について-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>微積分における記号法について</a></span><ul class="toc-item"><li><span><a href="#微分は分数商ではないのか？" data-toc-modified-id="微分は分数商ではないのか？-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>微分は分数商ではないのか？</a></span></li><li><span><a href="#積分の書き方について" data-toc-modified-id="積分の書き方について-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>積分の書き方について</a></span><ul class="toc-item"><li><span><a href="#積分記号-$\ds\int$-は和を意味する" data-toc-modified-id="積分記号-$\ds\int$-は和を意味する-1.2.1"><span class="toc-item-num">1.2.1&nbsp;&nbsp;</span>積分記号 $\ds\int$ は和を意味する</a></span></li><li><span><a href="#積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい" data-toc-modified-id="積分を-$\ds\int_a^b\!\!dx\;f(x)$-と書いてもよい-1.2.2"><span class="toc-item-num">1.2.2&nbsp;&nbsp;</span>積分を $\ds\int_a^b\!\!dx\;f(x)$ と書いてもよい</a></span></li><li><span><a href="#積分で-$dx$-を左側に書くスタイルのメリット" data-toc-modified-id="積分で-$dx$-を左側に書くスタイルのメリット-1.2.3"><span class="toc-item-num">1.2.3&nbsp;&nbsp;</span>積分で $dx$ を左側に書くスタイルのメリット</a></span></li></ul></li></ul></li><li><span><a href="#高校数学における三角函数の微積分は循環論法なのか？" data-toc-modified-id="高校数学における三角函数の微積分は循環論法なのか？-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>高校数学における三角函数の微積分は循環論法なのか？</a></span><ul class="toc-item"><li><span><a href="#補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例" data-toc-modified-id="補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>補足：高校数学的な三角函数の微積分が循環論法になっているかのように主張している事例</a></span></li></ul></li><li><span><a href="#無理式とは根号内に文字を含む式のことなのか？" data-toc-modified-id="無理式とは根号内に文字を含む式のことなのか？-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>無理式とは根号内に文字を含む式のことなのか？</a></span></li><li><span><a href="#単項式は多項式ではないのか？" data-toc-modified-id="単項式は多項式ではないのか？-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>単項式は多項式ではないのか？</a></span></li><li><span><a href="#等式は方程式と恒等式に分類されるのか？" data-toc-modified-id="等式は方程式と恒等式に分類されるのか？-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>等式は方程式と恒等式に分類されるのか？</a></span></li><li><span><a href="#「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？" data-toc-modified-id="「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>「他方の辺に符号を変えて項を移す」という教え方は教育的に正しいか？</a></span><ul class="toc-item"><li><span><a href="#誤解の例" data-toc-modified-id="誤解の例-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>誤解の例</a></span></li><li><span><a href="#教科書通りの教え方の問題点" data-toc-modified-id="教科書通りの教え方の問題点-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>教科書通りの教え方の問題点</a></span><ul class="toc-item"><li><span><a href="#枠で囲まれた「等式の性質」の記述はよろしくない" data-toc-modified-id="枠で囲まれた「等式の性質」の記述はよろしくない-6.2.1"><span class="toc-item-num">6.2.1&nbsp;&nbsp;</span>枠で囲まれた「等式の性質」の記述はよろしくない</a></span></li><li><span><a href="#「どんな等式の性質を使っているでしょうか」という問いもよろしくない" data-toc-modified-id="「どんな等式の性質を使っているでしょうか」という問いもよろしくない-6.2.2"><span class="toc-item-num">6.2.2&nbsp;&nbsp;</span>「どんな等式の性質を使っているでしょうか」という問いもよろしくない</a></span></li><li><span><a href="#「項を移すことができる」と教えることもよろしくない" data-toc-modified-id="「項を移すことができる」と教えることもよろしくない-6.2.3"><span class="toc-item-num">6.2.3&nbsp;&nbsp;</span>「項を移すことができる」と教えることもよろしくない</a></span></li></ul></li></ul></li><li><span><a href="#問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？" data-toc-modified-id="問題-6÷2(1+2)=?,-2a÷2a=?-の答えは唯一つに決まるか？-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>問題 6÷2(1+2)=?, 2a÷2a=? の答えは唯一つに決まるか？</a></span></li><li><span><a href="#ゼロは倍数ではないのか？" data-toc-modified-id="ゼロは倍数ではないのか？-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>ゼロは倍数ではないのか？</a></span></li><li><span><a href="#括弧やかけ算の式は1つの数量を表すか？" data-toc-modified-id="括弧やかけ算の式は1つの数量を表すか？-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>括弧やかけ算の式は1つの数量を表すか？</a></span></li><li><span><a href="#かけ算の順序が逆の「式」は誤りなのか？" data-toc-modified-id="かけ算の順序が逆の「式」は誤りなのか？-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>かけ算の順序が逆の「式」は誤りなのか？</a></span><ul class="toc-item"><li><span><a href="#掛け算順序問題の実態" data-toc-modified-id="掛け算順序問題の実態-10.1"><span class="toc-item-num">10.1&nbsp;&nbsp;</span>掛け算順序問題の実態</a></span></li><li><span><a href="#掛け算順序問題が生じる原因" data-toc-modified-id="掛け算順序問題が生じる原因-10.2"><span class="toc-item-num">10.2&nbsp;&nbsp;</span>掛け算順序問題が生じる原因</a></span></li><li><span><a href="#かけ算の式が数値や数量ではなく場面を表わすと教えている！" data-toc-modified-id="かけ算の式が数値や数量ではなく場面を表わすと教えている！-10.3"><span class="toc-item-num">10.3&nbsp;&nbsp;</span>かけ算の式が数値や数量ではなく場面を表わすと教えている！</a></span></li><li><span><a href="#掛け算順序固定強制指導には教育的効果がない" data-toc-modified-id="掛け算順序固定強制指導には教育的効果がない-10.4"><span class="toc-item-num">10.4&nbsp;&nbsp;</span>掛け算順序固定強制指導には教育的効果がない</a></span></li><li><span><a href="#1951年の文部省学習指導要領算数科編試案" data-toc-modified-id="1951年の文部省学習指導要領算数科編試案-10.5"><span class="toc-item-num">10.5&nbsp;&nbsp;</span>1951年の文部省学習指導要領算数科編試案</a></span></li><li><span><a href="#100年以上の歴史がある！" data-toc-modified-id="100年以上の歴史がある！-10.6"><span class="toc-item-num">10.6&nbsp;&nbsp;</span>100年以上の歴史がある！</a></span></li><li><span><a href="#パターンマッチ教育の恐怖" data-toc-modified-id="パターンマッチ教育の恐怖-10.7"><span class="toc-item-num">10.7&nbsp;&nbsp;</span>パターンマッチ教育の恐怖</a></span></li><li><span><a href="#パターンマッチ教育の極北" data-toc-modified-id="パターンマッチ教育の極北-10.8"><span class="toc-item-num">10.8&nbsp;&nbsp;</span>パターンマッチ教育の極北</a></span></li></ul></li></ul></div>
 <!-- #endregion -->
 
+```julia
+# Google Colabと自分のパソコンの両方で使えるようにするための工夫
+
+using Pkg
+
+"""すでにPkg.add済みのパッケージのリスト"""
+_packages_added = [sort!(readdir(Sys.STDLIB));
+    sort!([info.name for (uuid, info) in Pkg.dependencies() if info.is_direct_dep])]
+
+"""_packages_added内にないパッケージをPkg.addする"""
+add_pkg_if_not_added_yet(pkg) = if isnothing(Base.find_package(pkg))
+    println(stderr, "# $(pkg).jl is not added yet, so let's add it.")
+    Pkg.add(pkg)
+end
+
+"""expr::Exprからusing内の`.`を含まないモジュール名を抽出"""
+function find_using_pkgs(expr::Expr)
+    pkgs = String[]
+    function traverse(expr::Expr)
+        if expr.head == :using
+            for arg in expr.args
+                if arg.head == :. && length(arg.args) == 1
+                    push!(pkgs, string(arg.args[1]))
+                elseif arg.head == :(:) && length(arg.args[1].args) == 1
+                    push!(pkgs, string(arg.args[1].args[1]))
+                end
+            end
+        else
+            for arg in expr.args arg isa Expr && traverse(arg) end
+        end
+    end
+    traverse(expr)
+    pkgs
+end
+
+"""必要そうなPkg.addを追加するマクロ"""
+macro autoadd(expr)
+    pkgs = find_using_pkgs(expr)
+    :(add_pkg_if_not_added_yet.($(pkgs)); $expr)
+end
+```
+
 ```julia slideshow={"slide_type": "-"}
 function showimg(mime, fns...; scale="", 
         head = "https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/")
@@ -90,9 +132,11 @@ function showimg(mime, fns...; scale="",
     display("text/html", html)
 end
 
+@autoadd begin
 using Plots
 default(fmt=:png)
 using SymPy
+end
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
