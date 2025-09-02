@@ -29,7 +29,7 @@ $
 \newcommand\X{{\mathscr X}}
 $
 
-このノートブックは[Google Colabで実行できる](https://colab.research.google.com/github/genkuroki/Statistics/blob/master/2022/07-4%20Julia%20notebook%20for%20Google%20Colab.ipynb).
+このノートブックは[Google Colabで実行できる](https://colab.research.google.com/github/genkuroki/HighSchoolMath/blob/master/Julia%20notebook%20for%20Google%20Colab.ipynb).
 <!-- #endregion -->
 
 ```julia colab={"base_uri": "https://localhost:8080/"} id="fbfd965f" jupyter={"outputs_hidden": true} outputId="01a1f70c-2f36-40b7-972f-82504f121c20" tags=[]
