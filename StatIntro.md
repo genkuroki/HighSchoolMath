@@ -1068,6 +1068,8 @@ S値に関する文献:
 
 P値に対応する意外度 (S値) の表を次のセルで作成しよう.
 
+__余談:__ 確率 $P$ に対する $-\log P$ (対数の底は $2$ でも $e$ でもよい)は情報理論の文脈では __情報量__ (information)と呼ばれ, $\log P$ は __エントロピー__ と呼ばれることがある.
+
 ```julia
 @printf(" %7s  %7s\n", "P-value", "S-value")
 println("-"^18)
@@ -1274,8 +1276,17 @@ $$
 これらの函数はコンピュータの基本特殊函数ライブラリによって効率的に実装されている.
 
 ```julia
+cdf(Normal(0,1), 1.96)
+```
+
+```julia
+quantile(Normal(0,1), 0.975)
+```
+
+```julia
 x = 1.0
-plotdist(Normal(0, 1), -4, x; fillrange=0, la=0, fc=:pink, label="cdf(Normal(0,1), $x)")
+plotdist(Normal(0, 1), -4, x; 
+    fillrange=0, la=0, fc=:pink, label="cdf(Normal(0,1), $x)")
 plotdist!(Normal(0, 1), -4, 5; label="pdf(Normal(0,1), x)", c=1)
 plot!(xtick=-10:10, xguide="x")
 plot!(size=(500, 250))
@@ -1469,7 +1480,7 @@ $$
 $\ccdf = 1 - \cdf$ であることと, $\cdf$ の逆函数が $\quantile$ であることより,
 
 $$
-z_{\alpha/2} = \quantile(\Normal(0,1), 1-\alpha/2)
+z_{\alpha/2} = \op{cquantile}(\Normal(0,1), \alpha/2) = \quantile(\Normal(0,1), 1-\alpha/2)
 $$
 
 とおくと,  $\phat = k/n$ であったことより,
@@ -1718,7 +1729,7 @@ $$
 
 が中心極限定理によって標準正規分布で近似されることを直接的に用いる. Waldの場合と違って, 分母の $p_0$ をその点推定値 $\hat{p}=k/n$ で置き換えて無駄に誤差を増やすようなことはしない.
 
-$0\le \alpha\le 1$ と仮定する(有意水準 $\alpha$ と信頼度 $1-\alpha$ の設定).
+$0< \alpha\le 1$ と仮定する(有意水準 $\alpha$ と信頼度 $1-\alpha$ の設定).
 
 上のP値に対応するパラメータ $p$ の $100(1-\alpha)\%$ 信頼区間は次のように定義される:
 
