@@ -413,6 +413,8 @@ x = -y-z,\ -\omega y-\omega^2 z,\ -\omega^2 y-\omega z.
 $$
 
 と表わされる. これは本質的に所謂**Cardanoの公式**(カルダノの公式)である.
+
+<br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
@@ -600,6 +602,8 @@ $$
 この形の3次方程式は前節の結果を用いれば解ける.
 
 以上の方法は**Eulerの方法**と呼ばれているらしい(https://en.wikipedia.org/wiki/Quartic_function).
+
+<br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "-"}} -->
@@ -796,6 +800,8 @@ B_k'(x) = k B_{k-1}(x)
 $$
 
 が得られる. $B_0(x)=1$ なので $B_k(x)$ は最高次の係数が $1$ である $k$ 次の多項式になる.
+
+<br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -1233,6 +1239,8 @@ $$
 
 以上の $1+6=7$ 通りで$\{1,2,3,4\}$ の2分割の全体が尽くされている. $\QED$
 
+<br>
+
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 **定理:** $\partial=d/dx$ とおく. 微分作用素 $x\partial$ の $n$ 乗は以下のように表わされる:
 
@@ -1472,6 +1480,8 @@ $$
 $$
 
 が得られる. $\QED$
+
+<br>
 
 
 __別証明:__ 前節の系の別証明と似た組合せ論的方法で証明しよう.
@@ -2343,6 +2353,8 @@ L = \int_a^b \sqrt{x'(t)^2 + y'(t)^2}\,dt
 $$
 
 と表せることが説明されている.  $t$ を時間変数とみなすとき, 点 $(x(t),y(t))$ の運動の時刻 $t$ における速度ベクトルは $(x'(t), y'(t))$ になり, 速さは $\sqrt{x'(t)^2 + y'(t)^2}$ と書ける. 上の公式は曲線の長さを速さの積分で表せることを意味している.
+
+<br><br>
 <!-- #endregion -->
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125ArcLength1.jpg" width=60%>
@@ -2389,6 +2401,8 @@ $$
 要するに, 弧度法の意味での角度を単位円上の点の $y$ 座標を用いた積分で表わせば, 単に逆函数の微分として $\sin\theta$ の導函数が $\cos\theta$ になることがわかる. この議論は非常にシンプルである. 
 
 単位円の右側に制限した議論を単位円全体に拡張する作業は読者にまかせる. 現代数学的には円を多様体とみなして議論するのがよい. 三角函数論を完璧に理解するためには「円を多様体とみなす」というような数学的教養が必要になる.
+
+<br><br>
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "subslide"}
@@ -2559,14 +2573,18 @@ Gauss積分の公式 $\ds\int_{-\infty}^\infty e^{-x^2}\,dx=\sqrt{\pi}$ は筆�
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 <a href="https://www.google.co.jp/search?q=%E6%9D%B1%E5%B7%A5%E5%A4%A7+2015+%E6%95%B0%E5%AD%A6">2015年の東京工業大学前期日程の入試問題</a>として次の問題が出題された.
 
->\[3\] $a>0$ とする. 曲線 $y=e^{-x^2}$ と $x$ 軸, $y$ 軸, および直線 $x=a$ で囲まれた図形を, $y$ 軸のまわりに1回転してできる回転体を $A$ とする.
->
->(1) $A$ の体積 $V$ を求めよ.
->
->(2) 点 $(t,0)$ ($-a\leqq t\leqq a$) を通り, $x$ 軸と垂直な平面による $A$ の切り口の面積を $S(t)$ とするとき, 不等式 $\ds S(t)\leqq\int_{-a}^a e^{-(s^2+t^2)}\,ds$ を示せ.
->
->(3) 不等式 $\ds \sqrt{\pi(1-e^{-a^2})}\leqq\int_{-a}^a e^{-x^2}\,dx$ を示せ.
+\[3\] $a>0$ とする. 曲線 $y=e^{-x^2}$ と $x$ 軸, $y$ 軸, および直線 $x=a$ で囲まれた図形を, $y$ 軸のまわりに1回転してできる回転体を $A$ とする.
 
+(1) $A$ の体積 $V$ を求めよ.
+
+(2) 点 $(t,0)$ ($-a\leqq t\leqq a$) を通り, $x$ 軸と垂直な平面による $A$ の切り口の面積を $S(t)$ とするとき, 不等式 $\ds S(t)\leqq\int_{-a}^a e^{-(s^2+t^2)}\,ds$ を示せ.
+
+(3) 不等式 $\ds \sqrt{\pi(1-e^{-a^2})}\leqq\int_{-a}^a e^{-x^2}\,dx$ を示せ.
+
+<br>
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 この問題の内容は, 本質的に**Gauss積分の公式**
 
 $$
@@ -3388,6 +3406,8 @@ $$
 * 黒木玄, <a href="https://github.com/genkuroki/Calculus/blob/master/README.md">微分積分学のノート</a>
 
 を参照せよ. 例えば, Wallisの公式については「10 Gauss積分, ガンマ函数, ベータ函数」「12 Fourier解析」に非常に詳しい解説がある. $\QED$
+
+<br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -3494,6 +3514,11 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-02.jpg" width=50%>
 
 
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br>
+
+
 #### ガンマ函数の基礎
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-03.jpg" width=80%>
@@ -3502,6 +3527,9 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 #### Gaussの超幾何函数の現れ方(1)
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-04.jpg" width=60%>
+
+
+<br><br><br><br><br><br>
 
 
 #### Gaussの超幾何函数の現れ方(2)
@@ -3514,9 +3542,17 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-06.jpg" width=70%>
 
 
+<br>
+
+
 #### ガンマ函数と正弦函数の関係
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-07.jpg" width=70%>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 #### Hurwitzのゼータ函数とガンマ函数の関係
