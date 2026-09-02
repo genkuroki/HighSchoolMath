@@ -285,6 +285,8 @@ $$
 
 このように, 三角函数の加法定理は2次元ベクトルの内積や $2\times 2$ の行列式(もしくは2次元ベクトルの外積)の幾何学的意味を記述している公式ともみなされる.
 
+<br><br>
+
 
 ### 三角関数の加法定理と複素数
 
@@ -1156,6 +1158,8 @@ $D:\Q[x]\to\Q[x]$ の全射性を示そう.  $n$ 次以下の $Q[x]$ の元全�
 この証明より, $D$ の $xV_k$ (定数項のない $V_{k*1}$ の元全体のなす $V_{k+1}$ の部分空間) への制限が $V_k$ への全単射を定めることもわかる. 特に $k+1$ 次の多項式 $f(x)\in\Q[x]$ で $f(0)=0$ と $Df(x) = f(x) - f(x-1) = x^k$ を満たすものが唯一存在することがわかる.  この $f(x)$ が上の証明中の $f(x)$ である.
 
 このように線形代数の抽象的な議論を使いこなすことができれば, 具体的な計算抜きに欲しい $f(x)$ の唯一存在をシンプルな議論で示せる.  もちろん, その具体形を求めたい場合には具体的な計算に関わる議論が必要になってしまうが, 欲しいものの存在と一意性が論理的に確定していれば, 具体形を求める議論では存在と一意性を自由に用いる相対的に楽な方法を採用し易くなる. $\QED$
+
+<br><br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -1317,6 +1321,8 @@ a^n = \sum_{k=0}^n \stirlingsecond{n}{k}a(a-1)\cdots(a-k+1).
 $$
 
 が成立することがわかる. $\QED$
+
+<br><br>
 
 
 __注意:__ 要するに上の系の公式
@@ -2001,6 +2007,8 @@ M_{-1}(x_1,\ldots,x_n) = \frac{n}{\dfrac{1}{x_1}+\cdots+\dfrac{1}{x_n}}.
 $$
 
 なので, $M_1$ は加法平均で, $M_{-1}$ は調和平均である.
+
+<br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
@@ -2097,7 +2105,9 @@ E[x]\log E[x]
 \frac{1}{n}\sum_{i=1}^n x_i^p \log\frac{1}{n}\sum_{i=1}^n x_i^p.
 \end{aligned}
 $$
+<!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 これで $\ds \frac{d}{dp}\log M_p \geqq 0$ であることがわかった. $M_p$ は $p$ について単調増加函数になる:
 
 $$
@@ -2339,6 +2349,8 @@ $$
 であることが示された.
 
 しかし, 以上の方針は次の節の方針と比較すると, 非常に遠回りになっており, 弧度法の意味での角度の定義(単位円弧の長さで角度を定義すること)が不明瞭になっているという問題がある.
+
+<br>
 <!-- #endregion -->
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Jikkyo20140125limitsinc.jpg" width=60%>
@@ -3392,7 +3404,9 @@ $$
 $$
 
 もWallisの公式と呼ぶこともある. 
+<!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 **問題:** すぐ上の後者のWallisの公式を証明せよ. $\QED$
 
 **ヒント:** すでに証明した前者のWallisの公式を使えば後者を示せる. $B(1/2,n+1)/B(1/2,n+1/2)\to 1$ を書き直しても後者のWallisの公式が得られる. もしくは高校の教科書の掲載されている $\sin$ のべきの $0$ から $\pi/2$ までの定積分の計算結果と上で述べたことを合わせて使ってみよ. 偶数べきと奇数べきの比を考えよ. $\QED$
@@ -3514,14 +3528,14 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-02.jpg" width=50%>
 
 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br>
-
-
 #### ガンマ函数の基礎
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-03.jpg" width=80%>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br>
 
 
 #### Gaussの超幾何函数の現れ方(1)
@@ -3529,12 +3543,11 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-04.jpg" width=60%>
 
 
-<br><br><br><br><br><br>
-
-
 #### Gaussの超幾何函数の現れ方(2)
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-05.jpg" width=70%>
+
+<br><br><br><br><br>
 
 
 #### Kummerの超幾何函数の現れ方
@@ -3542,22 +3555,21 @@ Gauss積分($\Gamma(1/2)$ に等しい), ガンマ函数 $\Gamma(s)$, ベータ�
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-06.jpg" width=70%>
 
 
-<br>
-
-
 #### ガンマ函数と正弦函数の関係
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Beta-Gamma-Gauss-Kummer-07.jpg" width=70%>
-
-
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br>
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 #### Hurwitzのゼータ函数とガンマ函数の関係
 
 <img src="https://raw.githubusercontent.com/genkuroki/HighSchoolMath/refs/heads/master/images/Hurwitz-Gamma.jpg" width=70%>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
