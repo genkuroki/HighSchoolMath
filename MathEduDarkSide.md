@@ -157,6 +157,8 @@ end
 と教えている先生が一部にいるようだ. これは本当に正しいだろうか? 微分形式を含む現代数学における**微分**のスタイルを知っていれば, **そのような教え方は誤り**になるので注意しなければいけない.
 
 実際, 高木貞治『<a href="https://www.google.co.jp/search?q=%E9%AB%98%E6%9C%A8%E8%B2%9E%E6%B2%BB+%E8%A7%A3%E6%9E%90%E6%A6%82%E8%AB%96">解析概論</a>』には以下のように書いてある.
+
+<br><br>
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
@@ -327,6 +329,10 @@ $$
 
 実際の理論の展開の仕方の素描を「<a href="https://github.com/genkuroki/HighSchoolMath">高校数学の話題</a>」の方に書いておいたので参照して欲しい.
 
+<br>
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
 **補足:** 前者と後者の $\theta$ の表示は
 
 $$
@@ -588,6 +594,8 @@ showimg("image/jpeg", "images/polynomial1996.jpg", scale="50%")
 * C. A. Van Velzer and Chas. S. Slichter, University Algebra, 1892, 732 pages. <a href="https://books.google.co.jp/books?id=rkQ1AQAAMAAJ&pg=PA135#v=onepage&q&f=false">Google Books</a>
 
 のp.135より. 19世紀の教科書による説明.
+
+<br>
 <!-- #endregion -->
 
 ```julia slideshow={"slide_type": "-"}
@@ -672,7 +680,9 @@ Cさん曰く
 >**＝を跨がず、左辺、右辺内の移項は符号変わらないんですね。**
 
 これも「項を符号を変えて移す」と教えているせいで生じた誤解の例になっている. $\QED$
+<!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "subslide"}} -->
 以上のような誤解が広範に生じていることは
 
 * <a href="https://www.nier.go.jp/tyousakekka/03chuu_chousakekka_houkokusho.htm">平成１９年度　全国学力・学習状況調査【中学校】報告書</a>, <a href="https://www.nier.go.jp/tyousakekka/gaiyou_chuu/19chuu_houkoku4_2.pdf">数学 PDF</a>
@@ -690,7 +700,9 @@ $7x=5x+6$ を $7x-5x=6$ に変形する「移項」について「両辺に $5x$
 
 そもそも, 手際よく計算するためにも「項を移す」という考え方をする必要は一切ない. 「両辺に同じ項を足す(から同じ項を引く, 項の個数は複数でもよい」という基本に忠実な考え方さえあれば十分である. それだけで十分なのに, 「項が移動する」という見方に誘導して基本に忠実な考え方を上書きしようとするから教育に失敗してしまうのである.
 
-**注意:** <a href="https://www.nier.go.jp/14chousakekkahoukoku/report/middle/math/"></a>平成26年度の調査</a>では「移項が行われているのは，どの式からどの式に変形するときですか」というスタイルの問題が出されていて, 正答率が $90.0\%$ と高くなっているが, この事実は「移項の教育が改善したこと」を意味**しない**。なぜならば, どこで移項をしたかを問う問題と, 移項がどのような理由で可能なったかを問う問題では難易度が大きく違うからである. 理由を問う方が問題の難易度は高く, 単に「項を移すこと」ができるだけでは理解したとは言えず, 理由を答えられるかどうかを問う問題の方が調査的には重要である. $\QED$
+**注意:** <a href="https://www.nier.go.jp/14chousakekkahoukoku/report/middle/math/">平成26年度の調査</a>では「移項が行われているのは，どの式からどの式に変形するときですか」というスタイルの問題が出されていて, 正答率が $90.0\%$ と高くなっているが, この事実は「移項の教育が改善したこと」を意味**しない**。なぜならば, どこで移項をしたかを問う問題と, 移項がどのような理由で可能なったかを問う問題では難易度が大きく違うからである. 理由を問う方が問題の難易度は高く, 単に「項を移すこと」ができるだけでは理解したとは言えず, 理由を答えられるかどうかを問う問題の方が調査的には重要である. $\QED$
+
+<br><br>
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "subslide"}} -->
